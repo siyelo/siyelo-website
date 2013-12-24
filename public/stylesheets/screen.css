@@ -188,7 +188,7 @@ html, body {
 }
 
 #header {
-  padding: 15px 0 5px;
+  padding: 15px 0;
   position: absolute;
   top: 80px;
   width: 100%;
@@ -697,6 +697,7 @@ a#work-link {
     background: #06121d;
     position: fixed;
     top: 0;
+    padding-bottom: 5px;
     -webkit-transition: background 0.4s;
     -moz-transition: background 0.4s;
     -o-transition: background 0.4s;
