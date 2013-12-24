@@ -1,0 +1,182 @@
+.content
+	@include pie-clearfix
+
+.txt-heading
+	padding: 7em 0 5em
+	max-width: 600px
+
+.cta
+	background: #f5f5f5
+	display: block
+	padding: 5em 0
+	a
+		background: $two
+		color: #fff
+		display: block
+		margin: 0 auto
+		max-width: 300px
+		padding: 1em 1.5em
+		text-align: center
+		text-decoration: none
+		width: 90%
+		@include border-radius(2px)
+		@include transition(all .4s)
+		&:hover, &:focus
+			background: $two - #111
+		span
+			display: block
+			font: 40px Tungsten
+			text-transform: uppercase
+
+.projects
+	@include pie-clearfix
+	li
+		//display: inline
+		//float: left
+		//height: 500px
+		//padding: 40px
+		//width: 20%
+		border-top: 10px dotted #f5f5f5
+		padding-top: 6em
+		margin-bottom: 6em
+		min-height: 550px
+		position: relative
+		@include box-sizing(border-box)
+		@include pie-clearfix
+		&.ta, &.is, &.chai, &.cooco, &.madmimi
+			//background: url("/images/madmimi.jpg") no-repeat -350px center
+	.third
+		margin-bottom: 20px
+		max-width: 400px
+		text-align: center
+	.preview
+		position: absolute
+		&.left
+			left: 8%
+		&.right
+			right: 8%
+		img
+			max-width: 100%
+			width: 100%
+
+	h2
+		color: $four
+		font-size: 50px
+		line-height: 1
+		margin-bottom: .2em
+		padding-top: 1.5em
+	p
+		color: $four
+		margin-bottom: 2em
+	a
+		background: $two
+		color: #fff
+		display: block
+		font-size: 16px
+		margin: 0 auto
+		max-width: 60%
+		padding: 7px 15px
+		text-align: center
+		text-decoration: none
+
+.logos
+	background: #f5f5f5
+	padding: 6em 30px 0
+	text-align: center
+	ul
+		padding: 3em 2em 0
+		text-align: center
+		@include pie-clearfix
+	li
+		background: #fff
+		display: inline-block
+		height: 150px
+		margin: 0 15px
+		overflow: hidden
+		width: 150px
+	li, .bwWrapper
+		overflow: hidden
+		@include border-radius(100px)
+	h2
+		line-height: 1
+
+	img, canvas
+		float: left
+		max-width: 150px
+		overflow: hidden
+		width: 100%
+		@include border-radius(100px)
+	+ .cta
+		padding: 4em 0 5em
+
+.team
+	@include pie-clearfix
+	li
+		float: left
+		height: 700px
+		overflow: hidden
+		position: relative
+		width: 14.27%
+		@include pie-clearfix
+	h3
+		bottom: 0
+		color: #fff
+		line-height: 1.1
+		padding: 20px
+		position: absolute
+		@include box-sizing(border-box)
+		@include text-shadow(rgba(0, 0, 0, 0.2) 0 0 5px)
+		span
+			display: block
+			font: 14px "open sans"
+	.bwWrapper
+		height: 100%
+		@include pie-clearfix
+	img, canvas
+		height: 100%
+		margin-left: -50%
+	img
+		height: 100%
+
+.community
+	background: #f5f5f5
+	@include pie-clearfix
+	li
+		float: left
+		height: 480px
+		padding: 8em 0
+		text-align: center
+		width: 25%
+		@include box-sizing(border-box)
+		&.cnc
+			background: url("/images/events/cnc.jpg") no-repeat center
+		&.rb
+			background: url("/images/events/rb.jpg") no-repeat center
+		&.rf
+			background: url("/images/events/rf.jpg") no-repeat center
+		&.cr
+			background: url("/images/events/cr.jpg") no-repeat center
+	h3
+		background: rgba(0, 0, 0, 0.6)
+		color: #fff
+		display: inline-block
+		line-height: 1.2
+		padding: .4em 1em .3em
+		text-align: center
+		span
+			display: block
+			font: 16px "open sans"
+
+.offices
+	min-height: 500px
+	padding-left: 10%
+	position: relative
+	.planet
+		overflow: hidden
+		position: absolute
+		@include border-radius(300px)
+	.big
+		bottom: -9em
+	.small
+		top: 0
+		left: 40em

@@ -4,6 +4,7 @@ gem 'rake'
 gem 'sinatra'
 gem 'shotgun'
 gem 'haml'
+gem 'mail'
 
 # Sass & Compass
 gem 'sass'

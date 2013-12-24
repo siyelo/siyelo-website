@@ -1,0 +1,42 @@
+
+%header#header
+  .wrapper
+    %h1#logo
+      %a{:href => "#spaced"}
+        %img{src: './images/logo.png', :title => "Siyelo", :alt => "Siyelo logo"}
+    %nav#main-nav
+      %ul
+        %li
+          %a{href: '#work', class: 'active'}
+            Work
+        %li
+          %a{href: '#team'}
+            Team
+        %li
+          %a{href: '#community'}
+            Community
+        %li
+          %a{href: '#office'}
+            Offices
+        %li
+          %a{href: 'hireus', class: 'hireus'}
+            Hire Us
+
+%section#spaced
+
+  %header.wrapper
+    %hgroup
+      %h1 We turn client ideas into great applications
+      %h2 Bridge the gap between business, design and technology with an experienced team.
+  %ul
+    %li
+      %img#space{:src=>"./images/engine-blur.jpg"}
+    / %li
+    / 	%img#stars-1{:src=>"images/stars-1.png"}
+    / %li
+    / 	%img#stars-2{:src=>"images/stars-2.png"}
+    / %li
+    / 	%img#stars-3{:src=>"images/stars-3.png"}
+  %p.scroll
+    %a#work2{:href => "#work2"}
+      %img{src: "./images/scroll.png"}
