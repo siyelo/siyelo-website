@@ -32,14 +32,24 @@ class SinatraBootstrap < Sinatra::Base
     description = request.params["description"]
     budget = request.params["budget"]
 
+    mail_body = %Q(
+    Hey Glenn!
+
+    We got contacted by #{full_name}.
+    They'd like us to build something like...
+    #{description}
+
+    Their budget is #{budget}.
+    You can contact them by phone on #{phone}.
+    Or by email on #{email}.
+    )
+
     Mail.deliver do
       from "#{email}"
       to "ile@siyelo.com"
       subject "Someone wants to hire us!"
-      body "hireus_email"
+      body mail_body
     end
-
-    mail.deliver
   end
 
   # start the server if ruby file executed directly
