@@ -40,6 +40,12 @@
 %body
 
   = partial('./views/shared/_header.haml')
+
+  - if flash[:notice]
+    = flash[:notice]
+  - if flash[:error]
+    = flash[:error]
+
   = yield
   = partial('./views/shared/_footer.haml')
 

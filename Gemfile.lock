@@ -15,6 +15,8 @@ GEM
     mime-types (1.25.1)
     polyglot (0.3.3)
     rack (1.5.2)
+    rack-flash3 (1.0.5)
+      rack
     rack-protection (1.5.0)
       rack
     rake (10.1.0)
@@ -37,6 +39,7 @@ DEPENDENCIES
   compass
   haml
   mail
+  rack-flash3
   rake
   sass
   shotgun

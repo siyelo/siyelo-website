@@ -5,6 +5,7 @@ gem 'sinatra'
 gem 'shotgun'
 gem 'haml'
 gem 'mail'
+gem 'rack-flash3'
 
 # Sass & Compass
 gem 'sass'
