@@ -673,11 +673,19 @@ a#work-link {
 }
 
 @media only screen and (min-width: 960px) {
+  #main-nav {
+    display: block !important;
+  }
+
   .wrapper {
     max-width: 1200px;
   }
 }
 @media only screen and (min-width: 740px) and (max-width: 959px) {
+  #main-nav {
+    display: block !important;
+  }
+
   .wrapper {
     font-size: 14px;
   }
@@ -720,6 +728,11 @@ a#work-link {
 
   #main-nav {
     display: none;
+    float: left !important;
+    width: 100%;
+  }
+  #main-nav ul {
+    width: 100%;
   }
   #main-nav ul li {
     width: 100%;

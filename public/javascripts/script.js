@@ -34,12 +34,6 @@ $(document).ready(function(){
     $('#main-nav').slideToggle();
   });
 
-  // move Work link in main menu if it's tablet/mobile
-  if($(window).width() < 739) {
-    workLink = $('#main-nav ul').children('li').first();
-  }
-
-
   // Parallax
   $(window).scroll(function(){
     $("#space").css({
