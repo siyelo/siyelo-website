@@ -188,7 +188,7 @@ html, body {
 }
 
 #header {
-  padding: 15px 0;
+  padding: 15px 0 5px;
   position: absolute;
   top: 80px;
   width: 100%;
@@ -240,6 +240,29 @@ html, body {
   float: left;
   max-width: 140px;
   width: 100%;
+}
+
+#menu-toggle {
+  display: none;
+  float: right;
+  color: white !important;
+}
+
+a#work-link {
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px;
+  background: #ed9322;
+  color: white;
+  display: none;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin: 0 34px 12px 0;
+  padding: 12px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 #main-nav {
@@ -664,16 +687,62 @@ html, body {
     font-size: 13px;
   }
 }
+@media only screen and (min-width: 320px) and (max-width: 739px) {
+  #menu-toggle {
+    display: block;
+    font-size: 16px;
+  }
+
+  #header {
+    background: #06121d;
+    position: fixed;
+    top: 0;
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s;
+  }
+  #header #logo img {
+    max-width: 120px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  #header #main-nav a {
+    font-size: 14px;
+    -webkit-transition: font-size 0.4s;
+    -moz-transition: font-size 0.4s;
+    -o-transition: font-size 0.4s;
+    transition: font-size 0.4s;
+  }
+
+  #main-nav {
+    display: none;
+  }
+  #main-nav ul li {
+    width: 100%;
+  }
+  #main-nav ul li:hover {
+    background: #ed9322;
+  }
+  #main-nav ul li a {
+    padding-left: 15px;
+  }
+  #main-nav ul li a.hireus {
+    background: transparent;
+  }
+  #main-nav ul li a.active {
+    color: white;
+  }
+
+  a#work-link {
+    display: block;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 539px) {
   .wrapper {
     font-size: 13px;
     min-width: 300px;
-  }
-
-  #main_nav, .half, .third, .two-thirds, .fourth {
-    clear: both;
-    display: block;
-    float: none;
-    width: 100%;
   }
 }

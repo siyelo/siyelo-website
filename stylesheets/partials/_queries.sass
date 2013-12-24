@@ -1,22 +1,52 @@
 @media only screen and (min-width: 960px)
-	.wrapper
-		max-width: 1200px
+  .wrapper
+    max-width: 1200px
 
 @media only screen and (min-width: 740px) and (max-width: 959px)
-	.wrapper
-		font-size: 14px
-		
+  .wrapper
+    font-size: 14px
+
 @media only screen and (min-width: 540px) and (max-width: 739px)
-	.wrapper
-		font-size: 13px
-		
+  .wrapper
+    font-size: 13px
+
+
+@media only screen and (min-width: 320px) and (max-width: 739px)
+  #menu-toggle
+    display: block
+    font-size: 16px
+
+  #header
+    background: $one
+    position: fixed
+    top: 0
+    @include transition(background .4s)
+    #logo img
+      max-width: 120px
+      @include transition(all .4s)
+    #main-nav a
+      font-size: 14px
+      @include transition(font-size .4s)
+
+  #main-nav
+    display: none
+    ul
+      li
+        width: 100%
+        &:hover
+          background: $two
+        a
+          padding-left: 15px
+          &.hireus
+            background: transparent
+          &.active
+            color: #FFF
+
+  a#work-link
+    display: block
+
 @media only screen and (min-width: 320px) and (max-width: 539px)
-	.wrapper
-		font-size: 13px
-		min-width: 300px
-		
-	#main_nav, .half, .third, .two-thirds, .fourth
-		clear: both
-		display: block
-		float: none
-		width: 100%
+  .wrapper
+    font-size: 13px
+    min-width: 300px
+

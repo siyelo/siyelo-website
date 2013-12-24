@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+  // sticky navigation menu
   var mainNav    = $('#header');
   var topOffset = mainNav.offset().top;
   $(window).scroll(function() {
@@ -10,6 +12,7 @@ $(document).ready(function(){
     }
   });
 
+  // smooth scrolling to sections
   $(function() {
     $('#header a[href*=#]:not([href=#]), p.scroll a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -25,6 +28,19 @@ $(document).ready(function(){
     });
   });
 
+  // mobile menu toggle
+  $('#menu-toggle').click(function(e){
+    e.preventDefault();
+    $('#main-nav').slideToggle();
+  });
+
+  // move Work link in main menu if it's tablet/mobile
+  if($(window).width() < 739) {
+    workLink = $('#main-nav ul').children('li').first();
+  }
+
+
+  // Parallax
   $(window).scroll(function(){
     $("#space").css({
       top: $(window).scrollTop()*.1*-1
@@ -49,7 +65,7 @@ $(window).load(function(){
     hoverEffect : true, // default true
     // set the path to BnWWorker.js for a superfast implementation
     webworkerPath : false,
-    // for the images with a fluid width and height 
+    // for the images with a fluid width and height
     responsive:true,
     speed: { //this property could also be just speed: value for both fadeIn and fadeOut
       fadeIn: 200, // 200ms for fadeIn animations
