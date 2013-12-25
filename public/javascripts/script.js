@@ -35,23 +35,23 @@ $(document).ready(function(){
   });
 
   // Parallax
-  $(window).scroll(function(){
-    $("#space").css({
-      top: $(window).scrollTop()*.1*-1
-    });
-    $("#engine").css({
-      top: $(window).scrollTop()*.3*-1
-    });
-    $("#stars-1").css({
-      top: $(window).scrollTop()*.3*-1
-    });
-    $("#stars-2").css({
-      top: $(window).scrollTop()*.2*-1
-    });
-    $("#stars-3").css({
-      top: $(window).scrollTop()*.1*-1
-    });
-  });
+  // $(window).scroll(function(){
+  //   $("#space").css({
+  //     top: $(window).scrollTop()*.1*-1
+  //   });
+  //   $("#engine").css({
+  //     top: $(window).scrollTop()*.3*-1
+  //   });
+  //   $("#stars-1").css({
+  //     top: $(window).scrollTop()*.3*-1
+  //   });
+  //   $("#stars-2").css({
+  //     top: $(window).scrollTop()*.2*-1
+  //   });
+  //   $("#stars-3").css({
+  //     top: $(window).scrollTop()*.1*-1
+  //   });
+  // });
 });
 
 $(window).load(function(){
