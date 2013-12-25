@@ -38,7 +38,7 @@
     for optimal performance, create your own custom Modernizr build: www.modernizr.com/download/
   %script{:src => './javascripts/libs/modernizr-2.0.6.min.js'}
 
-%body
+%body{"data-spy" => 'scroll', "data-target" => '#main-nav'}
 
   = partial('./views/shared/_header.haml')
   = partial('./views/shared/_flashes.haml')
@@ -52,6 +52,7 @@
   %script{:src => './javascripts/libs/jquery-1.10.2.min.js'}
   %script{:src => './javascripts/libs/jQuery.BlackAndWhite.js'}
   %script{:src => './javascripts/libs/jquery-scrollintoview.js'}
+  %script{:src => './javascripts/libs/jquery-scrollspy.js'}
   %script{:src => './javascripts/script.js'}
 
 

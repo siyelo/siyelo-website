@@ -1,5 +1,18 @@
 $(document).ready(function(){
 
+  $('section').on('scrollSpy:enter', function(e){
+    id = e.target.id;
+    $('#main-nav a[href=#' + id + ']').css('color', '#ed9322');
+  });
+
+  $('section').on('scrollSpy:exit', function(e){
+    id = e.target.id;
+    $('#main-nav a[href=#' + id + ']').css('color', 'white');
+  });
+
+  $('section').scrollSpy();
+
+
   // sticky navigation menu
   var mainNav    = $('#header');
   var topOffset = mainNav.offset().top;
@@ -14,12 +27,12 @@ $(document).ready(function(){
 
   // smooth scrolling to sections
   $(function() {
-    $('#header a[href*=#]:not([href=#]), p.scroll a[href*=#]:not([href=#])').click(function() {
+    $('#main-nav a[href*=#]:not([href=#]), p.scroll a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
         if (target.length) {
-          $('#' + target[0].id).scrollintoview({ duration: 2000});
+          $('section#' + target[0].id).scrollintoview({ duration: 2000});
         }
       }
     });
