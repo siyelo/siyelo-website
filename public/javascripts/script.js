@@ -31,6 +31,13 @@ $(document).ready(function(){
     $('#main-nav').slideToggle();
   });
 
+  // add selected class on main-nav links
+  $('#main-nav a').click(function(e){
+    e.preventDefault();
+    $('#main-nav a').removeClass('active');
+    $(e.target).addClass('active');
+  });
+
   // Parallax
   // $(window).scroll(function(){
   //   $("#space").css({
