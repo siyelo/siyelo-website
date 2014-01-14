@@ -4,13 +4,10 @@
     .txt-heading
       %h1 Our work
       %p We like building software that people use. To do that, we start by understanding your business and the problem at hand. We prototype. We ship working software. We learn. We iterate. We work closely with you throughout.
-      %br
       %p Clients commonly come to us to:
 
   %ul.projects
     %li.ta
-      .preview.left
-        %img{src: "./images/study/tad.jpg"}
       .wrapper
         .right.third
           %h2 Launch a new idea
@@ -19,9 +16,10 @@
             %a{href: '#'}
               Talented Africa case study coming soon
           /%p= link_to "See what we did for TalentedAfrica", "talented-africa"
+        .preview.two-thirds.left
+          %img{src: "./images/study/tad.jpg"}
+
     %li.is
-      .preview.right
-        %img{src: "./images/study/tad.jpg"}
       .wrapper
         .left.third
           %h2 Streamline your business
@@ -30,9 +28,10 @@
             %a{href: '#'}
               Internet Solutions case study coming soon
           /%p= link_to "See what we did for Internet Solutions", "is"
+        .preview.two-thirds.right
+          %img{src: "./images/study/tad.jpg"}
+
     %li.chai
-      .preview.left
-        %img{src: "./images/study/tad.jpg"}
       .wrapper
         .right.third
           %h2 Improve your user's experience
@@ -41,9 +40,10 @@
             %a{href: '#'}
               Clinton Health Access Initiative case study coming soon
           /%p= link_to "See what we did for Clinton Health Access Initiative", "chai"
+        .preview.two-thirds.left
+          %img{src: "./images/study/tad.jpg"}
+
     %li.cooco
-      .preview.right
-        %img{src: "./images/study/tad.jpg"}
       .wrapper
         .left.third
           %h2 Rescue a project
@@ -52,9 +52,10 @@
             %a{href: '#'}
               EOS Marketplace case study coming soon
           /%p= link_to "See what we did for EOS Marketplace", "eos"
+        .preview.two-thirds.right
+          %img{src: "./images/study/tad.jpg"}
+
     %li.madmimi
-      .preview.left
-        %img{src: "./images/study/tad.jpg"}
       .wrapper
         .right.third
           %h2 Improve an existing product
@@ -63,6 +64,8 @@
             %a{href: '#'}
               Mad Mimi case study coming soon
           /%p= link_to "See what we did for Mad Mimi", "madmimi"
+        .preview.two-thirds.left
+          %img{src: "./images/study/tad.jpg"}
 
   .logos
     .wrapper
@@ -73,25 +76,22 @@
 
     %ul
       %li
-        %img{src: "./images/logos/madmimi.png"}
-      %li
-        %img{src: "./images/logos/chai.png"}
-        /%p Clinton Health Access Initiative
-      %li
-        %img{src: "./images/logos/eos.png"}
-        /%p EOS Marketplace
-      %li
-        %img{src: "./images/logos/hetzner.png"}
-        /%p Hetzner
-      %li
-        %img{src: "./images/logos/is.png"}
-        /%p Internet Solutions
-      %li
         %img{src: "./images/logos/abt.png"}
-        /%p ABT Associates
       %li
         %img{src: "./images/logos/tad.png"}
-        -# /%p Talented Africa
+      %li
+        %img{src: "./images/logos/is.png"}
+      %li
+        %img{src: "./images/logos/chai.png"}
+      %li
+        %img{src: "./images/logos/madmimi.png"}
+      %li
+        %img{src: "./images/logos/hetzner.png"}
+      %li
+        %img{src: "./images/logos/eos.png"}
+      
+      
+
       -# /%li
         -# /%img{src: "logos/slab.png"}
         -# /%p Sneaker Lab
@@ -170,19 +170,19 @@
       %h1 Our Community
       %p Siyelo is very passionate about supporting and giving back to the community. We sponsor and host events, we love contributing to open source just as much we enjoy using open source. If you are looking for sponsorship for a local event, get in touch with us, maybe we can help!
   %ul.community
-    %li.cnc
+    %li.cnc.fourth
       %h3
         %span We organize
         Code & Coffee Cape Town
-    %li.rb
+    %li.rb.fourth
       %h3
         %span	We host
         Rails Bridge
-    %li.rf
+    %li.rf.fourth
       %h3
         %span We design
         RubyFuza
-    %li.cr
+    %li.cr.fourth
       %h3
         %span We sponsor
         Code Retreat Skopje
@@ -193,11 +193,28 @@
     .txt-heading
       %h1 Our offices
       %p Siyelo is a remote company, meaning, we are located in two different cities, in two different countries, on two different continents. Our HQ is located in Cape Town near the City Bowl. Our second office is in Skopje, Macedonia. It is located in the very heart of the city. If you are around, regardless if it's Cape Town or Skopje, please stop by and say hello!
+      %p.contact
+        %i.fa.fa-envelope
+        hello@siyelo.com
+        %i.fa.fa-phone
+        +27214612050
+
 
     %ul.offices
       %li.ssa
         .big.planet
           %iframe{width: "550", height: "550", frameborder: "0", scrolling: "no", marginheight: "0", marginwidth: "0", src: "https://maps.google.com/maps?q=79+Roeland+St,+Cape+Town,+South+Africa&hl=en&ll=-33.92955,18.4222&spn=0.00292,0.005659&sll=37.0625,-95.677068&sspn=45.418852,92.724609&oq=79+Roe&hnear=79+Roeland+St,+Cape+Town,+Western+Cape+8000,+South+Africa&t=m&z=18&output=embed" }
+        %ul
+          %li Suite #1, 4th Floor
+          %li 79 Roeland Street
+          %li Cape Town, 8001
+          %li South Africa
+
       %li.smk
         .small.planet
           %iframe{frameborder: "0", height: "320", marginheight: "0", marginwidth: "0", scrolling: "no", src: "https://maps.google.mk/maps?ie=UTF8&cid=3518245121301413205&q=Siyelo+Skopje&gl=MK&hl=en&t=m&iwloc=A&ll=41.996821,21.428321&spn=0.006295,0.006295&output=embed", width: "320"}
+        %ul
+          %li Suite #5, 1st Floor
+          %li Marx & Engels 7
+          %li Skopje, 1000
+          %li Macedonia

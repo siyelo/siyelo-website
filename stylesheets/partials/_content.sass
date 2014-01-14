@@ -2,8 +2,19 @@
 	@include pie-clearfix
 
 .txt-heading
-	padding: 7em 0 5em
+	padding: 7em 0 1em
 	max-width: 600px
+	p
+		margin-bottom: 2em
+		&.contact
+			color: $two
+			font-size: 1.3em
+	.fa
+		color: $two
+		font-size: 1.2em
+		margin-right: 5px
+	.fa-phone
+		margin-left: 30px
 
 .cta
 	background: #f5f5f5
@@ -50,21 +61,19 @@
 		max-width: 400px
 		text-align: center
 	.preview
-		position: absolute
 		&.left
-			left: 8%
+			margin-left: -3em
 		&.right
-			right: 8%
+			margin-right: -3em
 		img
 			max-width: 100%
 			width: 100%
 
 	h2
 		color: $four
-		font-size: 50px
 		line-height: 1
 		margin-bottom: .2em
-		padding-top: 1.5em
+		padding-top: 1em
 	p
 		color: $four
 		margin-bottom: 2em
@@ -142,11 +151,9 @@
 	background: #f5f5f5
 	@include pie-clearfix
 	li
-		float: left
 		height: 480px
 		padding: 8em 0
 		text-align: center
-		width: 25%
 		@include box-sizing(border-box)
 		&.cnc
 			background: url("/images/events/cnc.jpg") no-repeat center
@@ -167,16 +174,25 @@
 			display: block
 			font: 16px "open sans"
 
-.offices
-	min-height: 500px
-	padding-left: 10%
-	position: relative
-	.planet
-		overflow: hidden
-		position: absolute
-		@include border-radius(300px)
-	.big
-		bottom: -9em
-	.small
-		top: 0
-		left: 40em
+@media only screen and (min-width: 801px)
+	.offices
+		min-height: 500px
+		position: relative
+		.ssa
+			float: left
+			padding-top: 70px
+			width: 60%
+		.smk
+			float: right
+			text-align: right
+			width: 40%
+		.planet
+			overflow: hidden
+			position: absolute
+			@include border-radius(300px)
+		.big
+			bottom: -9em
+			left: 10%
+		.small
+			top: 0
+			left: 40em

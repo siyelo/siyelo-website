@@ -1,43 +1,69 @@
-@media only screen and (min-width: 960px)
+@media only screen and (min-width: 801px)
   #main-nav
     display: block !important
 
   .wrapper
     max-width: 1200px
 
-@media only screen and (min-width: 740px) and (max-width: 959px)
-  #main-nav
-    display: block !important
-
-  .wrapper
+@media only screen and (max-width: 800px)
+  #header
+    top: 60px
+  #main-nav a
     font-size: 14px
 
-@media only screen and (min-width: 540px) and (max-width: 739px)
-  .wrapper
-    font-size: 13px
+  #spaced
+    hgroup
+      top: 30%
+    h1
+      font-size: 110px
+      padding-right: 10%
+    h2
+      font-size: 28px
+  .half, .third, .two-thirds, .fourth
+    display: block
+    float: none
+    width: auto
+  .third
+    margin: 0 auto
+  .projects .preview
+    margin-top: 50px
+    text-align: center
+    img
+      display: inline
+      width: 90%
+  .team
+    li
+      width: 50%
+    img, canvas
+      margin-left: 0
+  .community
+    li
+      float: left
+      width: 50%
 
 
-@media only screen and (min-width: 320px) and (max-width: 739px)
+@media only screen and (max-width: 480px)
   #menu-toggle
     display: block
-    font-size: 16px
+    font-size: 10px
+    padding: 2px
 
-  #header
+  #header, #header.sticky
     background: $one
     position: fixed
     top: 0
-    padding-bottom: 5px
     @include transition(background .4s)
     #logo img
-      max-width: 120px
+      max-width: 100px
       @include transition(all .4s)
     #main-nav a
       font-size: 14px
       @include transition(font-size .4s)
+    .wrapper > span a
+      font-size: 14px
 
   #main-nav
     display: none
-    float: left !important
     width: 100%
     ul
       width: 100%
@@ -54,9 +80,6 @@
 
   a#work-link
     display: block
-
-@media only screen and (min-width: 320px) and (max-width: 539px)
   .wrapper
     font-size: 13px
     min-width: 300px
-
