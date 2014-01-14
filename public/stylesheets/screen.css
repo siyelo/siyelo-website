@@ -190,7 +190,7 @@ html, body {
 #header {
   padding: 15px 0;
   position: absolute;
-  top: 80px;
+  top: 70px;
   width: 100%;
   z-index: 3;
   *zoom: 1;
@@ -288,8 +288,8 @@ a#work-link {
 }
 #main-nav a.hireus {
   background: #ed9322;
-  margin: 0;
-  padding: 12px 20px;
+  margin: 2px 0 0;
+  padding: 10px 20px;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   -ms-border-radius: 1px;
@@ -571,18 +571,16 @@ a#work-link {
 
 .team {
   *zoom: 1;
+  background: whitesmoke;
 }
 .team:after {
   content: "";
   display: table;
   clear: both;
 }
-.team ul {
-  background: whitesmoke;
-}
 .team li {
   float: left;
-  height: 700px;
+  height: 640px;
   overflow: hidden;
   position: relative;
   width: 14.27%;
@@ -756,9 +754,13 @@ a#work-link {
   margin-right: 30px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .team li {
-    height: 600px !important;
+    height: 600px;
+    width: 25%;
+  }
+  .team li img, .team li canvas {
+    margin-left: -35%;
   }
 }
 @media only screen and (min-width: 801px) {
@@ -817,13 +819,6 @@ a#work-link {
     -o-transition: all 0.4s;
     transition: all 0.4s;
   }
-  #header #main-nav a, #header.sticky #main-nav a {
-    font-size: 14px;
-    -webkit-transition: font-size 0.4s;
-    -moz-transition: font-size 0.4s;
-    -o-transition: font-size 0.4s;
-    transition: font-size 0.4s;
-  }
   #header .wrapper > span a, #header.sticky .wrapper > span a {
     font-size: 14px;
   }
@@ -857,8 +852,15 @@ a#work-link {
   }
 
   .wrapper {
-    min-width: 320px;
     width: 80%;
+  }
+
+  a {
+    font-size: 14px;
+    -webkit-transition: font-size 0.4s;
+    -moz-transition: font-size 0.4s;
+    -o-transition: font-size 0.4s;
+    transition: font-size 0.4s;
   }
 
   h1 {
@@ -899,5 +901,148 @@ a#work-link {
   .community li {
     float: left;
     width: 50%;
+  }
+
+  .offices > li {
+    margin-bottom: 3em;
+  }
+  .offices ul {
+    margin-top: 0.7em;
+  }
+  .offices iframe {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  #spaced hgroup {
+    top: 30%;
+  }
+  #spaced h1 {
+    font-size: 95px;
+    margin-bottom: 0.4em;
+  }
+  #spaced h2 {
+    font-size: 24px;
+    max-width: 240px;
+  }
+
+  .team li img, .team li canvas {
+    margin-left: -25%;
+  }
+
+  .community li {
+    width: 100%;
+  }
+
+  .logos h2 {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #spaced hgroup {
+    top: 20%;
+  }
+  #spaced h1 {
+    font-size: 80px;
+    margin-bottom: 0.3em;
+  }
+  #spaced h2 {
+    font-size: 21px;
+    max-width: 240px;
+  }
+
+  .logos .wrapper {
+    width: 100%;
+  }
+  .logos ul {
+    padding: 3em 0 0;
+  }
+  .logos li {
+    height: 120px;
+    width: 120px;
+  }
+
+  .team li img, .team li canvas {
+    margin-left: -50%;
+    min-height: 450px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 45px;
+    margin-bottom: 0.5em;
+  }
+
+  #header {
+    padding: 13px 0 10px;
+  }
+  #header #logo img {
+    max-width: 75px;
+  }
+
+  #spaced hgroup {
+    top: 23%;
+    width: 100%;
+  }
+  #spaced h1 {
+    font-size: 58px;
+    line-height: 0.85;
+    margin-bottom: 0.2em;
+    padding-right: 0;
+  }
+  #spaced h2 {
+    font-size: 16px;
+    margin-top: 0;
+    max-width: 240px;
+  }
+
+  .scroll a {
+    max-width: 150px;
+    padding: 15px 0 5px;
+  }
+
+  .txt-heading {
+    padding-top: 5em;
+  }
+
+  .planet {
+    margin: 0 -12%;
+  }
+
+  .community li {
+    height: auto;
+    padding: 6em 0;
+  }
+
+  .cta a {
+    max-width: 200px;
+  }
+
+  .team li {
+    width: 100%;
+  }
+  .team li img, .team li canvas {
+    margin-left: 0;
+  }
+
+  #footer ul {
+    float: left;
+  }
+  #footer .si {
+    margin-bottom: 25px;
+  }
+
+  .logos li {
+    height: 100px;
+    margin: 0 5px 10px;
+    width: 100px;
   }
 }

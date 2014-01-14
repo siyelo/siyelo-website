@@ -1,6 +1,9 @@
-@media only screen and (max-width: 1000px)
+@media only screen and (max-width: 1200px)
   .team li
-    height: 600px !important
+    height: 600px
+    width: 25%
+    img, canvas
+      margin-left: -35%
 
 @media only screen and (min-width: 801px)
   #main-nav
@@ -41,9 +44,7 @@
       img
         max-width: 100px
         @include transition(all .4s)
-    #main-nav a
-      font-size: 14px
-      @include transition(font-size .4s)
+    #main-nav 
     .wrapper > span a
       font-size: 14px
 
@@ -67,8 +68,10 @@
   a#work-link
     display: block
   .wrapper
-    min-width: 320px
     width: 80%
+  a
+    font-size: 14px
+    @include transition(font-size .4s)
   h1
     font-size: 75px
     line-height: 1
@@ -98,5 +101,106 @@
     li
       float: left
       width: 50%
+  .offices
+    > li
+      margin-bottom: 3em
+    ul
+      margin-top: .7em
+    iframe
+      width: 100%
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 640px)
+  #spaced
+    hgroup
+      top: 30%
+    h1
+      font-size: 95px
+      margin-bottom: .4em
+    h2
+      font-size: 24px
+      max-width: 240px
+  .team li
+    img, canvas
+      margin-left: -25%
+  .community
+    li
+      width: 100%
+  .logos
+    h2
+      font-size: 45px
+
+@media only screen and (max-width: 480px)
+  #spaced
+    hgroup
+      top: 20%
+    h1
+      font-size: 80px
+      margin-bottom: .3em
+    h2
+      font-size: 21px
+      max-width: 240px
+  .logos
+    .wrapper
+      width: 100%
+    ul
+      padding: 3em 0 0
+    li
+      height: 120px
+      width: 120px
+  .team li
+    img, canvas
+      margin-left: -50%
+      min-height: 450px
+
+@media only screen and (max-width: 320px)
+  body
+    font-size: 16px
+  h1
+    font-size: 60px
+  h2
+    font-size: 45px
+    margin-bottom: .5em
+  #header
+    padding: 13px 0 10px
+    #logo img
+      max-width: 75px
+    span.right
+
+  #spaced
+    hgroup
+      top: 23%
+      width: 100%
+    h1
+      font-size: 58px
+      line-height: .85
+      margin-bottom: .2em
+      padding-right: 0
+    h2
+      font-size: 16px
+      margin-top: 0
+      max-width: 240px
+  .scroll a
+    max-width: 150px
+    padding: 15px 0 5px
+  .txt-heading
+    padding-top: 5em
+  .planet
+    margin: 0 -12%
+  .community li
+    height: auto
+    padding: 6em 0
+  .cta a
+    max-width: 200px
+  .team li
+    width: 100%
+    img, canvas
+      margin-left: 0
+  #footer
+    ul
+      float: left
+    .si
+      margin-bottom: 25px
+  .logos li
+    height: 100px
+    margin: 0 5px 10px
+    width: 100px
