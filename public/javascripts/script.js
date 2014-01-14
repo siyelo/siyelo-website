@@ -1,33 +1,12 @@
 $(document).ready(function(){
 
-  $('section').on('scrollSpy:enter', function(e){
-    id = e.target.id;
-    $('#main-nav a[href=#' + id + ']').css('color', '#ed9322');
-  });
-
-  $('section').on('scrollSpy:exit', function(e){
-    id = e.target.id;
-    $('#main-nav a[href=#' + id + ']').css('color', 'white');
-  });
-
-  $('section').scrollSpy();
-
-
   // sticky navigation menu
-  var mainNav    = $('#header');
-  var topOffset = mainNav.offset().top;
-  $(window).scroll(function() {
-    var scrolled  = $(window).scrollTop();
-    if(scrolled > topOffset) {
-       mainNav.addClass('sticky');
-    }else{
-       mainNav.removeClass('sticky');
-    }
-  });
+  stickyNav('#header');
 
   // smooth scrolling to sections
   $(function() {
-    $('#main-nav a[href*=#]:not([href=#]), a#work-link[href*=#]:not([href=#])').click(function() {
+    $('#main-nav a[href*=#]:not([href=#]), a#work-link[href*=#]:not([href=#]), #logo a[href*=#]:not([href=#]), a#work2[href*=#]:not([href=#])').click(function(e) {
+      e.preventDefault();
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -45,11 +24,31 @@ $(document).ready(function(){
   });
 
   // add selected class on main-nav links
-  $('#main-nav a').click(function(e){
-    e.preventDefault();
-    $('#main-nav a').removeClass('active');
-    $(e.target).addClass('active');
+  $('#main-nav a, a[href="#spaced"], a#work2').click(function(e){
+    highlightNavLink(e.target.hash);
   });
+
+  // *****************
+  // PRIVATE functions
+  // *****************
+
+  function stickyNav(element) {
+    var mainNav    = $(element);
+    var topOffset = mainNav.offset().top;
+    $(window).scroll(function() {
+      var scrolled  = $(window).scrollTop();
+      if(scrolled > topOffset) {
+         mainNav.addClass('sticky');
+      }else{
+         mainNav.removeClass('sticky');
+      }
+    });
+  }
+
+  function highlightNavLink(href) {
+    $('#main-nav a').removeClass('active');
+    $("#main-nav a[href='" + href + "']").addClass('active');
+  }
 
   // Parallax
   // $(window).scroll(function(){
