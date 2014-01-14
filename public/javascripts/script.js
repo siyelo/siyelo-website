@@ -3,18 +3,24 @@ $(document).ready(function(){
   // sticky navigation menu
   stickyNav('#header');
 
-  // smooth scrolling to sections
-  $(function() {
-    $('#main-nav a[href*=#]:not([href=#]), a#work-link[href*=#]:not([href=#]), #logo a[href*=#]:not([href=#]), a#work2[href*=#]:not([href=#])').click(function(e) {
-      e.preventDefault();
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('section#' + target[0].id).scrollintoview({ duration: 2000});
-        }
+  // SMOOTH SCROLLING
+  $('a.js-smooth[href*=#]:not([href=#])').click(function(e) {
+    e.preventDefault();
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('section#' + target[0].id).scrollintoview({ duration: 2000});
       }
-    });
+    }
+  });
+
+  // smooth scroll logo link only if menu is sticky
+  $('#logo a[href*=#]:not([href=#])').click(function(e) {
+    if($(e.target).parents('header').hasClass('sticky')) {
+      e.preventDefault();
+      $('section#spaced').scrollintoview({ duration: 2000});
+    }
   });
 
   // mobile menu toggle
@@ -23,14 +29,31 @@ $(document).ready(function(){
     $('#main-nav').slideToggle();
   });
 
-  // add selected class on main-nav links
-  $('#main-nav a, a[href="#spaced"], a#work2').click(function(e){
-    highlightNavLink(e.target.hash);
+  /// SCROLL SPY
+  scrollItems = $('#main-nav a').map(function(){
+    var item = $($(this).attr("href"));
+      if (item.length) { return item; }
   });
+  headerSectionHeight = $('#spaced').height();
 
-  // *****************
-  // PRIVATE functions
-  // *****************
+  topSectionHeight = $('#spaced').outerHeight()+15;
+  menuItems = $('#main-nav').find("a");
+
+  $(window).scroll(function(){
+    var fromTop = $(this).scrollTop()+topSectionHeight;
+
+    var cur = scrollItems.map(function(){
+         if ($(this).offset().top < fromTop)
+           return this;
+     });
+    cur = cur[cur.length-1];
+    var id = cur && cur.length ? cur[0].id : "";
+    menuItems.removeClass("active");
+    if(fromTop > topSectionHeight){
+      menuItems.end().find("a[href=#"+id+"]").addClass("active");
+    }
+  });
+  /// END
 
   function stickyNav(element) {
     var mainNav    = $(element);
