@@ -16,7 +16,7 @@ $(document).ready(function(){
   });
 
   // smooth scroll logo link only if menu is sticky
-  $('#logo a[href*=#]:not([href=#])').click(function(e) {
+  $('#logo a').click(function(e) {
     if($(e.target).parents('header').hasClass('sticky')) {
       e.preventDefault();
       $('section#spaced').scrollintoview({ duration: 2000});
