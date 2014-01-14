@@ -1,6 +1,42 @@
 #footer
 	background: $one
 	color: #fff
-	padding: 7em 0
+	padding: 9em 0 0
 	position: relative
 	z-index: 2
+	.wrapper
+		padding-bottom: 9em
+	ul
+		float: right
+		a
+			color: #fff
+			font-size: 2em
+			margin-right: 3px
+			opacity: .8
+			text-decoration: none
+			@include transition(all .4s)
+			&:hover, &:focus
+				opacity: 1
+
+	p
+		&.copyright
+			background: rgba(0, 0, 0, 0.8)
+			clear: both
+			font-size: .7em
+			letter-spacing: .5px
+			opacity: .3
+			padding: 3em 0 2.5em
+			text-align: center
+			text-transform: uppercase
+		&.contact span
+			display: block
+
+			margin-bottom: 7px
+			opacity: .8
+		i
+			color: #fff
+			margin-right: 5px
+
+.si
+	float: left
+	margin-right: 30px
