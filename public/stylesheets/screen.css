@@ -238,7 +238,7 @@ html, body {
 }
 #logo img {
   float: left;
-  max-width: 140px;
+  max-width: 150px;
   width: 100%;
 }
 
@@ -421,6 +421,10 @@ a#work-link {
   margin-left: 30px;
 }
 
+#office .txt-heading {
+  padding-bottom: 0;
+}
+
 .cta {
   background: whitesmoke;
   display: block;
@@ -465,7 +469,7 @@ a#work-link {
 }
 .projects li {
   border-top: 10px dotted whitesmoke;
-  padding-top: 6em;
+  padding-top: 7em;
   margin-bottom: 6em;
   min-height: 550px;
   position: relative;
@@ -573,6 +577,9 @@ a#work-link {
   display: table;
   clear: both;
 }
+.team ul {
+  background: whitesmoke;
+}
 .team li {
   float: left;
   height: 700px;
@@ -662,7 +669,7 @@ a#work-link {
 
 @media only screen and (min-width: 801px) {
   .offices {
-    min-height: 500px;
+    min-height: 540px;
     position: relative;
   }
   .offices .ssa {
@@ -685,7 +692,7 @@ a#work-link {
     border-radius: 300px;
   }
   .offices .big {
-    bottom: -9em;
+    bottom: -8em;
     left: 10%;
   }
   .offices .small {
@@ -749,6 +756,11 @@ a#work-link {
   margin-right: 30px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .team li {
+    height: 600px !important;
+  }
+}
 @media only screen and (min-width: 801px) {
   #main-nav {
     display: block !important;
@@ -759,14 +771,6 @@ a#work-link {
   }
 }
 @media only screen and (max-width: 800px) {
-  #header {
-    top: 60px;
-  }
-
-  #main-nav a {
-    font-size: 14px;
-  }
-
   #spaced hgroup {
     top: 30%;
   }
@@ -788,28 +792,6 @@ a#work-link {
     margin: 0 auto;
   }
 
-  .projects .preview {
-    margin-top: 50px;
-    text-align: center;
-  }
-  .projects .preview img {
-    display: inline;
-    width: 90%;
-  }
-
-  .team li {
-    width: 50%;
-  }
-  .team img, .team canvas {
-    margin-left: 0;
-  }
-
-  .community li {
-    float: left;
-    width: 50%;
-  }
-}
-@media only screen and (max-width: 480px) {
   #menu-toggle {
     display: block;
     font-size: 10px;
@@ -824,6 +806,9 @@ a#work-link {
     -moz-transition: background 0.4s;
     -o-transition: background 0.4s;
     transition: background 0.4s;
+  }
+  #header #logo, #header.sticky #logo {
+    margin-bottom: 0;
   }
   #header #logo img, #header.sticky #logo img {
     max-width: 100px;
@@ -857,6 +842,7 @@ a#work-link {
     background: #ed9322;
   }
   #main-nav ul li a {
+    font-size: 14px;
     padding-left: 15px;
   }
   #main-nav ul li a.hireus {
@@ -871,7 +857,47 @@ a#work-link {
   }
 
   .wrapper {
-    font-size: 13px;
-    min-width: 300px;
+    min-width: 320px;
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 75px;
+    line-height: 1;
+    margin-bottom: 0.5em;
+  }
+
+  .projects li {
+    padding-top: 2em;
+  }
+  .projects .preview.left {
+    margin-left: 0;
+  }
+  .projects .preview.right {
+    margin-right: 0;
+  }
+
+  .logos li {
+    display: inline-block;
+    float: none;
+    height: 140px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 140px;
+  }
+
+  .team li {
+    width: 50%;
+    height: 500px;
+  }
+  .team li img, .team li canvas {
+    margin-left: 0;
+    min-height: 600px;
+    width: auto;
+  }
+
+  .community li {
+    float: left;
+    width: 50%;
   }
 }

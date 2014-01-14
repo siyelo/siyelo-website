@@ -27,7 +27,7 @@ class SinatraBootstrap < Sinatra::Base
   end
 
   get '/hireus' do
-    haml :hireus
+    haml :hireus, layout: :page
   end
 
   post '/hireus' do

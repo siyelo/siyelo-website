@@ -1,3 +1,7 @@
+@media only screen and (max-width: 1000px)
+  .team li
+    height: 600px !important
+
 @media only screen and (min-width: 801px)
   #main-nav
     display: block !important
@@ -6,10 +10,6 @@
     max-width: 1200px
 
 @media only screen and (max-width: 800px)
-  #header
-    top: 60px
-  #main-nav a
-    font-size: 14px
 
   #spaced
     hgroup
@@ -25,24 +25,7 @@
     width: auto
   .third
     margin: 0 auto
-  .projects .preview
-    margin-top: 50px
-    text-align: center
-    img
-      display: inline
-      width: 90%
-  .team
-    li
-      width: 50%
-    img, canvas
-      margin-left: 0
-  .community
-    li
-      float: left
-      width: 50%
 
-
-@media only screen and (max-width: 480px)
   #menu-toggle
     display: block
     font-size: 10px
@@ -53,9 +36,11 @@
     position: fixed
     top: 0
     @include transition(background .4s)
-    #logo img
-      max-width: 100px
-      @include transition(all .4s)
+    #logo
+      margin-bottom: 0
+      img
+        max-width: 100px
+        @include transition(all .4s)
     #main-nav a
       font-size: 14px
       @include transition(font-size .4s)
@@ -72,6 +57,7 @@
         &:hover
           background: $two
         a
+          font-size: 14px
           padding-left: 15px
           &.hireus
             background: transparent
@@ -81,5 +67,36 @@
   a#work-link
     display: block
   .wrapper
-    font-size: 13px
-    min-width: 300px
+    min-width: 320px
+    width: 80%
+  h1
+    font-size: 75px
+    line-height: 1
+    margin-bottom: .5em
+  .projects
+    li
+      padding-top: 2em
+    .preview.left
+      margin-left: 0
+    .preview.right
+      margin-right: 0
+  .logos li
+    display: inline-block
+    float: none
+    height: 140px
+    margin-bottom: 20px
+    text-align: center
+    width: 140px
+  .team li
+    width: 50%
+    height: 500px
+    img, canvas
+      margin-left: 0
+      min-height: 600px
+      width: auto
+  .community
+    li
+      float: left
+      width: 50%
+
+@media only screen and (max-width: 600px)
