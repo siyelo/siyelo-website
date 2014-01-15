@@ -20,14 +20,15 @@ class SinatraBootstrap < Sinatra::Base
       :password  => ENV['SENDGRID_PASSWORD'],
       :authentication => 'plain',
       :enable_starttls_auto => true }
+
+    Mail.defaults do
+      delivery_method :smtp, mail_settings
+    end
   else
-    mail_settings = { address: "localhost", port: 1025 }
+    Mail.defaults do
+      delivery_method :sendmail
+    end
   end
-
-  Mail.defaults do
-    delivery_method :smtp, mail_settings
-  end
-
 
   get '/' do
     haml :index
