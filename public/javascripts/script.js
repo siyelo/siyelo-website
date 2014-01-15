@@ -23,6 +23,12 @@ $(document).ready(function(){
     $('#main-nav').slideToggle();
   });
 
+  // team photos click event
+  $('#team li').click(function(e){
+    txtWrapper = $(e.target).parents('li').children('.txtWrapper');
+    $(txtWrapper).children('p').addClass('active').slideToggle();
+  });
+
   function highlightNavLink(href) {
     $('#main-nav a').removeClass('active');
     $("#main-nav a[href='" + href + "']").addClass('active');
@@ -54,7 +60,7 @@ $(window).load(function(){
     // set the path to BnWWorker.js for a superfast implementation
     webworkerPath : false,
     // for the images with a fluid width and height
-    responsive:true,
+    responsive : true,
     speed: { //this property could also be just speed: value for both fadeIn and fadeOut
       fadeIn: 200, // 200ms for fadeIn animations
       fadeOut: 800 // 800ms for fadeOut animations

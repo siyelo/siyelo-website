@@ -127,17 +127,25 @@
 		position: relative
 		width: 14.27%
 		@include pie-clearfix
-	h3
+	.txtWrapper
 		bottom: 0
-		color: #fff
-		line-height: 1.1
 		padding: 20px
 		position: absolute
 		@include box-sizing(border-box)
-		@include text-shadow(rgba(0, 0, 0, 0.2) 0 0 5px)
 		span
 			display: block
 			font: 14px "open sans"
+	h3
+		color: #fff
+		line-height: 1.1
+		@include text-shadow(rgba(0, 0, 0, 0.2) 0 0 5px)
+	p
+		color: #fff
+		display: none
+		font-size: 14px
+		line-height: 1.4
+		margin-top: 1em
+
 	.bwWrapper
 		height: 100%
 		@include pie-clearfix

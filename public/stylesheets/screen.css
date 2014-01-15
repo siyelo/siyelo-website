@@ -591,20 +591,29 @@ a#work-link {
   display: table;
   clear: both;
 }
-.team h3 {
+.team .txtWrapper {
   bottom: 0;
-  color: white;
-  line-height: 1.1;
   padding: 20px;
   position: absolute;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  text-shadow: rgba(0, 0, 0, 0.2) 0 0 5px;
 }
-.team h3 span {
+.team .txtWrapper span {
   display: block;
   font: 14px "open sans";
+}
+.team h3 {
+  color: white;
+  line-height: 1.1;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 0 5px;
+}
+.team p {
+  color: white;
+  display: none;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 1em;
 }
 .team .bwWrapper {
   height: 100%;
