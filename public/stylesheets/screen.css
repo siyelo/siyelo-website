@@ -579,6 +579,7 @@ a#work-link {
   clear: both;
 }
 .team li {
+  cursor: pointer;
   float: left;
   height: 640px;
   overflow: hidden;
@@ -590,6 +591,9 @@ a#work-link {
   content: "";
   display: table;
   clear: both;
+}
+.team li.active .txtWrapper {
+  background: rgba(0, 0, 0, 0.4);
 }
 .team .txtWrapper {
   bottom: 0;
@@ -711,6 +715,75 @@ a#work-link {
     font-size: 0.9em;
   }
 }
+#form {
+  margin-bottom: 5em;
+}
+#form .txt-heading {
+  padding-bottom: 1em;
+}
+#form li {
+  margin-bottom: 1em;
+}
+#form input[type=text], #form select, #form textarea {
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  color: #06121d;
+  font: normal 1em/1.4 "open sans";
+  padding: 15px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#form textarea {
+  max-width: 100%;
+  min-height: 8em;
+}
+#form input[type=submit] {
+  background: #ed9322;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 1.5em;
+  padding: 0.8em 2em;
+  text-transform: uppercase;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+#flashes {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+}
+
+.flash {
+  color: white;
+  font-size: 0.75em;
+  padding: 0.75em 0;
+}
+.flash.error {
+  background: #c20000;
+}
+.flash.notice {
+  background: #06121d;
+}
+.flash a {
+  color: white;
+  float: right;
+  opacity: 0.6;
+}
+.flash a:hover, .flash a:focus {
+  opacity: 1;
+}
+
 #footer {
   background: #06121d;
   color: white;

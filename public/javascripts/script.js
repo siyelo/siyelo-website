@@ -25,8 +25,15 @@ $(document).ready(function(){
 
   // team photos click event
   $('#team li').click(function(e){
-    txtWrapper = $(e.target).parents('li').children('.txtWrapper');
-    $(txtWrapper).children('p').addClass('active').slideToggle();
+    listItem = $(e.target).parents('li');
+    txtWrapper = $(listItem).children('.txtWrapper');
+    $(txtWrapper).children('p').slideToggle();
+    $(listItem).toggleClass('active');
+  });
+  // close flash notice
+  $('a.close').click(function(e){
+    x = e.target;
+    $(x).parents('#flashes').slideToggle();
   });
 
   function highlightNavLink(href) {

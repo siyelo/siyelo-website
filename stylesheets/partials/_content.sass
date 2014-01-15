@@ -121,12 +121,15 @@
 	@include pie-clearfix
 	background: #f5f5f5
 	li
+		cursor: pointer
 		float: left
 		height: 640px
 		overflow: hidden
 		position: relative
 		width: 14.27%
 		@include pie-clearfix
+		&.active .txtWrapper
+			background: rgba(0, 0, 0, 0.4)
 	.txtWrapper
 		bottom: 0
 		padding: 20px

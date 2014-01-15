@@ -1,0 +1,55 @@
+#form
+	margin-bottom: 5em
+
+	.txt-heading
+		padding-bottom: 1em
+
+	li
+		margin-bottom: 1em
+
+	input[type=text], select, textarea
+		background: rgba(0, 0, 0, .1)
+		border: none
+		color: $one
+		font: normal 1em/1.4 'open sans'
+		padding: 15px
+		width: 100%
+		@include box-sizing(border-box)
+
+	textarea
+		max-width: 100%
+		min-height: 8em
+
+	input[type=submit]
+		background: $two
+		border: none
+		color: #fff
+		cursor: pointer
+		display: block
+		font-size: 1.3em
+		font-weight: bold
+		margin-top: 1.5em
+		padding: .8em 2em
+		text-transform: uppercase
+		@include border-radius(2px)
+
+#flashes
+	position: absolute
+	top: 0
+	width: 100%
+	z-index: 1001
+
+.flash
+	color: #fff
+	font-size: .75em
+	padding: .75em 0
+	&.error
+		background: $three
+	&.notice
+		background: $one
+	a
+		color: #fff
+		float: right
+		opacity: .6
+		&:hover, &:focus
+			opacity: 1

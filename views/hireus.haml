@@ -1,36 +1,32 @@
-.wrapper
+%section#form
 
-  %h1 Hire Us
+  .wrapper
+    .txt-heading
+      %h1 Hire Siyelo
+      %p Tell us something about your project. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
 
-  %form{name: 'contact_email', action: '/hireus', method: 'post'}
-    %label Your full name
-    %input{name: 'full_name'}
 
-    %br
-    %br
+    %form{name: 'contact_email', action: '/hireus', method: 'post'}
+      %ul
+        %li
+          //%label Your full name?
+          %input{type: 'text', name: 'full_name', placeholder: 'Your full name'}
 
-    %label What is your email address?
-    %input{name: 'email'}
+        %li
+          //%label Your email address?
+          %input{type: 'text', name: 'email', placeholder: 'Your email address?'}
 
-    %br
-    %br
+        %li
+          //%label Your phone number?
+          %input{type: 'text', name: 'phone', placeholder: 'Your phone number?'}
 
-    %label What is your phone number?
-    %input{name: 'phone'}
+        %li
+          //%label What would you like Siyelo to do for you?
+          %textarea{type: 'text', name: 'description', placeholder: 'What would you like Siyelo to do for you?'}
 
-    %br
-    %br
+        %li
+          //%label Do you have a budget?
+          %input{type: 'text', name: 'budget', placeholder: 'Do you have a budget?'}
 
-    %label What would you like Siyelo to do for you?
-    %textarea{name: 'description'}
-
-    %br
-    %br
-
-    %label What is your budget?
-    %input{name: 'budget'}
-
-    %br
-    %br
-
-    %input{type: 'submit'}
+        %li
+          %input{type: 'submit', value: 'Send'}
