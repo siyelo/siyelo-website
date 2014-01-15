@@ -47,10 +47,3 @@ If you are working with SASS, execute
     compass watch stylesheets/screen.sass
 
 so Compass can compile your SASS on the fly.
-
-
-## Mailer
-
-In development, you can start ```mailcatcher``` to view the emails that are sent via the *Hire Us* form.
-
-
