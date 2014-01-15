@@ -3,17 +3,11 @@ $(document).ready(function(){
   // sticky navigation menu
   stickyNav('#header');
 
-  // SMOOTH SCROLLING
-  $('a.js-smooth[href*=#]:not([href=#])').click(function(e) {
-    e.preventDefault();
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('section#' + target[0].id).scrollintoview({ duration: 2000});
-      }
-    }
-  });
+  // smooth scrolling
+  smoothScroll('js-smooth');
+
+  // scroll spy (highlight link as scrolling through the page)
+  scrollSpy('#main-nav', '#spaced');
 
   // smooth scroll logo link only if menu is sticky
   $('#logo a').click(function(e) {
@@ -28,45 +22,6 @@ $(document).ready(function(){
     e.preventDefault();
     $('#main-nav').slideToggle();
   });
-
-  /// SCROLL SPY
-  scrollItems = $('#main-nav a').map(function(){
-    var item = $($(this).attr("href"));
-      if (item.length) { return item; }
-  });
-  headerSectionHeight = $('#spaced').height();
-
-  topSectionHeight = $('#spaced').outerHeight()+15;
-  menuItems = $('#main-nav').find("a");
-
-  $(window).scroll(function(){
-    var fromTop = $(this).scrollTop()+topSectionHeight;
-
-    var cur = scrollItems.map(function(){
-         if ($(this).offset().top < fromTop)
-           return this;
-     });
-    cur = cur[cur.length-1];
-    var id = cur && cur.length ? cur[0].id : "";
-    menuItems.removeClass("active");
-    if(fromTop > topSectionHeight){
-      menuItems.end().find("a[href=#"+id+"]").addClass("active");
-    }
-  });
-  /// END
-
-  function stickyNav(element) {
-    var mainNav    = $(element);
-    var topOffset = mainNav.offset().top;
-    $(window).scroll(function() {
-      var scrolled  = $(window).scrollTop();
-      if(scrolled > topOffset) {
-         mainNav.addClass('sticky');
-      }else{
-         mainNav.removeClass('sticky');
-      }
-    });
-  }
 
   function highlightNavLink(href) {
     $('#main-nav a').removeClass('active');
