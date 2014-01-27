@@ -1,5 +1,21 @@
 $(document).ready(function(){
 
+  orderSections();
+
+  $(window).resize(function(){
+    orderSections();
+  });
+
+  function orderSections(){
+    windowWidth = $(window).width();
+    slides = $('section.slide');
+    slidesCount = slides.length;
+    slides.css('position', 'absolute');
+    for(i=0; i<slidesCount; i++) {
+      $(slides[i]).css('left', windowWidth * i);
+    }
+  }
+
   // sticky navigation menu
   stickyNav('#header');
 
