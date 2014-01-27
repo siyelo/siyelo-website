@@ -765,11 +765,15 @@ a#work-link {
 section.case {
   padding: 4em 0;
 }
+section.case .image {
+  text-align: center;
+}
 section.case h1 {
   line-height: 1;
   padding-top: 0.7em;
 }
-section.case h2, section.case p {
+section.case h1, section.case h2, section.case p {
+  margin: 0 auto;
   max-width: 600px;
 }
 section.case h2 {
@@ -792,6 +796,16 @@ section.case p {
 }
 section.case p ~ p {
   padding-bottom: 1.4em;
+}
+section.case a {
+  color: #ed9322;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+section.case a:hover, section.case a:focus {
+  color: #c20000;
 }
 
 #form {
