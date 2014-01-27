@@ -396,6 +396,53 @@ a#work-link {
   margin-bottom: 15px;
 }
 
+#mini-nav {
+  display: inline-block;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+}
+#mini-nav a {
+  display: block;
+  font-size: 0.8em;
+  line-height: 40px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+#mini-nav a span {
+  display: none;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+#mini-nav a i {
+  background: #06121d;
+  color: #ed9322;
+  display: block;
+  float: left;
+  font-size: 1.2em;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+}
+#mini-nav a:hover, #mini-nav a:focus {
+  background: #06121d;
+  color: white;
+  min-width: 200px;
+}
+#mini-nav a:hover span, #mini-nav a:focus span {
+  display: block;
+}
+#mini-nav img {
+  float: left;
+}
+
 .content {
   *zoom: 1;
 }
@@ -718,15 +765,33 @@ a#work-link {
 section.case {
   padding: 4em 0;
 }
+section.case h1 {
+  line-height: 1;
+  padding-top: 0.7em;
+}
 section.case h2, section.case p {
   max-width: 600px;
 }
 section.case h2 {
   line-height: 1;
-  padding: 0.7em 0 0.3em;
+  padding: 0 0 0.4em;
+}
+section.case h2 a, section.case h2 span {
+  color: #394550;
+  font-size: 0.9em;
+  text-transform: none;
+}
+section.case h2 a {
+  text-decoration: none;
+}
+section.case h2 a:hover, section.case h2 a:focus {
+  color: #ed9322;
 }
 section.case p {
-  padding-bottom: 1em;
+  padding-bottom: 4em;
+}
+section.case p ~ p {
+  padding-bottom: 1.4em;
 }
 
 #form {

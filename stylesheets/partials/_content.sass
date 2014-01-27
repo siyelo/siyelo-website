@@ -215,10 +215,23 @@
 // Case studies
 section.case
 	padding: 4em 0
+	h1
+		line-height: 1
+		padding-top: .7em
 	h2, p
 		max-width: 600px
 	h2
 		line-height: 1
-		padding: .7em 0 .3em
+		padding: 0 0 .4em
+		a, span
+			color: $one + #333
+			font-size: .9em
+			text-transform: none
+		a
+			text-decoration: none
+			&:hover, &:focus
+				color: $two
 	p
-		padding-bottom: 1em
+		padding-bottom: 4em
+		~ p
+			padding-bottom: 1.4em

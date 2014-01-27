@@ -151,3 +151,44 @@ a#work-link
   span
     display: none
     margin-bottom: 15px
+
+
+// Mini navigation for case studies
+#mini-nav
+  display: inline-block
+  left: 10px
+  position: absolute
+  top: 10px
+  a
+    display: block
+    font-size: .8em
+    line-height: 40px
+    overflow: hidden
+    position: relative
+    @include transition(all .4s)
+    span
+      display: none
+      height: 40px
+      left: 0
+      position: absolute
+      top: 0
+    i
+      background: $one
+      color: $two
+      display: block
+      float: left
+      font-size: 1.2em
+      height: 40px
+      line-height: 40px
+      text-align: center
+      width: 40px
+    &:hover, &:focus
+      background: $one
+      color: #fff
+      min-width: 200px
+      span
+        display: block
+  img
+    float: left
+
+  
