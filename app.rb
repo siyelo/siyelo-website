@@ -38,6 +38,22 @@ class SinatraBootstrap < Sinatra::Base
     haml :hireus, layout: :page
   end
 
+  get '/is' do
+    haml :is, layout: :page
+  end
+  get '/tad' do
+    haml :tad, layout: :page
+  end
+  get '/chai' do
+    haml :chai, layout: :page
+  end
+  get '/eos' do
+    haml :eos, layout: :page
+  end
+  get '/mm' do
+    haml :mm, layout: :page
+  end
+
   post '/hireus' do
     unless EmailValidator.validate(request.params)
       flash[:error] = 'Your email form is invalid!'
