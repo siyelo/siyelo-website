@@ -38,6 +38,10 @@ class SinatraBootstrap < Sinatra::Base
     haml :hireus, layout: :page
   end
 
+  get '/projects' do
+    haml :projects, layout: :page
+  end
+
   get '/is' do
     haml :is, layout: :page
   end

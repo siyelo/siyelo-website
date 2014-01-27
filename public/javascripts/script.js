@@ -2,15 +2,51 @@ $(document).ready(function(){
 
   orderSections();
 
+  targetId = document.location.hash
+  if(! targetId == "") {
+    $('html, body').animate({
+            scrollLeft: $(targetId).offset().left
+    }, 1000);
+  }
+  $('a#scroll-left, a#scroll-right').css('position', 'fixed');
+  $('a#scroll-left, a#scroll-right').css('z-index', '20');
+  $('a#scroll-right').css('left', '50px');
+  $('section.slide').css('width', $(window).width());
+  $('html').css('overflow-x', 'hidden');
+
+  $('a#scroll-left').on('click', function(e){
+    e.preventDefault();
+    windowWidth = $(window).width();
+    $('html, body').animate({
+            scrollLeft: $(window).scrollLeft() - windowWidth
+    }, 1000);
+
+    sections = $('section.slide');
+    for(i=0; i<sections.length; i++){
+      if($(sections[i]).isOnScreen()){
+        $('body').css('height', $(sections[i]).height());
+        break;
+      }
+    }
+  });
+
+  $('a#scroll-right').on('click', function(e){
+    e.preventDefault();
+    windowWidth = $(window).width();
+    $('html, body').animate({
+            scrollLeft: $(window).scrollLeft() + windowWidth
+    }, 1000);
+  });
+
   $(window).resize(function(){
     orderSections();
   });
 
   function orderSections(){
-    windowWidth = $(window).width();
     slides = $('section.slide');
     slidesCount = slides.length;
     slides.css('position', 'absolute');
+    windowWidth = $(window).width();
     for(i=0; i<slidesCount; i++) {
       $(slides[i]).css('left', windowWidth * i);
     }
