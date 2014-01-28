@@ -560,11 +560,17 @@ a#work-link {
   color: white;
   display: block;
   font-size: 16px;
+  line-height: 1.35;
   margin: 0 auto;
   max-width: 60%;
-  padding: 7px 15px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
 }
 
 .logos {
