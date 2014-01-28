@@ -331,8 +331,8 @@ a#work-link {
   line-height: 0.85;
 }
 #spaced h1 {
-  font-size: 125px;
-  max-width: 1000px;
+  font-size: 140px;
+  max-width: 900px;
 }
 #spaced h2 {
   bottom: 0;
@@ -451,6 +451,10 @@ a#work-link {
   display: table;
   clear: both;
 }
+.content h1 {
+  line-height: 1;
+  padding-bottom: 0.3em;
+}
 
 .txt-heading {
   padding: 8em 0 2.5em;
@@ -504,6 +508,37 @@ a#work-link {
   display: block;
   font: 40px Tungsten;
   text-transform: uppercase;
+}
+
+#process {
+  background: #ed9322;
+}
+#process h1, #process p {
+  color: white;
+}
+#process h1, #process h2 {
+  color: #333333;
+  line-height: 0.9;
+}
+#process h2 {
+  padding-bottom: 0.3em;
+}
+@media screen and (min-width: 800px) {
+  #process ul {
+    margin: 1em -15% 4em;
+    *zoom: 1;
+  }
+  #process ul:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #process ul li {
+    float: left;
+    width: 20%;
+    padding: 0 2.5%;
+    text-align: center;
+  }
 }
 
 .projects {
