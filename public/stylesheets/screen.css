@@ -517,15 +517,23 @@ a#work-link {
   color: white;
 }
 #process h1, #process h2 {
-  color: #333333;
+  color: #222222;
   line-height: 0.9;
 }
 #process h2 {
   padding-bottom: 0.3em;
 }
+#process ul li {
+  padding-bottom: 3em;
+}
+@media screen and (min-width: 1280px) {
+  #process ul {
+    margin: 2em -15% 5em;
+  }
+}
 @media screen and (min-width: 800px) {
   #process ul {
-    margin: 1em -15% 4em;
+    margin: 2em -5% 5em;
     *zoom: 1;
   }
   #process ul:after {
