@@ -52,7 +52,7 @@ $(document).ready(function(){
     scrollToId(prevSectionId);
     inViewId = prevSectionId;
     $('footer').css('top', $('#' + inViewId).height());
-    $('html, body').css('top', $('#' + inViewId).height());
+    $('html, body').css('height', $('#' + inViewId).height());
     $('footer').css('width', $(window).width());
     $('footer').css('left', $('#' + inViewId).offset().left);
   });
@@ -64,7 +64,7 @@ $(document).ready(function(){
     scrollToId(nextSectionId);
     inViewId = nextSectionId;
     $('footer').css('top', $('#' + inViewId).height());
-    $('html, body').css('top', $('#' + inViewId).height());
+    $('html, body').css('height', $('#' + inViewId).height());
     $('footer').css('width', $(window).width());
     $('footer').css('left', $('#' + inViewId).offset().left);
   });
