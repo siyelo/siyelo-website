@@ -324,24 +324,46 @@ a#work-link {
 }
 #spaced hgroup {
   position: absolute;
-  top: 35%;
+  top: 34%;
 }
 #spaced h1, #spaced h2 {
   color: white;
   line-height: 0.85;
 }
 #spaced h1 {
-  font-size: 125px;
+  font-size: 145px;
   max-width: 1000px;
+}
+@media screen and (min-width: 1441px) {
+  #spaced h1 {
+    font-size: 150px;
+  }
 }
 #spaced h2 {
   bottom: 0;
-  font: 27px/1.4 "open sans";
+  color: rgba(255, 255, 255, 0.7);
+  font: 32px/1.4 "open sans";
   letter-spacing: 0.5px;
   margin-top: 20px;
-  max-width: 500px;
-  opacity: 0.7;
+  max-width: 550px;
   text-transform: none;
+}
+#spaced h2 a {
+  background: #ed9322;
+  color: white;
+  clear: both;
+  display: inline-block;
+  font-size: 0.9em;
+  margin-top: 0.8em;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  text-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1px;
 }
 #spaced ul img {
   bottom: 0;
@@ -1135,7 +1157,7 @@ section.case a:hover, section.case a:focus {
     font-size: 45px;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   #spaced hgroup {
     top: 20%;
   }

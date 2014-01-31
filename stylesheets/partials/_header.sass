@@ -91,22 +91,37 @@ a#work-link
     @include box-sizing(border-box)
   hgroup
     position: absolute
-    top: 35%
+    top: 34%
   h1, h2
     color: #fff
     line-height: .85
 
   h1
-    font-size: 125px
+    font-size: 145px
     max-width: 1000px
+    @media screen and (min-width: 1441px)
+      font-size: 150px
   h2
     bottom: 0
-    font: 27px/1.4 "open sans"
+    color: rgba(255, 255, 255, 0.7)
+    font: 32px/1.4 "open sans"
     letter-spacing: .5px
     margin-top: 20px
-    max-width: 500px
-    opacity: .7
+    max-width: 550px
     text-transform: none
+    a
+      background: $two
+      color: #fff
+      clear: both
+      display: inline-block
+      font-size: .9em
+      margin-top: .8em
+      padding: 10px 30px
+      text-decoration: none
+      text-transform: uppercase
+      @include border-radius(2px)
+      //@include box-shadow($two - #333 0 4px 0)
+      @include text-shadow(rgba(0, 0, 0, 0.15) 1px 1px 1px)
   ul img
     bottom: 0
     left: 0
