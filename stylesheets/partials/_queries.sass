@@ -58,22 +58,26 @@
       img
         max-width: 100px
         @include transition(all .4s)
-    #main-nav 
-    .wrapper > span a
-      font-size: 14px
+    .wrapper
+      width: 90%
+      > span a
+        font-size: 14px
 
   #main-nav
     display: none
     width: 100%
     ul
-      width: 100%
+      border-top: 1px solid rgba(255, 255, 255, 0.04)
+      margin: 1em -5.5% 0
+      width: 111%
       li
+        border-top: 1px solid rgba(255, 255, 255, 0.04)
         width: 100%
         &:hover
           background: $two
-        a
+        a, .hireus
           font-size: 14px
-          padding-left: 15px
+          padding-left: 5%
           &.hireus
             background: transparent
           &.active
@@ -166,7 +170,7 @@
       margin-left: -50%
       min-height: 450px
 
-@media only screen and (max-width: 320px)
+@media only screen and (max-width: 400px)
   body
     font-size: 16px
   h1
@@ -174,15 +178,23 @@
   h2
     font-size: 45px
     margin-bottom: .5em
-  #header
+  #header, #header.sticky
     padding: 13px 0 10px
     #logo img
       max-width: 75px
     span.right
+  a#menu-toggle
+    padding: 3px 2px
+    i
+      font-size: 2em
+      line-height: 1
+  a#work-link
+    color: #666
+    padding: 4px 10px
 
   #spaced
     hgroup
-      top: 23%
+      top: 28%
       width: 100%
     h1
       font-size: 58px
@@ -190,7 +202,7 @@
       margin-bottom: .2em
       padding-right: 0
     h2
-      font-size: 16px
+      font-size: 18px
       margin-top: 0
       max-width: 240px
   .scroll a

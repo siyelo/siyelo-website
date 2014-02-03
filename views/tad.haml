@@ -5,12 +5,20 @@
 			%i.fa.fa-chevron-left
 			Go back to the site
 
+%nav#slide-nav
+	%a{:href=>"/mm", :id=>"previous-slide"}
+		%i.fa.fa-chevron-left
+	%a{:href=>"/is", :id=>"next-slide"}
+		%i.fa.fa-chevron-right
+
 %section.case
 	.wrapper
+
 		.image
 			%img{:src=>"./images/study/tad.jpg"}
-		%h1
-			Launch A New Idea
+
+		%h1 Launch A New Idea
+
 		%h2
 			%a{:href=>"#", :target=>"_blank"} Talented Africa:
 			%span A new approach to an old problem

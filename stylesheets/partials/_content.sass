@@ -187,7 +187,11 @@
 			display: block
 			font: 16px "open sans"
 
-@media only screen and (min-width: 801px)
+.offices
+	> li
+		margin-bottom: 3em
+
+@media only screen and (min-width: 1001px)
 	.offices
 		min-height: 540px
 		position: relative
@@ -208,17 +212,23 @@
 			left: 10%
 		.small
 			top: 0
-			left: 40em
+			
 		ul
 			opacity: .7
 			font-size: .9em
-
+@media only screen and (min-width: 1281px)
+	.offices
+		.small
+			left: 40em
 
 // Case studies
 section.case
 	padding: 4em 0
 	.image
 		text-align: center
+		img
+			max-width: 800px
+			width: 100%
 	h1
 		line-height: 1
 		padding-top: .7em
@@ -245,3 +255,16 @@ section.case
 		@include transition(color .2s)
 		&:hover, &:focus
 			color: $three
+
+#slide-nav	a
+	color: #ddd
+	font-size: 3em
+	position: absolute
+	top: 12%
+	@include transition(color .4s)
+	&#previous-slide
+		left: 2%
+	&#next-slide
+		right: 2%
+	&:hover, &:focus
+		color: $one

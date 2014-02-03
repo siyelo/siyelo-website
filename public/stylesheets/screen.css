@@ -243,9 +243,13 @@ html, body {
 }
 
 #menu-toggle {
+  color: white !important;
   display: none;
   float: right;
-  color: white !important;
+}
+#menu-toggle i {
+  font-size: 2.5em;
+  line-height: 30px;
 }
 
 a#work-link {
@@ -334,15 +338,10 @@ a#work-link {
   font-size: 145px;
   max-width: 1000px;
 }
-@media screen and (min-width: 1441px) {
-  #spaced h1 {
-    font-size: 150px;
-  }
-}
 #spaced h2 {
   bottom: 0;
   color: rgba(255, 255, 255, 0.7);
-  font: 32px/1.4 "open sans";
+  font: 30px/1.4 "open sans";
   letter-spacing: 0.5px;
   margin-top: 20px;
   max-width: 550px;
@@ -753,7 +752,11 @@ a#work-link {
   font: 16px "open sans";
 }
 
-@media only screen and (min-width: 801px) {
+.offices > li {
+  margin-bottom: 3em;
+}
+
+@media only screen and (min-width: 1001px) {
   .offices {
     min-height: 540px;
     position: relative;
@@ -783,11 +786,15 @@ a#work-link {
   }
   .offices .small {
     top: 0;
-    left: 40em;
   }
   .offices ul {
     opacity: 0.7;
     font-size: 0.9em;
+  }
+}
+@media only screen and (min-width: 1281px) {
+  .offices .small {
+    left: 40em;
   }
 }
 section.case {
@@ -795,6 +802,10 @@ section.case {
 }
 section.case .image {
   text-align: center;
+}
+section.case .image img {
+  max-width: 800px;
+  width: 100%;
 }
 section.case h1 {
   line-height: 1;
@@ -834,6 +845,26 @@ section.case a {
 }
 section.case a:hover, section.case a:focus {
   color: #c20000;
+}
+
+#slide-nav a {
+  color: #dddddd;
+  font-size: 3em;
+  position: absolute;
+  top: 12%;
+  -webkit-transition: color 0.4s;
+  -moz-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+}
+#slide-nav a#previous-slide {
+  left: 2%;
+}
+#slide-nav a#next-slide {
+  right: 2%;
+}
+#slide-nav a:hover, #slide-nav a:focus {
+  color: #06121d;
 }
 
 #form {
@@ -1038,6 +1069,9 @@ section.case a:hover, section.case a:focus {
     -o-transition: all 0.4s;
     transition: all 0.4s;
   }
+  #header .wrapper, #header.sticky .wrapper {
+    width: 90%;
+  }
   #header .wrapper > span a, #header.sticky .wrapper > span a {
     font-size: 14px;
   }
@@ -1047,22 +1081,25 @@ section.case a:hover, section.case a:focus {
     width: 100%;
   }
   #main-nav ul {
-    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    margin: 1em -5.5% 0;
+    width: 111%;
   }
   #main-nav ul li {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
     width: 100%;
   }
   #main-nav ul li:hover {
     background: #ed9322;
   }
-  #main-nav ul li a {
+  #main-nav ul li a, #main-nav ul li .hireus {
     font-size: 14px;
-    padding-left: 15px;
+    padding-left: 5%;
   }
-  #main-nav ul li a.hireus {
+  #main-nav ul li a.hireus, #main-nav ul li .hireus.hireus {
     background: transparent;
   }
-  #main-nav ul li a.active {
+  #main-nav ul li a.active, #main-nav ul li .hireus.active {
     color: white;
   }
 
@@ -1186,7 +1223,7 @@ section.case a:hover, section.case a:focus {
     min-height: 450px;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   body {
     font-size: 16px;
   }
@@ -1200,15 +1237,28 @@ section.case a:hover, section.case a:focus {
     margin-bottom: 0.5em;
   }
 
-  #header {
+  #header, #header.sticky {
     padding: 13px 0 10px;
   }
-  #header #logo img {
+  #header #logo img, #header.sticky #logo img {
     max-width: 75px;
   }
 
+  a#menu-toggle {
+    padding: 3px 2px;
+  }
+  a#menu-toggle i {
+    font-size: 2em;
+    line-height: 1;
+  }
+
+  a#work-link {
+    color: #666666;
+    padding: 4px 10px;
+  }
+
   #spaced hgroup {
-    top: 23%;
+    top: 28%;
     width: 100%;
   }
   #spaced h1 {
@@ -1218,7 +1268,7 @@ section.case a:hover, section.case a:focus {
     padding-right: 0;
   }
   #spaced h2 {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 0;
     max-width: 240px;
   }

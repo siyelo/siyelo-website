@@ -5,11 +5,19 @@
 			%i.fa.fa-chevron-left
 			Go back to the site
 
+%nav#slide-nav
+	%a{:href=>"/eos", :id=>"previous-slide"}
+		%i.fa.fa-chevron-left
+	%a{:href=>"/tad", :id=>"next-slide"}
+		%i.fa.fa-chevron-right
+
 %section.case
 	.wrapper
 
-		%h1
-			Improve an existing product
+		.image
+			%img{:src=>"./images/study/madmimi.jpg"}
+
+		%h1 Improve an existing product
 
 		%h2
 			%a{:href=>"http://www.madmimi.com/", :target=>"_blank"} Mad Mimi

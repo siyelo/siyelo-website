@@ -5,11 +5,19 @@
 			%i.fa.fa-chevron-left
 			Go back to the site
 
+%nav#slide-nav
+	%a{:href=>"/chai", :id=>"previous-slide"}
+		%i.fa.fa-chevron-left
+	%a{:href=>"/mm", :id=>"next-slide"}
+		%i.fa.fa-chevron-right
+
 %section.case
 	.wrapper
 
+		.image
+			%img{:src=>"./images/study/eos.jpg"}
+
 		%h1 Rescue a project
-			
 		
 		%h2
 			%a{:href=>"http://www.eosmarketplace.com/", :target=>"_blank"} EOS Marketplace

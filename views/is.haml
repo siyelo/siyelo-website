@@ -5,8 +5,18 @@
 			%i.fa.fa-chevron-left
 			Go back to the site
 
+%nav#slide-nav
+	%a{:href=>"/tad", :id=>"previous-slide"}
+		%i.fa.fa-chevron-left
+	%a{:href=>"/chai", :id=>"next-slide"}
+		%i.fa.fa-chevron-right
+
 %section.case
 	.wrapper
+
+		.image
+			%img{:src=>"./images/study/is.jpg"}
+
 		%h1 Streamline Your Business
 
 		%h2

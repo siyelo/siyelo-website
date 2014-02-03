@@ -5,8 +5,18 @@
 			%i.fa.fa-chevron-left
 			Go back to the site
 
+%nav#slide-nav
+	%a{:href=>"/is", :id=>"previous-slide"}
+		%i.fa.fa-chevron-left
+	%a{:href=>"/eos", :id=>"next-slide"}
+		%i.fa.fa-chevron-right
+
 %section.case
 	.wrapper
+
+		.image
+			%img{:src=>"./images/study/chai.jpg"}
+
 		%h1 Improve your user's experience
 
 		%h2
