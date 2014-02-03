@@ -989,12 +989,28 @@ section.case a:hover, section.case a:focus {
 }
 
 @media only screen and (max-width: 1440px) {
+  #spaced h1 {
+    font-size: 140px;
+    max-width: 800px;
+  }
+  #spaced h2 {
+    font-size: 28px;
+  }
+
   .projects li {
     margin-bottom: 5em;
     padding-top: 6em;
   }
 }
 @media only screen and (max-width: 1280px) {
+  #spaced h1 {
+    font-size: 120px;
+  }
+  #spaced h2 {
+    font-size: 26px;
+    max-width: 450px;
+  }
+
   .projects li {
     margin-bottom: 2em;
     padding-top: 5em;
