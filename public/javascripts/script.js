@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+  // projects scrolling
+  $(document).on('click', '#next-slide, #previous-slide', function(e){
+    console.log('clicked!');
+    e.preventDefault();
+    link = $(e.target).parent()[0].href
+    $('#slide-nav').load(link + ' #slide-nav a');
+    $('section.case').load(link + ' section.case .wrapper');
+    $('#mini-nav').load(link + ' #mini-nav');
+  });
+
   // sticky navigation menu
   stickyNav('#header');
 
