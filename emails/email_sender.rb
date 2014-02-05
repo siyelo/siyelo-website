@@ -22,7 +22,7 @@ class EmailSender
 
       Mail.deliver do
         from "#{email}"
-        to "ile@siyelo.com"
+        to ENV['DESTINATION_EMAIL']
         subject "Someone wants to hire us!"
         body mail_body
       end
