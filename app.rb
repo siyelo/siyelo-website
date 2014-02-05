@@ -34,30 +34,34 @@ class SinatraBootstrap < Sinatra::Base
     haml :index
   end
 
-  get '/hireus' do
-    haml :hireus, layout: :page
+  get '/hire-us' do
+    haml :hireus
   end
 
-  get '/is' do
-    haml :is, layout: :page
-  end
-  get '/tad' do
-    haml :tad, layout: :page
-  end
-  get '/chai' do
-    haml :chai, layout: :page
-  end
-  get '/eos' do
-    haml :eos, layout: :page
-  end
-  get '/mm' do
-    haml :mm, layout: :page
+  get '/clients/internet-solutions' do
+    haml :is
   end
 
-  post '/hireus' do
+  get '/clients/talented-africa' do
+    haml :tad
+  end
+
+  get '/clients/clinton-health-access-initiative' do
+    haml :chai
+  end
+
+  get '/clients/cooco' do
+    haml :eos
+  end
+
+  get '/clients/mad-mimi' do
+    haml :mm
+  end
+
+  post '/hire-us' do
     unless EmailValidator.validate(request.params)
       flash[:error] = 'Your email form is invalid!'
-      redirect '/hireus'
+      redirect '/hire-us'
     end
 
     EmailSender.deliver!(request.params)
