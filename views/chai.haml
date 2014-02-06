@@ -1,5 +1,3 @@
-%header#header.sticky
-  = partial('./views/shared/_header.haml')
 %nav#mini-nav
   %a{:href=>"/#cs-chai"}
     %img{:src=>"/images/mini-logo-elementary.png"}
@@ -8,9 +6,9 @@
       Go back to the site
 
 %nav#slide-nav
-  %a{:href=>"/is", :id=>"previous-slide"}
+  %a{:href=>"/clients/internet-solutions", :id=>"previous-slide"}
     %i.fa.fa-chevron-left
-  %a{:href=>"/eos", :id=>"next-slide"}
+  %a{:href=>"/clients/cooco", :id=>"next-slide"}
     %i.fa.fa-chevron-right
 
 %section.case
@@ -34,9 +32,3 @@
     %p Not only were we responsible for the designs, we also helped implement them. With their development team having chosen a Java-based framework that we were relatively unfamiliar with, we were nonetheless able rapidly integrate using our expertise with JS/HAML/SASS/CSS3.
 
     %p What’s more, we collaborated entirely remotely on this project, using great tools like Google Docs, Github, Dropbox, PivotalTracker and Skype.
-
-:javascript
-  $(document).ready(function(){
-    // hack to add .sticky from main nav on the index
-    $('#header').addClass('sticky');
-  });

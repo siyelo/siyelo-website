@@ -5,9 +5,9 @@ project_path          = Sinatra::Application.root
 
 # HTTP paths
 http_path             = '/'
-http_stylesheets_path = '/stylesheets'
-http_images_path      = '/images'
-http_javascripts_path = '/javascripts'
+http_stylesheets_path = './public/stylesheets'
+http_images_path      = './public/images'
+http_javascripts_path = './public/javascripts'
 
 # File system locations
 css_dir               = File.join 'public', 'stylesheets'

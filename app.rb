@@ -39,23 +39,23 @@ class SinatraBootstrap < Sinatra::Base
   end
 
   get '/clients/internet-solutions' do
-    haml :is
+    haml :is, layout: :page
   end
 
   get '/clients/talented-africa' do
-    haml :tad
+    haml :tad, layout: :page
   end
 
   get '/clients/clinton-health-access-initiative' do
-    haml :chai
+    haml :chai, layout: :page
   end
 
   get '/clients/cooco' do
-    haml :eos
+    haml :eos, layout: :page
   end
 
   get '/clients/mad-mimi' do
-    haml :mm
+    haml :mm, layout: :page
   end
 
   post '/hire-us' do
