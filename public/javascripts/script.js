@@ -30,11 +30,6 @@ $(document).ready(function(){
     $(txtWrapper).children('p').slideToggle();
     $(listItem).toggleClass('active');
   });
-  // close flash notice
-  $('a.close').click(function(e){
-    x = e.target;
-    $(x).parents('#flashes').slideToggle();
-  });
 
   function highlightNavLink(href) {
     $('#main-nav a').removeClass('active');

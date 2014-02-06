@@ -35,7 +35,11 @@ class SinatraBootstrap < Sinatra::Base
   end
 
   get '/hire-us' do
-    haml :hireus
+    haml :hireus, layout: :page
+  end
+
+  get '/jobs' do
+    haml :jobs, layout: :page
   end
 
   get '/clients/internet-solutions' do
@@ -64,9 +68,21 @@ class SinatraBootstrap < Sinatra::Base
       redirect '/hire-us'
     end
 
-    EmailSender.deliver!(request.params)
+    EmailSender.deliver_hire_email(request.params)
 
     flash[:notice] = 'Your email has been sent!'
+    redirect '/'
+  end
+
+  post '/jobs' do
+    unless EmailValidator.validate(request.params)
+      flash[:error] = 'Please fill in all of the fields and resubmit your application.'
+      redirect '/jobs'
+    end
+
+    EmailSender.deliver_job_application(request.params)
+
+    flash[:notice] = 'Your application has been submitted. Thank you!'
     redirect '/'
   end
 

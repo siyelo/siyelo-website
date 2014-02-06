@@ -1,0 +1,25 @@
+%header#header.sticky
+  = partial('./views/shared/_header.haml')
+
+%section#form
+
+  .wrapper
+    .txt-heading
+      %h1 Join Siyelo
+
+    %form{name: 'jobs_email', action: '/jobs', method: 'post'}
+      %ul
+        %li
+          %input{type: 'text', name: 'full_name', placeholder: 'What is your name?'}
+
+        %li
+          %input{type: 'text', name: 'email', placeholder: 'What is your email address?'}
+
+        %li
+          %textarea{type: 'text', name: 'description', placeholder: 'What will it be like for us to work with you?'}
+
+        %li
+          %input{type: 'text', name: 'portfolio', placeholder: 'Portfolio or Github account URL?'}
+
+        %li
+          %input{type: 'submit', value: 'Submit'}

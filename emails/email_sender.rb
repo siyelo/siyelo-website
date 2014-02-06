@@ -1,6 +1,6 @@
 class EmailSender
   class << self
-    def deliver!(params)
+    def deliver_hire_email(params)
       full_name = params["full_name"]
       email = params["email"]
       phone = params["phone"]
@@ -22,8 +22,38 @@ class EmailSender
 
       Mail.deliver do
         from "#{email}"
-        to ENV['DESTINATION_EMAIL']
+        to ENV['DESTINATION_EMAIL'] || "localhost"
         subject "Someone wants to hire us!"
+        body mail_body
+      end
+    end
+
+
+    def deliver_job_application(params)
+      full_name = params["full_name"]
+      email = params["email"]
+      description = params["description"]
+      portfolio_url = params["portfolio"]
+
+
+      mail_body = %Q(
+      Hey!
+
+      #{full_name} just sent us a job application.
+
+      The applicatnt would describe himself as:
+      #{description}
+
+      You can see his work here: #{portfolio_url}
+
+      You can contact him by email on #{email}.
+
+      Cheers!)
+
+      Mail.deliver do
+        from "#{email}"
+        to ENV['DESTINATION_EMAIL'] || "localhost"
+        subject "Job application by: #{full_name}"
         body mail_body
       end
     end
