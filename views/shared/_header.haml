@@ -1,28 +1,23 @@
-
-%header#header
-  .wrapper
-    %h1#logo
-      %a.js-smooth{:href => "/"}
-        %img{src: './images/logo.png', :title => "Siyelo", :alt => "Siyelo logo"}
-    %a.right#menu-toggle{href: '#'}
-      %i.fa.fa-bars
-    / %span.right
-    /   %a.js-smooth{href: '#work', id: 'work-link'}
-    /     Work
-    %nav#main-nav
-      %ul
-        %li
-          %a.js-smooth{href: '#work'}
-            Work
-        %li
-          %a.js-smooth{href: '#team'}
-            Team
-        %li
-          %a.js-smooth{href: '#community'}
-            Community
-        %li
-          %a.js-smooth{href: '#office'}
-            Offices
-        %li
-          %a.js-smooth{href: 'hireus', class: 'hireus'}
-            Hire Us
+.wrapper
+  %h1#logo
+    %a.js-smooth{:href => "/"}
+      %img{src: '/images/logo.png', :title => "Siyelo", :alt => "Siyelo logo"}
+  %a.right#menu-toggle{href: '#'}
+    %i.fa.fa-bars
+  %nav#main-nav
+    %ul
+      %li
+        %a.js-smooth{href: '/#work'}
+          Work
+      %li
+        %a.js-smooth{href: '/#team'}
+          Team
+      %li
+        %a.js-smooth{href: '/#community'}
+          Community
+      %li
+        %a.js-smooth{href: '/#office'}
+          Offices
+      %li
+        %a.js-smooth{href: '/hire-us', class: 'hireus'}
+          Hire Us

@@ -1,3 +1,6 @@
+%header#header
+  = partial('./views/shared/_header.haml')
+
 %section#spaced
 
   %header.wrapper
@@ -5,11 +8,10 @@
       %h1 We turn ideas into great applications
       %h2
         Build your next web & mobile app with an experienced team.
-        //%a{href: 'hireus', class: 'hireus'} Get in touch
 
   %ul
     %li
-      %img#space{:src=>"./images/engine-blur.jpg"}
+      %img#space{:src=>"/images/engine-blur.jpg"}
     / %li
     /   %img#stars-1{:src=>"images/stars-1.png"}
     / %li
@@ -20,7 +22,7 @@
 
     %a#work2.js-smooth{:href => "#work"}
       %span keep going
-      %img{src: "./images/scroll.png"}
+      %img{src: "/images/scroll.png"}
 
 
 %section#work.content
@@ -28,64 +30,70 @@
   .wrapper
     .txt-heading
       %h1 Our work
-      %p We like building software that people use. To do that, we start by understanding your business and the problem at hand. We prototype. We ship working software. We learn. We iterate. We work closely with you throughout.
-      %p Clients commonly come to us to:
+      %p Clients hire us to build amazing products and services. We always start by understanding the business first. We prototype. We ship working software. We learn. We iterate. We collaborate very closely throughout the entire project.
 
   %ul.projects
     %li.ta#cs-tad
       .wrapper
         .right.third
           %h2 Launch a new idea
-          %p Maybe you are looking to bring a new web app to market. You need a team to help design, develop and deliver it.
+          %p Looking to bring a new web app to market. You need a team to help design, develop and deliver it.
           %p
-            %a{href: 'tad'}
-              Read our Talented Africa case study
+            %a{href: '/clients/talented-africa'}
+              See how we launched Talented Africa
         .preview.two-thirds.left
-          %img{src: "./images/study/tad.jpg"}
+          %img{src: "/images/study/tad.jpg"}
 
     %li.is#cs-is
       .wrapper
         .left.third
           %h2 Streamline your business
-          %p Maybe you need to save costs by rethinking the way you are doing things. We've helped clients save costs by rapidly replacing their legacy systems.
+          %p Need to save costs? Rethinking the way you are doing things? We've helped clients save costs by rapidly replacing their legacy systems.
           %p
-            %a{href: 'is'}
-              Read our Internet Solutions case study
+            %a{href: '/clients/internet-solutions'}
+              How we saved costs for Internet Solutions
         .preview.two-thirds.right
-          %img{src: "./images/study/is.jpg"}
+          %img{src: "/images/study/is.jpg"}
 
     %li.chai#cs-chai
       .wrapper
         .right.third
           %h2 Improve your user's experience
-          %p Maybe you're building an app and it needs visual appeal. We've helped clients design and implement responsive and intuitive interfaces for their applications.
+          %p Apps nowadays must be intuitive to use and visually appealing. We can help design and implement responsive and intuitive interfaces.
           %p
-            %a{href: 'chai'}
-              Read our Clinton Health Access Initiative case study
+            %a{href: '/clients/clinton-health-access-initiative'}
+              How we helped CHAI re-imagine their UX
         .preview.two-thirds.left
-          %img{src: "./images/study/chai.jpg"}
+          %img{src: "/images/study/chai.jpg"}
 
     %li.cooco#cs-eos
       .wrapper
         .left.third
           %h2 Rescue a project
-          %p Maybe you've had a bad experience with a development team. We've helped clients turn things around and get their app to market, fast.
           %p
-            %a{href: 'eos'}
-              Read our EOS Marketplace case study
+            Software projects (and some developers!) are notoriously difficult to manage.
+            But it doesn't have to be that way.
+            Our collaborative approach helped some of our clients to start fresh and really
+            turn things around
+          %p
+            %a{href: '/clients/cooco'}
+              How we pivoted and lanched EOS Marketplace
         .preview.two-thirds.right
-          %img{src: "./images/study/eos.jpg"}
+          %img{src: "/images/study/eos.jpg"}
 
     %li.madmimi#cs-mm
       .wrapper
         .right.third
           %h2 Improve an existing product
-          %p Maybe you need to add features to your existing web app. We do a lot of development work to help clients launch the next version of their application.
           %p
-            %a{href: 'mm'}
-              Read our Mad Mimi case study
+            Need to launch new features sooner than your current capacity allows?
+            As an experienced team available at reasonably short notice, we've helped many
+            clients solve this problem.
+          %p
+            %a{href: '/clients/mad-mimi'}
+              How we helped the Mad Mimi team
         .preview.two-thirds.left
-          %img{src: "./images/study/madmimi.jpg"}
+          %img{src: "/images/study/madmimi.jpg"}
 
   .logos
     .wrapper
@@ -96,28 +104,32 @@
 
     %ul
       %li
-        %img{src: "./images/logos/abt.png"}
+        %img{src: "/images/logos/madmimi.png", alt: 'MadMimi'}
       %li
-        %img{src: "./images/logos/tad.png"}
+        %img{src: "/images/logos/hetzner.png", alt: 'Hetzner'}
       %li
-        %img{src: "./images/logos/is.png"}
+        %img{src: "/images/logos/chai.png", alt: 'CHAI'}
       %li
-        %img{src: "./images/logos/chai.png"}
+        %img{src: "/images/logos/is.png", alt: 'Internet Solutions'}
       %li
-        %img{src: "./images/logos/madmimi.png"}
+        %img{src: "/images/logos/tad.png", alt: 'TalentedAfrica'}
       %li
-        %img{src: "./images/logos/hetzner.png"}
+        %img{src: "/images/logos/classroom7.png", alt: 'Classroom7'}
       %li
-        %img{src: "./images/logos/eos.png"}
-
-
-
-      -# /%li
-        -# /%img{src: "logos/slab.png"}
-        -# /%p Sneaker Lab
-      -# /%li
-        -# -# %img{src: "logos/eeco.png"}
-        -# /%p Espresseco
+        %img{src: "/images/logos/eos.png", alt: 'EoS'}
+    %ul
+      %li
+        %img{src: "/images/logos/activitar.png", alt: 'Activitar'}
+      %li
+        %img{src: "/images/logos/funkudu.png", alt: 'Funkudu'}
+      %li
+        %img{src: "/images/logos/abt.png", alt: 'ABT'}
+      %li
+        %img{src: "/images/logos/sneakerlab.png", alt: 'SneakerLab'}
+      %li
+        %img{src: "/images/logos/eeco.png", alt: 'EspressEco'}
+      %li
+        %img{src: "/images/logos/wildtwig.png", alt: 'WildTwig'}
   .cta
     %a{:href => "mailto:hello@siyelo.com"}
       Want to work with us?
@@ -133,7 +145,7 @@
   %ul.team
     %li
       .bwWrapper
-        %img{src: './images/team/glenn.jpg'}
+        %img{src: '/images/team/glenn.jpg'}
       .txtWrapper
         %h3
           Glenn Roberts
@@ -151,7 +163,7 @@
 
     %li
       .bwWrapper
-        %img{src: './images/team/stu.jpg'}
+        %img{src: '/images/team/stu.jpg'}
       .txtWrapper
         %h3
           Stuart Corbishley
@@ -160,7 +172,7 @@
 
     %li
       .bwWrapper
-        %img{src: './images/team/nic.jpg'}
+        %img{src: '/images/team/nic.jpg'}
       .txtWrapper
         %h3
           Nic Young
@@ -169,7 +181,7 @@
 
     %li
       .bwWrapper
-        %img{src: './images/team/ile.jpg'}
+        %img{src: '/images/team/ile.jpg'}
       .txtWrapper
         %h3
           Ile Eftimov
@@ -178,7 +190,7 @@
 
     %li
       .bwWrapper
-        %img{src: './images/team/charleen.jpg'}
+        %img{src: '/images/team/charleen.jpg'}
       .txtWrapper
         %h3
           Charleen Marais
@@ -188,7 +200,7 @@
 
     %li
       .bwWrapper
-        %img{src: './images/team/wendy.jpg'}
+        %img{src: '/images/team/wendy.jpg'}
       .txtWrapper
         %h3
           Wendy Williams
@@ -197,8 +209,8 @@
 
   .cta
     %a{:href => "mailto:hello@siyelo.com"}
-      Wanna join a great team?
-      %span Apply now!
+      Want to join the team?
+      %span Click here to apply
 
 %section#community.content
   .wrapper
@@ -206,22 +218,26 @@
       %h1 Our Community
       %p Siyelo is very passionate about supporting and giving back to the community. We sponsor and host events, we love contributing to open source just as much we enjoy using open source. If you are looking for sponsorship for a local event, get in touch with us, maybe we can help!
   %ul.community
-    %li.cnc.fourth
-      %h3
-        %span We organize
-        Code & Coffee Cape Town
-    %li.rb.fourth
-      %h3
-        %span	We host
-        Rails Bridge
-    %li.rf.fourth
-      %h3
-        %span We design
-        RubyFuza
-    %li.cr.fourth
-      %h3
-        %span We sponsor
-        Code Retreat Skopje
+    %a{href: 'http://www.meetup.com/Code-Coffee-Cape-Town/', target: '_blank' }
+      %li.cnc.fourth
+        %h3
+          %span We organize
+          Code & Coffee Cape Town
+    %a{href: 'http://www.railsbridge.org/', target: '_blank' }
+      %li.rb.fourth
+        %h3
+          %span We host
+          Rails Bridge
+    %a{href: 'http://www.rubyfuza.org/', target: '_blank' }
+      %li.rf.fourth
+        %h3
+          %span We design
+          RubyFuza
+    %a{href: 'http://coderetreat.org/events/global-day-of-coderetreat-2013-skopje-macedonia', target: '_blank' }
+      %li.cr.fourth
+        %h3
+          %span We sponsor
+          Code Retreat Skopje
 
 %section#office.content
   .wrapper
@@ -248,3 +264,7 @@
           %li Marx & Engels 7
           %li Skopje, 1000
           %li Macedonia
+
+
+%script{:src => '/javascripts/mylibs/sticky-nav.js'}
+

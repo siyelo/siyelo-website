@@ -1,34 +1,42 @@
+%header#header.sticky
+  = partial('./views/shared/_header.haml')
 %nav#mini-nav
-	%a{:href=>"/#cs-chai"}
-		%img{:src=>"./images/mini-logo-elementary.png"}
-		%span
-			%i.fa.fa-chevron-left
-			Go back to the site
+  %a{:href=>"/#cs-chai"}
+    %img{:src=>"/images/mini-logo-elementary.png"}
+    %span
+      %i.fa.fa-chevron-left
+      Go back to the site
 
 %nav#slide-nav
-	%a{:href=>"/is", :id=>"previous-slide"}
-		%i.fa.fa-chevron-left
-	%a{:href=>"/eos", :id=>"next-slide"}
-		%i.fa.fa-chevron-right
+  %a{:href=>"/is", :id=>"previous-slide"}
+    %i.fa.fa-chevron-left
+  %a{:href=>"/eos", :id=>"next-slide"}
+    %i.fa.fa-chevron-right
 
 %section.case
-	.wrapper
+  .wrapper
 
-		.image
-			%img{:src=>"./images/study/chai.jpg"}
+    .image
+      %img{:src=>"/images/study/chai.jpg"}
 
-		%h1 Improve your user's experience
+    %h1 Improve your user's experience
 
-		%h2
-			%a{:href=>"http://www.districthealth.moh.gov.rw/", :target=>"_blank"} Clinton Health Access Innitiative
-			%span A great initiative ...
+    %h2
+      %a{:href=>"http://www.districthealth.moh.gov.rw/", :target=>"_blank"} Clinton Health Access Innitiative
+      %span A great initiative ...
 
-		%p CHAI was charged with the important task of improve health systems and technology in Rwanda. These tools were important in managing AIDS, Malaria and logistical efforts in-country. Their development team were producing some great applications, but they needed some design and front-end expertise to make them more user-friendly.
-		
-		%h2… with an interface to match 
+    %p CHAI was charged with the important task of improve health systems and technology in Rwanda. These tools were important in managing AIDS, Malaria and logistical efforts in-country. Their development team were producing some great applications, but they needed some design and front-end expertise to make them more user-friendly.
 
-		%p Through constant collaboration and feedback we created designs that presented the application data in meaningful ways to the healthcare decision-makers. We supported several iterations of user-testing, prototyping heavily with Balsamiq to optimize workflows, reports and overall UX.
+    %h2… with an interface to match
 
-		%p Not only were we responsible for the designs, we also helped implement them. With their development team having chosen a Java-based framework that we were relatively unfamiliar with, we were nonetheless able rapidly integrate using our expertise with JS/HAML/SASS/CSS3.
+    %p Through constant collaboration and feedback we created designs that presented the application data in meaningful ways to the healthcare decision-makers. We supported several iterations of user-testing, prototyping heavily with Balsamiq to optimize workflows, reports and overall UX.
 
-		%p What’s more, we collaborated entirely remotely on this project, using great tools like Google Docs, Github, Dropbox, PivotalTracker and Skype.
+    %p Not only were we responsible for the designs, we also helped implement them. With their development team having chosen a Java-based framework that we were relatively unfamiliar with, we were nonetheless able rapidly integrate using our expertise with JS/HAML/SASS/CSS3.
+
+    %p What’s more, we collaborated entirely remotely on this project, using great tools like Google Docs, Github, Dropbox, PivotalTracker and Skype.
+
+:javascript
+  $(document).ready(function(){
+    // hack to add .sticky from main nav on the index
+    $('#header').addClass('sticky');
+  });

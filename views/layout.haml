@@ -25,7 +25,7 @@
   -# Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons
 
   -# CSS: implied media=all
-  %link{href: './stylesheets/screen.css', rel: 'stylesheet', type: 'text/css'}
+  %link{href: '/stylesheets/screen.css', rel: 'stylesheet', type: 'text/css'}
   -# CSS concatenated and minified via ant build script
 
   -# end CSS
@@ -36,26 +36,22 @@
     All JavaScript at the bottom, except this Modernizr build incl. Respond.js
     Respond is a polyfill for min/max-width media queries. Modernizr enables HTML5 elements & feature detects;
     for optimal performance, create your own custom Modernizr build: www.modernizr.com/download/
-  %script{:src => './javascripts/libs/modernizr-2.0.6.min.js'}
+  %script{:src => '/javascripts/libs/modernizr-2.0.6.min.js'}
 
 %body{"data-spy" => 'scroll', "data-target" => '#main-nav'}
 
-  = partial('./views/shared/_header.haml')
-  = partial('./views/shared/_flashes.haml')
   = yield
   = partial('./views/shared/_footer.haml')
-
 
   -# JavaScript at the bottom for fast page loading
 
   -# Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline
-  %script{:src => './javascripts/libs/jquery-1.10.2.min.js'}
-  %script{:src => './javascripts/libs/jquery.BlackAndWhite.js'}
-  %script{:src => './javascripts/libs/jquery-scrollintoview.js'}
-  %script{:src => './javascripts/mylibs/smooth-scroll.js'}
-  %script{:src => './javascripts/mylibs/scroll-spy.js'}
-  %script{:src => './javascripts/mylibs/sticky-nav.js'}
-  %script{:src => './javascripts/script.js'}
+  %script{:src => '/javascripts/libs/jquery-1.10.2.min.js'}
+  %script{:src => '/javascripts/libs/jquery.BlackAndWhite.js'}
+  %script{:src => '/javascripts/libs/jquery-scrollintoview.js'}
+  %script{:src => '/javascripts/mylibs/smooth-scroll.js'}
+  %script{:src => '/javascripts/mylibs/scroll-spy.js'}
+  %script{:src => '/javascripts/script.js'}
 
 
 

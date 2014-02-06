@@ -1,32 +1,35 @@
+%header#header.sticky
+  = partial('./views/shared/_header.haml')
+
 %nav#mini-nav
-	%a{:href=>"/#cs-tad"}
-		%img{:src=>"./images/mini-logo-elementary.png"}
-		%span
-			%i.fa.fa-chevron-left
-			Go back to the site
+  %a{:href=>"/#cs-tad"}
+    %img{:src=>"/images/mini-logo-elementary.png"}
+    %span
+      %i.fa.fa-chevron-left
+      Go back to the site
 
 %nav#slide-nav
-	%a{:href=>"/mm", :id=>"previous-slide"}
-		%i.fa.fa-chevron-left
-	%a{:href=>"/is", :id=>"next-slide"}
-		%i.fa.fa-chevron-right
+  %a{:href=>"/mm", :id=>"previous-slide"}
+    %i.fa.fa-chevron-left
+  %a{:href=>"/is", :id=>"next-slide"}
+    %i.fa.fa-chevron-right
 
 %section.case
-	.wrapper
+  .wrapper
 
-		.image
-			%img{:src=>"./images/study/tad.jpg"}
+    .image
+      %img{:src=>"/images/study/tad.jpg"}
 
-		%h1 Launch A New Idea
+    %h1 Launch A New Idea
 
-		%h2
-			%a{:href=>"#", :target=>"_blank"} Talented Africa:
-			%span A new approach to an old problem
+    %h2
+      %a{:href=>"#", :target=>"_blank"} Talented Africa:
+      %span A new approach to an old problem
 
-		%p TalentedAfrica is an extremely easy-to-use accounting package for small businesses who are struggling to keep their records. TalentedAfrica came to Siyelo with several years experience working with, and understanding the challenges facing small enterprises, but lacking the tools to reach more of their target market.
-		
-		%h2 Focusing on simplicity
+    %p TalentedAfrica is an extremely easy-to-use accounting package for small businesses who are struggling to keep their records. TalentedAfrica came to Siyelo with several years experience working with, and understanding the challenges facing small enterprises, but lacking the tools to reach more of their target market.
 
-		%p We started with several intensive workshops focused on understanding the unique context in which TA will primarily operate (low-bandwidth, low-technology areas), and helped formulate a product roadmap that aligns with TA’s business strategy.
+    %h2 Focusing on simplicity
 
-		%p With a solid understanding of TA’s context and vision, we designed a friendly and scalable web-based, mobile-friendly solution to centralize their operations and reach more customers. Leveraging the power of Rails, Postgres, Coffeescript and cloud services, TA is built on a solid foundation for the future, and extensible enough for whatever the new ideas the TA team has along the way.
+    %p We started with several intensive workshops focused on understanding the unique context in which TA will primarily operate (low-bandwidth, low-technology areas), and helped formulate a product roadmap that aligns with TA’s business strategy.
+
+    %p With a solid understanding of TA’s context and vision, we designed a friendly and scalable web-based, mobile-friendly solution to centralize their operations and reach more customers. Leveraging the power of Rails, Postgres, Coffeescript and cloud services, TA is built on a solid foundation for the future, and extensible enough for whatever the new ideas the TA team has along the way.

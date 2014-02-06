@@ -1,33 +1,35 @@
+%header#header.sticky
+  = partial('./views/shared/_header.haml')
 %nav#mini-nav
-	%a{:href=>"/#cs-mm"}
-		%img{:src=>"./images/mini-logo-elementary.png"}
-		%span
-			%i.fa.fa-chevron-left
-			Go back to the site
+  %a{:href=>"/#cs-mm"}
+    %img{:src=>"/images/mini-logo-elementary.png"}
+    %span
+      %i.fa.fa-chevron-left
+      Go back to the site
 
 %nav#slide-nav
-	%a{:href=>"/eos", :id=>"previous-slide"}
-		%i.fa.fa-chevron-left
-	%a{:href=>"/tad", :id=>"next-slide"}
-		%i.fa.fa-chevron-right
+  %a{:href=>"/eos", :id=>"previous-slide"}
+    %i.fa.fa-chevron-left
+  %a{:href=>"/tad", :id=>"next-slide"}
+    %i.fa.fa-chevron-right
 
 %section.case
-	.wrapper
+  .wrapper
 
-		.image
-			%img{:src=>"./images/study/madmimi.jpg"}
+    .image
+      %img{:src=>"/images/study/madmimi.jpg"}
 
-		%h1 Improve an existing product
+    %h1 Improve an existing product
 
-		%h2
-			%a{:href=>"http://www.madmimi.com/", :target=>"_blank"} Mad Mimi
-			%span Successful app going forward
+    %h2
+      %a{:href=>"http://www.madmimi.com/", :target=>"_blank"} Mad Mimi
+      %span Successful app going forward
 
-		%p
-			After a successful redesign of
-			%a{:href=>"http://rubyfuza.org/", :target=>"_blank"} Ruby Fuza
-			we were engaged by Mad Mimi - an already established email marketing platform, with millions of happy users. The goal was to boost their design and development teams, and help push forward few new usability and design improvements.
+    %p
+      After a successful redesign of
+      %a{:href=>"http://rubyfuza.org/", :target=>"_blank"} Ruby Fuza
+      we were engaged by Mad Mimi - an already established email marketing platform, with millions of happy users. The goal was to boost their design and development teams, and help push forward few new usability and design improvements.
 
-		%h2 A foundation for the future
+    %h2 A foundation for the future
 
-		%p Facing a large and complex code base, we had to be very careful with our approach. We helped develop and design the new email statistics, optimized the site and blog for tablet and mobile, implemented add-ons for Big Commerce and Etsy and helped improve the email templates and optimize them for mobile devices.
+    %p Facing a large and complex code base, we had to be very careful with our approach. We helped develop and design the new email statistics, optimized the site and blog for tablet and mobile, implemented add-ons for Big Commerce and Etsy and helped improve the email templates and optimize them for mobile devices.

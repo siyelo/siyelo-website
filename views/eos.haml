@@ -1,30 +1,33 @@
+%header#header.sticky
+  = partial('./views/shared/_header.haml')
+
 %nav#mini-nav
-	%a{:href=>"/#cs-eos"}
-		%img{:src=>"./images/mini-logo-elementary.png"}
-		%span
-			%i.fa.fa-chevron-left
-			Go back to the site
+  %a{:href=>"/#cs-eos"}
+    %img{:src=>"/images/mini-logo-elementary.png"}
+    %span
+      %i.fa.fa-chevron-left
+      Go back to the site
 
 %nav#slide-nav
-	%a{:href=>"/chai", :id=>"previous-slide"}
-		%i.fa.fa-chevron-left
-	%a{:href=>"/mm", :id=>"next-slide"}
-		%i.fa.fa-chevron-right
+  %a{:href=>"/chai", :id=>"previous-slide"}
+    %i.fa.fa-chevron-left
+  %a{:href=>"/mm", :id=>"next-slide"}
+    %i.fa.fa-chevron-right
 
 %section.case
-	.wrapper
+  .wrapper
 
-		.image
-			%img{:src=>"./images/study/eos.jpg"}
+    .image
+      %img{:src=>"/images/study/eos.jpg"}
 
-		%h1 Rescue a project
-		
-		%h2
-			%a{:href=>"http://www.eosmarketplace.com/", :target=>"_blank"} EOS Marketplace
-			%span A dark cloud...
+    %h1 Rescue a project
 
-		%p Cooco approached us after having their fixed-price Ruby on Rails project delivered not only 9 months late but chock-full of bugs.
-		 
-		%h2 ...With a silver lining
-		 
-		%p In less than (?) man-months of development we launched EoS, a fully functional online marketplace 
+    %h2
+      %a{:href=>"http://www.eosmarketplace.com/", :target=>"_blank"} EOS Marketplace
+      %span A dark cloud...
+
+    %p Cooco approached us after having their fixed-price Ruby on Rails project delivered not only 9 months late but chock-full of bugs.
+
+    %h2 ...With a silver lining
+
+    %p In less than (?) man-months of development we launched EoS, a fully functional online marketplace

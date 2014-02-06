@@ -1,32 +1,34 @@
+%header#header.sticky
+  = partial('./views/shared/_header.haml')
 %nav#mini-nav
-	%a{:href=>"/#cs-is"}
-		%img{:src=>"./images/mini-logo-elementary.png"}
-		%span
-			%i.fa.fa-chevron-left
-			Go back to the site
+  %a{:href=>"/#cs-is"}
+    %img{:src=>"/images/mini-logo-elementary.png"}
+    %span
+      %i.fa.fa-chevron-left
+      Go back to the site
 
 %nav#slide-nav
-	%a{:href=>"/tad", :id=>"previous-slide"}
-		%i.fa.fa-chevron-left
-	%a{:href=>"/chai", :id=>"next-slide"}
-		%i.fa.fa-chevron-right
+  %a{:href=>"/tad", :id=>"previous-slide"}
+    %i.fa.fa-chevron-left
+  %a{:href=>"/chai", :id=>"next-slide"}
+    %i.fa.fa-chevron-right
 
 %section.case
-	.wrapper
+  .wrapper
 
-		.image
-			%img{:src=>"./images/study/is.jpg"}
+    .image
+      %img{:src=>"/images/study/is.jpg"}
 
-		%h1 Streamline Your Business
+    %h1 Streamline Your Business
 
-		%h2
-			%a{:href=>"http://www.is.co.za/", :target=>"_blank"} Internet Solutions:
-			%span A business that had outgrown it’s software
+    %h2
+      %a{:href=>"http://www.is.co.za/", :target=>"_blank"} Internet Solutions:
+      %span A business that had outgrown it’s software
 
-		%p The IS sales team came to us with an enormously complex, and business-critical pricing tool that was no longer scaling to their needs. With an enterprise-wide solution still on the horizon, they desperately needed an interim solution. We handled the analysis and reverse-engineering of their existing tool and built them a centralized web application in just a few short months.
-		
-		%h2 From complexity to flexibility
+    %p The IS sales team came to us with an enormously complex, and business-critical pricing tool that was no longer scaling to their needs. With an enterprise-wide solution still on the horizon, they desperately needed an interim solution. We handled the analysis and reverse-engineering of their existing tool and built them a centralized web application in just a few short months.
 
-		%p Many challenges were met and overcome by Siyelo in the creation of a new VPN pricing tool. We helped unscramble and extract the key business logic that had accumulated organically in their old Excel-based system over the past 12 years, and rapidly build a new web-based solution. 
+    %h2 From complexity to flexibility
 
-		%p By collaborating closely with the key stakeholders, and utilizing leading edge tools like Backbone.js, Rails and cloud services, we were able to launch two web applications, for their domestic and international sales teams respectively. The IS sales teams can now properly manage their pricing, quoting and contracts in a central location, while enjoying a significantly reduced administration burden.
+    %p Many challenges were met and overcome by Siyelo in the creation of a new VPN pricing tool. We helped unscramble and extract the key business logic that had accumulated organically in their old Excel-based system over the past 12 years, and rapidly build a new web-based solution.
+
+    %p By collaborating closely with the key stakeholders, and utilizing leading edge tools like Backbone.js, Rails and cloud services, we were able to launch two web applications, for their domestic and international sales teams respectively. The IS sales teams can now properly manage their pricing, quoting and contracts in a central location, while enjoying a significantly reduced administration burden.
