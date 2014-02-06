@@ -8,7 +8,7 @@ class EmailSender
       budget = params["budget"]
 
       mail_body = %Q(
-      Hey Glenn!
+      Hey!
 
       We got contacted by #{full_name}.
       They'd describe their project as:
