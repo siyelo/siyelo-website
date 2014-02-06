@@ -755,6 +755,16 @@ a#work-link {
 .offices > li {
   margin-bottom: 3em;
 }
+.offices > li img {
+  float: left;
+  max-width: 100%;
+}
+.offices .smk img {
+  max-width: 550px;
+}
+.offices .smk img {
+  max-width: 340px;
+}
 
 @media only screen and (min-width: 1001px) {
   .offices {
@@ -949,9 +959,8 @@ section.case a:hover, section.case a:focus {
 #footer ul {
   float: right;
 }
-#footer ul a {
-  color: white;
-  font-size: 2em;
+#footer a {
+  color: #ed9322;
   margin-right: 3px;
   opacity: 0.8;
   text-decoration: none;
@@ -960,7 +969,7 @@ section.case a:hover, section.case a:focus {
   -o-transition: all 0.4s;
   transition: all 0.4s;
 }
-#footer ul a:hover, #footer ul a:focus {
+#footer a:hover, #footer a:focus {
   opacity: 1;
 }
 #footer p.copyright {
@@ -973,19 +982,69 @@ section.case a:hover, section.case a:focus {
   text-align: center;
   text-transform: uppercase;
 }
-#footer p.contact span {
-  display: block;
+#footer p.contact {
+  padding-left: 100px;
   margin-bottom: 7px;
   opacity: 0.8;
+}
+#footer p.contact span {
+  display: block;
+  margin-bottom: 3px;
+}
+#footer p.contact span:last-child {
+  font-size: 14px;
 }
 #footer p i {
   color: white;
   margin-right: 5px;
 }
+#footer p i.fa-twitter, #footer p i.fa-github, #footer p i.fa-rss {
+  font-size: 1.4em;
+  margin-top: 5px;
+}
 
 .si {
   float: left;
   margin-right: 30px;
+}
+
+@media screen and (min-width: 801px) {
+  .links {
+    float: left;
+    width: 40%;
+  }
+}
+
+.text {
+  float: right;
+  width: 60%;
+}
+.text li {
+  font-size: 14px;
+}
+@media screen and (min-width: 801px) {
+  .text li {
+    float: left;
+    padding-left: 3.33%;
+    width: 30%;
+  }
+}
+.text span {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+}
+.text a {
+  background: #ed9322;
+  clear: left;
+  color: #06121d !important;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
 }
 
 .dg-container {
@@ -1262,9 +1321,6 @@ section.case a:hover, section.case a:focus {
   }
   .offices ul {
     margin-top: 0.7em;
-  }
-  .offices iframe {
-    width: 100%;
   }
 }
 @media only screen and (max-width: 640px) {

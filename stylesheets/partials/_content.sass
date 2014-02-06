@@ -1,270 +1,278 @@
 .content
-	@include pie-clearfix
+  @include pie-clearfix
 
 .txt-heading
-	padding: 8em 0 2.5em
-	max-width: 600px
-	p
-		margin-bottom: 2em
-	.fa
-		color: $two
-		font-size: 1.2em
-		margin-right: 5px
-	.fa-phone
-		margin-left: 30px
+  padding: 8em 0 2.5em
+  max-width: 600px
+  p
+    margin-bottom: 2em
+  .fa
+    color: $two
+    font-size: 1.2em
+    margin-right: 5px
+  .fa-phone
+    margin-left: 30px
 #office .txt-heading
-	padding-bottom: 0
+  padding-bottom: 0
 
 .cta
-	background: #f5f5f5
-	display: block
-	padding: 5em 0
-	a
-		background: $two
-		color: #fff
-		display: block
-		margin: 0 auto
-		max-width: 300px
-		padding: 1em 1.5em
-		text-align: center
-		text-decoration: none
-		width: 90%
-		@include border-radius(2px)
-		@include transition(all .4s)
-		&:hover, &:focus
-			background: $two - #111
-		span
-			display: block
-			font: 40px Tungsten
-			text-transform: uppercase
+  background: #f5f5f5
+  display: block
+  padding: 5em 0
+  a
+    background: $two
+    color: #fff
+    display: block
+    margin: 0 auto
+    max-width: 300px
+    padding: 1em 1.5em
+    text-align: center
+    text-decoration: none
+    width: 90%
+    @include border-radius(2px)
+    @include transition(all .4s)
+    &:hover, &:focus
+      background: $two - #111
+    span
+      display: block
+      font: 40px Tungsten
+      text-transform: uppercase
 
 .projects
-	@include pie-clearfix
-	li
-		//display: inline
-		//float: left
-		//height: 500px
-		//padding: 40px
-		//width: 20%
-		border-top: 10px dotted #f5f5f5
-		padding-top: 7em
-		margin-bottom: 6em
-		min-height: 550px
-		position: relative
-		@include box-sizing(border-box)
-		@include pie-clearfix
-		&.ta, &.is, &.chai, &.cooco, &.madmimi
-			//background: url("/images/madmimi.jpg") no-repeat -350px center
-	.third
-		margin-bottom: 20px
-		max-width: 400px
-		text-align: center
-	.preview
-		&.left
-			margin-left: -3em
-		&.right
-			margin-right: -3em
-		img
-			max-width: 100%
-			width: 100%
+  @include pie-clearfix
+  li
+    //display: inline
+    //float: left
+    //height: 500px
+    //padding: 40px
+    //width: 20%
+    border-top: 10px dotted #f5f5f5
+    padding-top: 7em
+    margin-bottom: 6em
+    min-height: 550px
+    position: relative
+    @include box-sizing(border-box)
+    @include pie-clearfix
+    &.ta, &.is, &.chai, &.cooco, &.madmimi
+      //background: url("/images/madmimi.jpg") no-repeat -350px center
+  .third
+    margin-bottom: 20px
+    max-width: 400px
+    text-align: center
+  .preview
+    &.left
+      margin-left: -3em
+    &.right
+      margin-right: -3em
+    img
+      max-width: 100%
+      width: 100%
 
-	h2
-		color: $four
-		line-height: 1
-		margin-bottom: .2em
-		padding-top: 1em
-	p
-		color: $four
-		margin-bottom: 2em
-	a
-		background: $two
-		color: #fff
-		display: block
-		font-size: 16px
-		line-height: 1.35
-		margin: 0 auto
-		max-width: 60%
-		padding: 10px 20px
-		text-align: center
-		text-decoration: none
-		@include border-radius(2px)
+  h2
+    color: $four
+    line-height: 1
+    margin-bottom: .2em
+    padding-top: 1em
+  p
+    color: $four
+    margin-bottom: 2em
+  a
+    background: $two
+    color: #fff
+    display: block
+    font-size: 16px
+    line-height: 1.35
+    margin: 0 auto
+    max-width: 60%
+    padding: 10px 20px
+    text-align: center
+    text-decoration: none
+    @include border-radius(2px)
 
 .logos
-	background: #f5f5f5
-	padding: 6em 30px 0
-	text-align: center
-	ul
-		padding: 3em 2em 0
-		text-align: center
-		@include pie-clearfix
-	li
-		background: #fff
-		display: inline-block
-		height: 150px
-		margin: 0 15px
-		overflow: hidden
-		width: 150px
-	li, .bwWrapper
-		overflow: hidden
-		@include border-radius(100px)
-	h2
-		line-height: 1
+  background: #f5f5f5
+  padding: 6em 30px 0
+  text-align: center
+  ul
+    padding: 3em 2em 0
+    text-align: center
+    @include pie-clearfix
+  li
+    background: #fff
+    display: inline-block
+    height: 150px
+    margin: 0 15px
+    overflow: hidden
+    width: 150px
+  li, .bwWrapper
+    overflow: hidden
+    @include border-radius(100px)
+  h2
+    line-height: 1
 
-	img, canvas
-		float: left
-		max-width: 150px
-		overflow: hidden
-		width: 100%
-		@include border-radius(100px)
-	+ .cta
-		padding: 4em 0 5em
+  img, canvas
+    float: left
+    max-width: 150px
+    overflow: hidden
+    width: 100%
+    @include border-radius(100px)
+  + .cta
+    padding: 4em 0 5em
 
 .team
-	@include pie-clearfix
-	background: #f5f5f5
-	li
-		cursor: pointer
-		float: left
-		height: 640px
-		overflow: hidden
-		position: relative
-		width: 14.27%
-		@include pie-clearfix
-		&.active .txtWrapper
-			background: rgba(0, 0, 0, 0.4)
-	.txtWrapper
-		bottom: 0
-		padding: 20px
-		position: absolute
-		@include box-sizing(border-box)
-		span
-			display: block
-			font: 14px "open sans"
-	h3
-		color: #fff
-		line-height: 1.1
-		@include text-shadow(rgba(0, 0, 0, 0.2) 0 0 5px)
-	p
-		color: #fff
-		display: none
-		font-size: 14px
-		line-height: 1.4
-		margin-top: 1em
+  @include pie-clearfix
+  background: #f5f5f5
+  li
+    cursor: pointer
+    float: left
+    height: 640px
+    overflow: hidden
+    position: relative
+    width: 14.27%
+    @include pie-clearfix
+    &.active .txtWrapper
+      background: rgba(0, 0, 0, 0.4)
+  .txtWrapper
+    bottom: 0
+    padding: 20px
+    position: absolute
+    @include box-sizing(border-box)
+    span
+      display: block
+      font: 14px "open sans"
+  h3
+    color: #fff
+    line-height: 1.1
+    @include text-shadow(rgba(0, 0, 0, 0.2) 0 0 5px)
+  p
+    color: #fff
+    display: none
+    font-size: 14px
+    line-height: 1.4
+    margin-top: 1em
 
-	.bwWrapper
-		height: 100%
-		@include pie-clearfix
-	img, canvas
-		height: 100%
-		margin-left: -50%
-	img
-		height: 100%
+  .bwWrapper
+    height: 100%
+    @include pie-clearfix
+  img, canvas
+    height: 100%
+    margin-left: -50%
+  img
+    height: 100%
 
 .community
-	background: #f5f5f5
-	@include pie-clearfix
-	li
-		height: 480px
-		padding: 8em 0
-		text-align: center
-		@include box-sizing(border-box)
-		&.cnc
-			background: url("/images/events/cnc.jpg") no-repeat center
-		&.rb
-			background: url("/images/events/rb.jpg") no-repeat center
-		&.rf
-			background: url("/images/events/rf.jpg") no-repeat center
-		&.cr
-			background: url("/images/events/cr.jpg") no-repeat center
-	h3
-		background: rgba(0, 0, 0, 0.6)
-		color: #fff
-		display: inline-block
-		line-height: 1.2
-		padding: .4em 1em .3em
-		text-align: center
-		span
-			display: block
-			font: 16px "open sans"
+  background: #f5f5f5
+  @include pie-clearfix
+  li
+    height: 480px
+    padding: 8em 0
+    text-align: center
+    @include box-sizing(border-box)
+    &.cnc
+      background: url("/images/events/cnc.jpg") no-repeat center
+    &.rb
+      background: url("/images/events/rb.jpg") no-repeat center
+    &.rf
+      background: url("/images/events/rf.jpg") no-repeat center
+    &.cr
+      background: url("/images/events/cr.jpg") no-repeat center
+  h3
+    background: rgba(0, 0, 0, 0.6)
+    color: #fff
+    display: inline-block
+    line-height: 1.2
+    padding: .4em 1em .3em
+    text-align: center
+    span
+      display: block
+      font: 16px "open sans"
 
 .offices
-	> li
-		margin-bottom: 3em
+  > li
+    margin-bottom: 3em
+    img
+      float: left
+      max-width: 100%
+  .smk img
+    max-width: 550px
+
+  .smk img
+    max-width: 340px
 
 @media only screen and (min-width: 1001px)
-	.offices
-		min-height: 540px
-		position: relative
-		.ssa
-			float: left
-			padding-top: 70px
-			width: 60%
-		.smk
-			float: right
-			text-align: right
-			width: 40%
-		.planet
-			overflow: hidden
-			position: absolute
-			@include border-radius(300px)
-		.big
-			bottom: -8em
-			left: 10%
-		.small
-			top: 0
-			
-		ul
-			opacity: .7
-			font-size: .9em
+  .offices
+    min-height: 540px
+    position: relative
+    .ssa
+      float: left
+      padding-top: 70px
+      width: 60%
+    .smk
+      float: right
+      text-align: right
+      width: 40%
+    .planet
+      overflow: hidden
+      position: absolute
+      @include border-radius(300px)
+    .big
+      bottom: -8em
+      left: 10%
+    .small
+      top: 0
+      
+    ul
+      opacity: .7
+      font-size: .9em
 @media only screen and (min-width: 1281px)
-	.offices
-		.small
-			left: 40em
+  .offices
+    .small
+      left: 40em
 
 // Case studies
 section.case
-	padding: 4em 0
-	.image
-		text-align: center
-		img
-			max-width: 800px
-			width: 100%
-	h1
-		line-height: 1
-		padding-top: .7em
-	h1, h2, p
-		margin: 0 auto
-		max-width: 600px
-	h2
-		line-height: 1
-		padding: 0 0 .4em
-		a, span
-			color: $one + #333
-			font-size: .9em
-			text-transform: none
-		a
-			text-decoration: none
-			&:hover, &:focus
-				color: $two
-	p
-		padding-bottom: 4em
-		~ p
-			padding-bottom: 1.4em
-	a
-		color: $two
-		@include transition(color .2s)
-		&:hover, &:focus
-			color: $three
+  padding: 4em 0
+  .image
+    text-align: center
+    img
+      max-width: 800px
+      width: 100%
+  h1
+    line-height: 1
+    padding-top: .7em
+  h1, h2, p
+    margin: 0 auto
+    max-width: 600px
+  h2
+    line-height: 1
+    padding: 0 0 .4em
+    a, span
+      color: $one + #333
+      font-size: .9em
+      text-transform: none
+    a
+      text-decoration: none
+      &:hover, &:focus
+        color: $two
+  p
+    padding-bottom: 4em
+    ~ p
+      padding-bottom: 1.4em
+  a
+    color: $two
+    @include transition(color .2s)
+    &:hover, &:focus
+      color: $three
 
-#slide-nav	a
-	color: #ddd
-	font-size: 3em
-	position: absolute
-	top: 12%
-	@include transition(color .4s)
-	&#previous-slide
-		left: 2%
-	&#next-slide
-		right: 2%
-	&:hover, &:focus
-		color: $one
+#slide-nav  a
+  color: #ddd
+  font-size: 3em
+  position: absolute
+  top: 12%
+  @include transition(color .4s)
+  &#previous-slide
+    left: 2%
+  &#next-slide
+    right: 2%
+  &:hover, &:focus
+    color: $one

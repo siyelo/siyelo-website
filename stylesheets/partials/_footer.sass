@@ -8,15 +8,14 @@
 		padding-bottom: 9em
 	ul
 		float: right
-		a
-			color: #fff
-			font-size: 2em
-			margin-right: 3px
-			opacity: .8
-			text-decoration: none
-			@include transition(all .4s)
-			&:hover, &:focus
-				opacity: 1
+	a
+		color: $two
+		margin-right: 3px
+		opacity: .8
+		text-decoration: none
+		@include transition(all .4s)
+		&:hover, &:focus
+			opacity: 1
 
 	p
 		&.copyright
@@ -28,15 +27,47 @@
 			padding: 3em 0 2.5em
 			text-align: center
 			text-transform: uppercase
-		&.contact span
-			display: block
+		&.contact
+			padding-left: 100px
+			span
+				display: block
+				margin-bottom: 3px
+				&:last-child
+					font-size: 14px
 
 			margin-bottom: 7px
 			opacity: .8
 		i
 			color: #fff
 			margin-right: 5px
+			&.fa-twitter, &.fa-github, &.fa-rss
+				font-size: 1.4em
+				margin-top: 5px
 
 .si
 	float: left
 	margin-right: 30px
+.links
+	@media screen and (min-width: 801px)
+		float: left
+		width: 40%
+.text
+	float: right
+	width: 60%
+	li
+		font-size: 14px
+		@media screen and (min-width: 801px)
+			float: left
+			padding-left: 3.33%
+			width: 30%
+	span
+		color: rgba(255, 255, 255, 0.6)
+		display: block
+	a
+		background: $two
+		clear: left
+		color: $one !important
+		display: inline-block
+		margin-top: 10px
+		padding: 10px 20px
+		@include border-radius(2px)
