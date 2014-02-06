@@ -52,7 +52,8 @@ so Compass can compile your SASS on the fly.
 # Deployment
 
 ## Setup
-    git remote add heroku git@heroku.com:siyelo.git
+
+    git remote add production git@heroku.com:siyelo.git
 
 ## Deploy
 
