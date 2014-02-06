@@ -20,21 +20,28 @@ class EmailSender
 
       Cheers!)
 
+      log_mail(email, mail_body)
+
       Mail.deliver do
         from "#{email}"
-        to ENV['DESTINATION_EMAIL'] || "localhost"
+        to 'hello+web@siyelo.com'
         subject "Someone wants to hire us!"
         body mail_body
       end
     end
 
+    def log_mail(email, mail_body)
+      puts "Sending mail..."
+      puts " from #{email}"
+      puts " to hello+web@siyelo.com"
+      puts " body #{mail_body}"
+    end
 
     def deliver_job_application(params)
       full_name = params["full_name"]
       email = params["email"]
       description = params["description"]
       portfolio_url = params["portfolio"]
-
 
       mail_body = %Q(
       Hey!
@@ -50,9 +57,11 @@ class EmailSender
 
       Cheers!)
 
+      log_mail(email, mail_body)
+
       Mail.deliver do
         from "#{email}"
-        to ENV['DESTINATION_EMAIL'] || "localhost"
+        to 'hello+web@siyelo.com' || "localhost"
         subject "Job application by: #{full_name}"
         body mail_body
       end

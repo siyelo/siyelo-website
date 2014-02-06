@@ -11,7 +11,6 @@ class SinatraBootstrap < Sinatra::Base
   enable :sessions
   use Rack::Flash
 
-
   if ENV['RACK_ENV'] == 'production'
     mail_settings = { :address   => "smtp.sendgrid.net",
       :port      => 587,
@@ -70,7 +69,7 @@ class SinatraBootstrap < Sinatra::Base
 
     EmailSender.deliver_hire_email(request.params)
 
-    flash[:notice] = 'Your email has been sent!'
+    flash[:notice] = 'Thank you! Your email has been sent.'
     redirect '/'
   end
 
