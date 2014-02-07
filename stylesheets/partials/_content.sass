@@ -239,7 +239,7 @@ section.case
       max-width: 800px
       width: 100%
   h1
-    line-height: .7
+    line-height: .8
     padding-top: .7em
     padding-bottom: .5em
     span
@@ -287,6 +287,10 @@ section.case
     text-align: center
     width: 20%
     @include box-sizing(border-box)
+    @media screen and (min-width: 801px)
+      height: 300px
+      a
+        height: 300px
   a
     background: #f9f9f9
     border-top: 1px solid rgba(0, 0, 0, 0.1)
