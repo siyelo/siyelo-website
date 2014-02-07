@@ -864,7 +864,6 @@ section.case a:hover, section.case a:focus {
 }
 
 #slide-nav {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
   *zoom: 1;
 }
 #slide-nav:after {
@@ -880,11 +879,6 @@ section.case a:hover, section.case a:focus {
   display: table;
   clear: both;
 }
-@media screen and (min-width: 801px) {
-  #slide-nav ul {
-    padding-bottom: 1.3em;
-  }
-}
 @media screen and (max-width: 800px) {
   #slide-nav ul {
     display: none;
@@ -899,16 +893,23 @@ section.case a:hover, section.case a:focus {
   box-sizing: border-box;
 }
 #slide-nav a {
+  background: #f9f9f9;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   color: #06121d;
   display: block;
   font: 2em Tungsten;
   padding: 40px 20px;
   text-decoration: none;
   z-index: 1000;
-  -webkit-transition: color 0.4s;
-  -moz-transition: color 0.4s;
-  -o-transition: color 0.4s;
-  transition: color 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+@media screen and (min-width: 801px) {
+  #slide-nav a {
+    padding-bottom: 2.2em;
+  }
 }
 #slide-nav a#previous-slide {
   left: 2%;
@@ -918,6 +919,7 @@ section.case a:hover, section.case a:focus {
 }
 #slide-nav a:hover, #slide-nav a:focus {
   color: #06121d;
+  opacity: 1;
 }
 #slide-nav a span {
   color: #ed9322;
@@ -929,6 +931,13 @@ section.case a:hover, section.case a:focus {
   clear: both;
   margin-bottom: -30px;
   text-align: center;
+}
+#slide-nav a.active {
+  background: none;
+  border-top: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  opacity: 1;
 }
 #slide-nav p {
   display: none;

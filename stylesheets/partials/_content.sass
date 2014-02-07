@@ -271,12 +271,10 @@ section.case
       color: $three
 
 #slide-nav
-  border-top: 1px solid rgba(0, 0, 0, 0.1)
   @include pie-clearfix
   ul
     @include pie-clearfix
-    @media screen and (min-width: 801px)
-      padding-bottom: 1.3em
+    
     @media screen and (max-width: 800px)
       display: none
   li
@@ -285,19 +283,24 @@ section.case
     width: 20%
     @include box-sizing(border-box)
   a
+    background: #f9f9f9
+    border-top: 1px solid rgba(0, 0, 0, 0.1)
     color: $one
     display: block
     font: 2em Tungsten
     padding: 40px 20px
     text-decoration: none
     z-index: 1000
-    @include transition(color .4s)
+    @include transition(all .4s)
+    @media screen and (min-width: 801px)
+      padding-bottom: 2.2em
     &#previous-slide
       left: 2%
     &#next-slide
       right: 2%
     &:hover, &:focus
       color: $one
+      opacity: 1
     span
       color: $two
       display: block
@@ -307,6 +310,12 @@ section.case
       clear: both
       margin-bottom: -30px
       text-align: center
+    &.active
+      background: none
+      border-top: none
+      border-left: 1px solid rgba(0, 0, 0, 0.1)
+      border-right: 1px solid rgba(0, 0, 0, 0.1)
+      opacity: 1
   p
     display: none
     @media screen and (max-width: 800px)
