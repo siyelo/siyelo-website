@@ -818,18 +818,24 @@ section.case .image img {
   width: 100%;
 }
 section.case h1 {
-  line-height: 1;
+  line-height: 0.7;
   padding-top: 0.7em;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.5em;
+}
+section.case h1 span {
+  font-size: 0.7em;
+  line-height: 0.7;
+  opacity: 0.8;
+  text-transform: none;
 }
 section.case h1, section.case h2, section.case p {
   margin: 0 auto;
   max-width: 600px;
 }
 section.case h2 {
-  font: 2.2em Arial;
+  font: 2em Arial;
   line-height: 1.2;
-  padding: 0 0 0.4em;
+  padding: 0 0 0.6em;
   text-transform: none;
 }
 section.case h2 a, section.case h2 span {
@@ -1256,7 +1262,7 @@ section.case a:hover, section.case a:focus {
 
 @media only screen and (max-width: 1440px) {
   #spaced h1 {
-    font-size: 140px;
+    font-size: 139px;
     max-width: 800px;
   }
   #spaced h2 {
