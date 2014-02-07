@@ -24,7 +24,7 @@ class EmailSender
 
       Mail.deliver do
         from "#{email}"
-        to 'hello+web@siyelo.com'
+        to ENV['HIRE_EMAIL'] || 'hello+web@siyelo.com'
         subject "Someone wants to hire us!"
         body mail_body
       end
@@ -61,7 +61,7 @@ class EmailSender
 
       Mail.deliver do
         from "#{email}"
-        to 'hello+web@siyelo.com' || "localhost"
+        to ENV['JOBS_EMAIL'] || 'hello+web@siyelo.com'
         subject "Job application by: #{full_name}"
         body mail_body
       end
