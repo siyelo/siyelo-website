@@ -40,6 +40,7 @@
 
 %body{"data-spy" => 'scroll', "data-target" => '#main-nav'}
 
+  = partial('./views/shared/_flashes.haml')
   = yield
   = partial('./views/shared/_footer.haml')
 
@@ -52,6 +53,7 @@
   %script{:src => '/javascripts/mylibs/smooth-scroll.js'}
   %script{:src => '/javascripts/mylibs/scroll-spy.js'}
   %script{:src => '/javascripts/script.js'}
+  %script{:src => '/javascripts/mylibs/flashes.js'}
 
 
 
@@ -60,7 +62,7 @@
 
   -# Change UAXXXXXXXX1 to be your site's ID
   %script
-    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    window._gaq = [['_setAccount','UA-6353020-1'],['_trackPageview'],['_trackPageLoadTime']];
     Modernizr.load({load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'});
 
 

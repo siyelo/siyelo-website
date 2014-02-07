@@ -37,8 +37,12 @@
     Respond is a polyfill for min/max-width media queries. Modernizr enables HTML5 elements & feature detects;
     for optimal performance, create your own custom Modernizr build: www.modernizr.com/download/
   %script{:src => '/javascripts/libs/modernizr.custom.53451.js'}
+  %script{:src => '/javascripts/libs/jquery-1.10.2.min.js'}
+  %script{:src => '/javascripts/libs/jquery.gallery.js'}
+  %script{:src => '/javascripts/mylibs/projects-slide.js'}
+  %script{:src => '/javascripts/mylibs/flashes.js'}
 
-%body{"data-spy" => 'scroll', "data-target" => '#main-nav'}
+%body
 
   = partial('./views/shared/_flashes.haml')
   = yield
@@ -48,6 +52,7 @@
   -# JavaScript at the bottom for fast page loading
 
   -# Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline
+
   %script{:src => '/javascripts/libs/jquery-1.10.2.min.js'}
   %script{:src => '/javascripts/libs/jquery.gallery.js'}
   / %script{:src => '/javascripts/mylibs/projects-slide.js'}

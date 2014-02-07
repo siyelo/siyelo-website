@@ -47,3 +47,14 @@ If you are working with SASS, execute
     compass watch stylesheets/screen.sass
 
 so Compass can compile your SASS on the fly.
+
+
+# Deployment
+
+## Setup
+
+    git remote add production git@heroku.com:siyelo.git
+
+## Deploy
+
+    git push heroku master
