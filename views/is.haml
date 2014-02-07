@@ -5,22 +5,27 @@
       %i.fa.fa-chevron-left
       Go back to the site
 
-%nav#slide-nav
-  %a{:href=>"/clients/talented-africa", :id=>"previous-slide"}
-    %i.fa.fa-chevron-left
-  %a{:href=>"/clients/clinton-health-access-initiative", :id=>"next-slide"}
-    %i.fa.fa-chevron-right
-
 %section.case
+  .image
+    %section#dg-container.dg-container
+      .dg-wrapper
+        %a{href: "#"}
+          %img{alt: "image05", src: "/images/study/is1.png"}
+        %a{href: "#"}
+          %img{alt: "image06", src: "/images/study/is2.png"}
+        %a{href: "#"}
+          %img{alt: "image07", src: "/images/study/is3.png"}
+      %nav
+        %span.dg-prev
+          %i.fa.fa-chevron-left
+        %span.dg-next
+          %i.fa.fa-chevron-right
+
   .wrapper
-
-    %h1 Internet Solutions
-    %h2 Market leader in Communications & Connectivity
-
-    .image
-      %img{:src=>"/images/study/is.jpg"}
-
-    %h2 A business that had outgrown it’s software
+    %h1 Streamline your business
+    %h2
+      %a{:href=>"http://vpn-pricing.herokuapp.com/", :target=>"_blank"} Internet Solutions
+      %span A business that had outgrown it’s software
 
     %p
       Internet Solutions (IS) is a market leader in Africa with their
@@ -54,3 +59,43 @@
     %p Many challenges were met and overcome by Siyelo in the creation of a new VPN pricing tool. We helped unscramble and extract the key business logic that had accumulated organically in their old Excel-based system over the past 12 years, and rapidly build a new web-based solution.
 
     %p By collaborating closely with the key stakeholders, and utilizing leading edge tools like Backbone.js, Rails and cloud services, we were able to launch two web applications, for their domestic and international sales teams respectively. The IS sales teams can now properly manage their pricing, quoting and contracts in a central location, while enjoying a significantly reduced administration burden.
+
+%nav#slide-nav
+  %ul
+
+    %li
+      %a{:href=>"/clients/talented-africa"}
+        %img{:src=>"/images/logos/tad.png"}
+        %br
+        Launch a new idea
+        %span Talented Africa
+    %li
+      %a{:href=>"/clients/internet-solutions", :class=>"active"}
+        %img{:src=>"/images/logos/is.png"}
+        %br
+        Streamline your business
+        %span Internet Solutions
+    %li
+      %a{:href=>"/clients/clinton-health-access-initiative"}
+        %img{:src=>"/images/logos/chai.png"}
+        %br
+        Improve your user's experience
+        %span Clinton Health Access Initiative
+    %li
+      %a{:href=>"/clients/cooco"}
+        %img{:src=>"/images/logos/eos.png"}
+        %br
+        Rescue a project
+        %span EoS Marketplace
+    %li
+      %a{:href=>"/clients/mad-mimi"}
+        %img{:src=>"/images/logos/madmimi.png"}
+        %br
+        Improve an existing product
+        %span Mad Mimi
+
+  %p
+    %a{:href=>"/clients/internet-solutions", :id=>"previous-slide"}
+      %i.fa.fa-chevron-left
+    %a{:href=>"/clients/cooco", :id=>"next-slide"}
+      %i.fa.fa-chevron-right

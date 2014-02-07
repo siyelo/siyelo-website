@@ -5,22 +5,28 @@
       %i.fa.fa-chevron-left
       Go back to the site
 
-%nav#slide-nav
-  %a{:href=>"/clients/mad-mimi", :id=>"previous-slide"}
-    %i.fa.fa-chevron-left
-  %a{:href=>"/clients/internet-solutions", :id=>"next-slide"}
-    %i.fa.fa-chevron-right
-
 %section.case
+  .image
+    %section#dg-container.dg-container
+      .dg-wrapper
+        %a{href: "#"}
+          %img{alt: "image05", src: "/images/study/tad1.png"}
+        %a{href: "#"}
+          %img{alt: "image06", src: "/images/study/tad2.png"}
+        %a{href: "#"}
+          %img{alt: "image07", src: "/images/study/tad3.png"}
+      %nav
+        %span.dg-prev
+          %i.fa.fa-chevron-left
+        %span.dg-next
+          %i.fa.fa-chevron-right
+
   .wrapper
 
-    %h1 Talented Africa
-    %h2 Bookkeeping for everyone
-
-    .image
-      %img{:src=>"/images/study/tad.jpg"}
-
-    %h2 A new approach to an old problem
+    %h1 Launch a new idea
+    %h2
+      %a{:href=>"http://tad-staging.herokuapp.com/", :target=>"_blank"} Talented Africa:
+      %span A new approach to an old problem
 
     %p An extremely easy-to-use accounting package and micro-finance portal for businesses who are struggling to keep their records. Talented Africa came to Siyelo with several years experience working with, and understanding the challenges facing small enterprises, but lacking the technology to implement their innovative ideas and scale their operations.
 
@@ -29,3 +35,43 @@
     %p We started with several intensive workshops focused on understanding the unique context in which TA will primarily operate (low-bandwidth, low-technology areas), and helped formulate a product roadmap that aligns with TA’s business strategy.
 
     %p With a solid understanding of TA’s context and vision, we designed a friendly and scalable web-based, mobile-friendly solution to centralize their operations and reach more customers. Leveraging the power of Rails, Postgres, Coffeescript and cloud services, TA is built on a solid foundation for the future, and extensible enough for whatever the new ideas the TA team has along the way.
+
+%nav#slide-nav
+  %ul
+
+    %li
+      %a{:href=>"/clients/talented-africa", :class=>"active"}
+        %img{:src=>"/images/logos/tad.png"}
+        %br
+        Launch a new idea
+        %span Talented Africa
+    %li
+      %a{:href=>"/clients/internet-solutions"}
+        %img{:src=>"/images/logos/is.png"}
+        %br
+        Streamline your business
+        %span Internet Solutions
+    %li
+      %a{:href=>"/clients/clinton-health-access-initiative"}
+        %img{:src=>"/images/logos/chai.png"}
+        %br
+        Improve your user's experience
+        %span Clinton Health Access Initiative
+    %li
+      %a{:href=>"/clients/cooco"}
+        %img{:src=>"/images/logos/eos.png"}
+        %br
+        Rescue a project
+        %span EoS Marketplace
+    %li
+      %a{:href=>"/clients/mad-mimi"}
+        %img{:src=>"/images/logos/madmimi.png"}
+        %br
+        Improve an existing product
+        %span Mad Mimi
+
+  %p
+    %a{:href=>"/clients/internet-solutions", :id=>"previous-slide"}
+      %i.fa.fa-chevron-left
+    %a{:href=>"/clients/cooco", :id=>"next-slide"}
+      %i.fa.fa-chevron-right

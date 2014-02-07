@@ -103,7 +103,7 @@
 					'-o-transform'		: 'translateX(-500px) translateZ(0px) rotateY(0deg) scale(0.8)',
 					'-ms-transform'		: 'translateX(-500px) translateZ(0px) rotateY(0deg) scale(0.8)',
 					'transform'		: 'translateX(-500px) translateZ(0px) rotateY(0deg) scale(0.8)',
-                                        'left'                  : '140px',
+                                        'left'                  : '50px',
                                         'z-index'               : '-1'
 				};
 
@@ -113,7 +113,7 @@
 					'-o-transform'		: 'translateX(500px) translateZ(0px) rotateY(0deg) scale(0.8)',
 					'-ms-transform'		: 'translateX(500px) translateZ(0px) rotateY(0deg) scale(0.8)',
 					'transform'		: 'translateX(500px) translateZ(0px) rotateY(0deg) scale(0.8)',
-                                        'left'                  : '-140px',
+                                        'left'                  : '-50px',
                                         'z-index'               : '-1'
 				};
 
@@ -267,7 +267,7 @@
 							'transform'		: 'translateX(-500px) translateZ(0px) rotateY(0deg) scale(0.8)',
 							'opacity'		: 0.4,
 							'visibility'		: 'visible',
-                                                        'left'                  : '140px',
+                                                        'left'                  : '70px',
                                                         'z-index'               : '-1'
 						};
 						break;
@@ -280,7 +280,7 @@
 							'transform'		: 'translateX(500px) translateZ(0px) rotateY(0deg) scale(0.8)',
 							'opacity'			: 0.4,
 							'visibility'		: 'visible',
-                                                        'left'                  : '-140px',
+                                                        'left'                  : '-70px',
                                                         'z-index'               : '-1'
 
 						};

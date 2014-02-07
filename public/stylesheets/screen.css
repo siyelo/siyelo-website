@@ -880,6 +880,11 @@ section.case a:hover, section.case a:focus {
   display: table;
   clear: both;
 }
+@media screen and (min-width: 801px) {
+  #slide-nav ul {
+    padding-bottom: 1.3em;
+  }
+}
 @media screen and (max-width: 800px) {
   #slide-nav ul {
     display: none;
@@ -918,6 +923,12 @@ section.case a:hover, section.case a:focus {
   color: #ed9322;
   display: block;
   font: 0.5em Arial;
+  padding-top: 0.3em;
+}
+#slide-nav a img {
+  clear: both;
+  margin-bottom: -30px;
+  text-align: center;
 }
 #slide-nav p {
   display: none;
@@ -1142,7 +1153,7 @@ section.case a:hover, section.case a:focus {
 
 .dg-wrapper {
   max-width: 640px;
-  height: 500px;
+  height: 540px;
   margin: 0 auto;
   position: relative;
   width: 100%;

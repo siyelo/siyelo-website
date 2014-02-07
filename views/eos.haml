@@ -5,22 +5,28 @@
       %i.fa.fa-chevron-left
       Go back to the site
 
-%nav#slide-nav
-  %a{:href=>"/clients/clinton-health-access-initiative", :id=>"previous-slide"}
-    %i.fa.fa-chevron-left
-  %a{:href=>"/clients/mad-mimi", :id=>"next-slide"}
-    %i.fa.fa-chevron-right
-
 %section.case
+  .image
+    %section#dg-container.dg-container
+      .dg-wrapper
+        %a{href: "#"}
+          %img{alt: "image05", src: "/images/study/eos1.png"}
+        %a{href: "#"}
+          %img{alt: "image06", src: "/images/study/eos2.png"}
+        %a{href: "#"}
+          %img{alt: "image07", src: "/images/study/eos3.png"}
+      %nav
+        %span.dg-prev
+          %i.fa.fa-chevron-left
+        %span.dg-next
+          %i.fa.fa-chevron-right
+
   .wrapper
 
-    %h1 EoS Marketplace
-    %h2 An innovative free-market
-
-    .image
-      %img{:src=>"/images/study/eos.jpg"}
-
-    %h2 A project on the brink
+    %h1 Rescue a project
+    %h2
+      %a{:href=>"http://eosmarketplace.com/", :target=>"_blank"} EoS Marketplace
+      %span A project on the brink
 
     %p
       Cooco had outsourced the development of their social networking
@@ -49,3 +55,42 @@
       and well-tested Ruby on Rails code, and a lot of incredible collaboration
       we launched EoS in-time for the next round of funding.
 
+%nav#slide-nav
+  %ul
+
+    %li
+      %a{:href=>"/clients/talented-africa"}
+        %img{:src=>"/images/logos/tad.png"}
+        %br
+        Launch a new idea
+        %span Talented Africa
+    %li
+      %a{:href=>"/clients/internet-solutions"}
+        %img{:src=>"/images/logos/is.png"}
+        %br
+        Streamline your business
+        %span Internet Solutions
+    %li
+      %a{:href=>"/clients/clinton-health-access-initiative"}
+        %img{:src=>"/images/logos/chai.png"}
+        %br
+        Improve your user's experience
+        %span Clinton Health Access Initiative
+    %li
+      %a{:href=>"/clients/cooco", :class=>"active"}
+        %img{:src=>"/images/logos/eos.png"}
+        %br
+        Rescue a project
+        %span EoS Marketplace
+    %li
+      %a{:href=>"/clients/mad-mimi"}
+        %img{:src=>"/images/logos/madmimi.png"}
+        %br
+        Improve an existing product
+        %span Mad Mimi
+
+  %p
+    %a{:href=>"/clients/internet-solutions", :id=>"previous-slide"}
+      %i.fa.fa-chevron-left
+    %a{:href=>"/clients/cooco", :id=>"next-slide"}
+      %i.fa.fa-chevron-right
