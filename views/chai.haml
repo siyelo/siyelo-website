@@ -5,27 +5,27 @@
       %i.fa.fa-chevron-left
       Go back to the site
 
-%nav#slide-nav
-  %a{:href=>"/clients/internet-solutions", :id=>"previous-slide"}
-    %i.fa.fa-chevron-left
-  %a{:href=>"/clients/cooco", :id=>"next-slide"}
-    %i.fa.fa-chevron-right
+
 
 %section.case
+  .image
+    %section#dg-container.dg-container
+      .dg-wrapper
+        %a{href: "#"}
+          %img{alt: "image05", src: "/images/study/chai1.png"}
+        %a{href: "#"}
+          %img{alt: "image06", src: "/images/study/chai2.png"}
+        %a{href: "#"}
+          %img{alt: "image07", src: "/images/study/chai3.png"}
+      %nav
+        %span.dg-prev
+          %i.fa.fa-chevron-left
+        %span.dg-next
+          %i.fa.fa-chevron-right
+
   .wrapper
 
-    .image
-      %section#dg-container.dg-container
-        .dg-wrapper
-          %a{href: "#"}
-            %img{alt: "image05", src: "/images/study/chai.jpg"}/
-          %a{href: "#"}
-            %img{alt: "image06", src: "/images/study/chai.jpg"}/
-          %a{href: "#"}
-            %img{alt: "image07", src: "/images/study/chai.jpg"}/
-        %nav
-          %span.dg-prev &lt;
-          %span.dg-next &gt;
+    
 
     %h1 Improve your user's experience
 
@@ -42,3 +42,33 @@
     %p Not only were we responsible for the designs, we also helped implement them. With their development team having chosen a Java-based framework that we were relatively unfamiliar with, we were nonetheless able rapidly integrate using our expertise with JS/HAML/SASS/CSS3.
 
     %p What’s more, we collaborated entirely remotely on this project, using great tools like Google Docs, Github, Dropbox, PivotalTracker and Skype.
+
+%nav#slide-nav
+
+  
+  %ul
+    %li
+      %a{:href=>"/clients/talented-africa"}
+        Launch a new idea
+        %span Talented Africa
+    %li
+      %a{:href=>"/clients/internet-solutions"}
+        Streamline your business
+        %span Internet Solutions
+    %li
+      %a{:href=>"/clients/clinton-health-access-initiative"}
+        Improve your user's experience
+        %span Clinton Health Access Initiative
+    %li
+      %a{:href=>"/clients/cooco"}
+        Rescue a project
+        %span EoS Marketplace
+    %li
+      %a{:href=>"/clients/mad-mimi"}
+        Improve an existing product
+        %span Mad Mimi
+  %p
+    %a{:href=>"/clients/internet-solutions", :id=>"previous-slide"}
+      %i.fa.fa-chevron-left
+    %a{:href=>"/clients/cooco", :id=>"next-slide"}
+      %i.fa.fa-chevron-right

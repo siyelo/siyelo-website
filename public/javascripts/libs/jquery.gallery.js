@@ -98,19 +98,19 @@
 			if( this.support3d && this.supportTrans ) {
 
 				leftCSS 	= {
-					'-webkit-transform'	: 'translateX(-500px) translateZ(-200px) rotateY(0deg)',
-					'-moz-transform'	: 'translateX(-500px) translateZ(-200px) rotateY(0deg)',
-					'-o-transform'		: 'translateX(-500px) translateZ(-200px) rotateY(0deg)',
-					'-ms-transform'		: 'translateX(-500px) translateZ(-200px) rotateY(0deg)',
-					'transform'		: 'translateX(-500px) translateZ(-200px) rotateY(0deg)'
+					'-webkit-transform'	: 'translateX(-500px) translateZ(-250px) rotateY(0deg)',
+					'-moz-transform'	: 'translateX(-500px) translateZ(-250px) rotateY(0deg)',
+					'-o-transform'		: 'translateX(-500px) translateZ(-250px) rotateY(0deg)',
+					'-ms-transform'		: 'translateX(-500px) translateZ(-250px) rotateY(0deg)',
+					'transform'		: 'translateX(-500px) translateZ(-250px) rotateY(0deg)'
 				};
 
 				rightCSS	= {
-					'-webkit-transform'	: 'translateX(500px) translateZ(-200px) rotateY(0deg)',
-					'-moz-transform'	: 'translateX(500px) translateZ(-200px) rotateY(0deg)',
-					'-o-transform'		: 'translateX(500px) translateZ(-200px) rotateY(0deg)',
-					'-ms-transform'		: 'translateX(500px) translateZ(-200px) rotateY(0deg)',
-					'transform'		: 'translateX(500px) translateZ(-200px) rotateY(0deg)'
+					'-webkit-transform'	: 'translateX(500px) translateZ(-250px) rotateY(0deg)',
+					'-moz-transform'	: 'translateX(500px) translateZ(-250px) rotateY(0deg)',
+					'-o-transform'		: 'translateX(500px) translateZ(-250px) rotateY(0deg)',
+					'-ms-transform'		: 'translateX(500px) translateZ(-250px) rotateY(0deg)',
+					'transform'		: 'translateX(500px) translateZ(-250px) rotateY(0deg)'
 				};
 
 				leftCSS.opacity		= 0.4;
@@ -122,19 +122,19 @@
 			else if( this.support2d && this.supportTrans ) {
 
 				leftCSS 	= {
-					'-webkit-transform'	: 'translateX(-500px) translateZ(-200px) rotateY(0deg) scale(0)',
-					'-moz-transform'	: 'translateX(-500px) translateZ(-200px) rotateY(0deg) scale(0)',
-					'-o-transform'		: 'translateX(-500px) translateZ(-200px) rotateY(0deg) scale(0)',
-					'-ms-transform'		: 'translateX(-500px) translateZ(-200px) rotateY(0deg) scale(0)',
-					'transform'		: 'translateX(-500px) translateZ(-200px) rotateY(0deg) scale(0)',
+					'-webkit-transform'	: 'translateX(-500px) translateZ(-250px) rotateY(0deg) scale(0)',
+					'-moz-transform'	: 'translateX(-500px) translateZ(-250px) rotateY(0deg) scale(0)',
+					'-o-transform'		: 'translateX(-500px) translateZ(-250px) rotateY(0deg) scale(0)',
+					'-ms-transform'		: 'translateX(-500px) translateZ(-250px) rotateY(0deg) scale(0)',
+					'transform'		: 'translateX(-500px) translateZ(-250px) rotateY(0deg) scale(0)',
 				};
 
 				rightCSS	= {
-					'-webkit-transform'	: 'translateX(500px) translateZ(-200px) rotateY(0deg) scale(0)',
-					'-moz-transform'	: 'translateX(500px) translateZ(-200px) rotateY(0deg) scale(0)',
-					'-o-transform'		: 'translateX(500px) translateZ(-200px) rotateY(0deg) scale(0)',
-					'-ms-transform'		: 'translateX(500px) translateZ(-200px) rotateY(0deg) scale(0)',
-					'transform'		: 'translateX(500px) translateZ(-200px) rotateY(0deg) scale(0)',
+					'-webkit-transform'	: 'translateX(500px) translateZ(-250px) rotateY(0deg) scale(0)',
+					'-moz-transform'	: 'translateX(500px) translateZ(-250px) rotateY(0deg) scale(0)',
+					'-o-transform'		: 'translateX(500px) translateZ(-250px) rotateY(0deg) scale(0)',
+					'-ms-transform'		: 'translateX(500px) translateZ(-250px) rotateY(0deg) scale(0)',
+					'transform'		: 'translateX(500px) translateZ(-250px) rotateY(0deg) scale(0)',
 				};
 
 				currentCSS	= {
@@ -234,44 +234,44 @@
 				switch( position ) {
 					case 'outleft':
 						return {
-							'-webkit-transform'	: 'translateX(500px) translateZ(-200px) rotateY(0deg)',
-							'-moz-transform'	: 'translateX(500px) translateZ(-200px) rotateY(0deg)',
-							'-o-transform'		: 'translateX(500px) translateZ(-200px) rotateY(0deg)',
-							'-ms-transform'		: 'translateX(500px) translateZ(-200px) rotateY(0deg)',
-							'transform'		: 'translateX(500px) translateZ(-200px) rotateY(0deg)',
+							'-webkit-transform'	: 'translateX(500px) translateZ(-250px) rotateY(0deg)',
+							'-moz-transform'	: 'translateX(500px) translateZ(-250px) rotateY(0deg)',
+							'-o-transform'		: 'translateX(500px) translateZ(-250px) rotateY(0deg)',
+							'-ms-transform'		: 'translateX(500px) translateZ(-250px) rotateY(0deg)',
+							'transform'		: 'translateX(500px) translateZ(-250px) rotateY(0deg)',
 							'opacity'		: 0,
 							'visibility'		: 'hidden'
 						};
 						break;
 					case 'outright':
 						return {
-							'-webkit-transform'	: 'translateX(-500px) translateZ(-200px) rotateY(0deg)',
-							'-moz-transform'	: 'translateX(-500px) translateZ(-200px) rotateY(0deg)',
-							'-o-transform'		: 'translateX(-500px) translateZ(-200px) rotateY(0deg)',
-							'-ms-transform'		: 'translateX(-500px) translateZ(-200px) rotateY(0deg)',
-							'transform'		: 'translateX(-500px) translateZ(-200px) rotateY(0deg)',
+							'-webkit-transform'	: 'translateX(-500px) translateZ(-250px) rotateY(0deg)',
+							'-moz-transform'	: 'translateX(-500px) translateZ(-250px) rotateY(0deg)',
+							'-o-transform'		: 'translateX(-500px) translateZ(-250px) rotateY(0deg)',
+							'-ms-transform'		: 'translateX(-500px) translateZ(-250px) rotateY(0deg)',
+							'transform'		: 'translateX(-500px) translateZ(-250px) rotateY(0deg)',
 							'opacity'		: 0,
 							'visibility'		: 'hidden'
 						};
 						break;
 					case 'left':
 						return {
-							'-webkit-transform'	: 'translateX(-500px) translateZ(-200px) rotateY(0deg)',
-							'-moz-transform'	: 'translateX(-500px) translateZ(-200px) rotateY(0deg)',
-							'-o-transform'		: 'translateX(-500px) translateZ(-200px) rotateY(0deg)',
-							'-ms-transform'		: 'translateX(-500px) translateZ(-200px) rotateY(0deg)',
-							'transform'		: 'translateX(-500px) translateZ(-200px) rotateY(0deg)',
+							'-webkit-transform'	: 'translateX(-500px) translateZ(-250px) rotateY(0deg)',
+							'-moz-transform'	: 'translateX(-500px) translateZ(-250px) rotateY(0deg)',
+							'-o-transform'		: 'translateX(-500px) translateZ(-250px) rotateY(0deg)',
+							'-ms-transform'		: 'translateX(-500px) translateZ(-250px) rotateY(0deg)',
+							'transform'		: 'translateX(-500px) translateZ(-250px) rotateY(0deg)',
 							'opacity'		: 0.4,
 							'visibility'		: 'visible'
 						};
 						break;
 					case 'right':
 						return {
-							'-webkit-transform'	: 'translateX(500px) translateZ(-200px) rotateY(0deg)',
-							'-moz-transform'	: 'translateX(500px) translateZ(-200px) rotateY(0deg)',
-							'-o-transform'		: 'translateX(500px) translateZ(-200px) rotateY(0deg)',
-							'-ms-transform'		: 'translateX(500px) translateZ(-200px) rotateY(0deg)',
-							'transform'		: 'translateX(500px) translateZ(-200px) rotateY(0deg)',
+							'-webkit-transform'	: 'translateX(500px) translateZ(-250px) rotateY(0deg)',
+							'-moz-transform'	: 'translateX(500px) translateZ(-250px) rotateY(0deg)',
+							'-o-transform'		: 'translateX(500px) translateZ(-250px) rotateY(0deg)',
+							'-ms-transform'		: 'translateX(500px) translateZ(-250px) rotateY(0deg)',
+							'transform'		: 'translateX(500px) translateZ(-250px) rotateY(0deg)',
 							'opacity'			: 0.4,
 							'visibility'		: 'visible'
 						};

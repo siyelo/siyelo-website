@@ -4,6 +4,9 @@
 	padding: 9em 0 0
 	position: relative
 	z-index: 2
+	@include pie-clearfix
+	@media screen and (max-width: 800px)
+		padding-top: 5em
 	.wrapper
 		padding-bottom: 9em
 	ul
@@ -48,14 +51,18 @@
 	float: left
 	margin-right: 30px
 .links
+	@include pie-clearfix
 	@media screen and (min-width: 801px)
 		float: left
 		width: 40%
 .text
-	float: right
-	width: 60%
+	@include pie-clearfix
+	@media screen and (min-width: 801px)
+		float: right
+		width: 60%
 	li
 		font-size: 14px
+		margin-bottom: 3em
 		@media screen and (min-width: 801px)
 			float: left
 			padding-left: 3.33%
@@ -66,8 +73,9 @@
 	a
 		background: $two
 		clear: left
-		color: $one !important
+		color: #fff !important
 		display: inline-block
-		margin-top: 10px
-		padding: 10px 20px
+		margin-top: 15px
+		padding: 7px 20px
 		@include border-radius(2px)
+		@include text-shadow(rgba(0, 0, 0, 0.1) 1px 1px 1px)
