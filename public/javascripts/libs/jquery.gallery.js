@@ -165,7 +165,7 @@
 
 			this.$items.removeClass('dg-center');
 
-			this.$currentItm	= ths.$items.eq( this.current );
+			this.$currentItm	= this.$items.eq( this.current );
 			this.$leftItm		= ( this.current === 0 ) ? this.$items.eq( this.itemsCount - 1 ) : this.$items.eq( this.current - 1 );
 			this.$rightItm		= ( this.current === this.itemsCount - 1 ) ? this.$items.eq( 0 ) : this.$items.eq( this.current + 1 );
 
