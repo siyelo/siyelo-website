@@ -1,6 +1,27 @@
 %header#header.sticky
-  = partial('./views/shared/_header.haml')
-
+  .wrapper
+    %h1#logo
+      %a.js-smooth{:href => "/"}
+        %img{src: '/images/logo.png', :title => "Siyelo", :alt => "Siyelo logo"}
+    %a.right#menu-toggle{href: '#'}
+      %i.fa.fa-bars
+    %nav#main-nav
+      %ul
+        %li
+          %a{href: '/#work'}
+            Work
+        %li
+          %a{href: '/#team'}
+            Team
+        %li
+          %a{href: '/#community'}
+            Community
+        %li
+          %a{href: '/#office'}
+            Offices
+        %li
+          %a{href: 'hire-us', class: 'hireus'}
+            Hire Us
 %section#form
 
   .wrapper
