@@ -41,11 +41,6 @@
 .projects
   @include pie-clearfix
   li
-    //display: inline
-    //float: left
-    //height: 500px
-    //padding: 40px
-    //width: 20%
     border-top: 10px dotted #f5f5f5
     padding-top: 7em
     margin-bottom: 6em
@@ -53,8 +48,10 @@
     position: relative
     @include box-sizing(border-box)
     @include pie-clearfix
-    &.ta, &.is, &.chai, &.cooco, &.madmimi
-      //background: url("/images/madmimi.jpg") no-repeat -350px center
+    @media screen and (min-width: 1441px)
+      margin-bottom: 7em
+      padding-top: 8em
+
   .third
     margin-bottom: 20px
     max-width: 400px
@@ -161,33 +158,35 @@
     height: 100%
 
 .community
-  background: #f5f5f5
+  background: url("/images/community.jpg") no-repeat center fixed #f5f5f5
+
   @include pie-clearfix
   li
-    height: 480px
+    background: rgba(0, 0, 0, 0.5)
+    height: 750px
     padding: 8em 0
+    position: relative
     text-align: center
     @include box-sizing(border-box)
-    &.cnc
-      background: url("/images/events/cnc.jpg") no-repeat center
-    &.rb
-      background: url("/images/events/rb.jpg") no-repeat center
-    &.rf
-      background: url("/images/events/rf.jpg") no-repeat center
-    &.cr
-      background: url("/images/events/cr.jpg") no-repeat center
-  h3
-    background: rgba(0, 0, 0, 0.6)
+    @include transition(all .4s)
+
+  h2
+    //background: rgba(0, 0, 0, 0.6)
     color: #fff
-    display: inline-block
-    line-height: 1.2
-    padding: .4em 1em .3em
+    line-height: .9
+    padding: .8em 0 .7em
     text-align: center
     span
       display: block
-      font: 16px "open sans"
+      font: 16px/2 "open sans"
+    img
+      margin-top: .6em
+      max-width: 100%
+
 
 .offices
+  @include pie-clearfix
+  padding-bottom: 7em
   > li
     margin-bottom: 3em
     img
@@ -210,16 +209,22 @@
     .smk
       float: right
       text-align: right
+      position: relative
       width: 40%
     .planet
       overflow: hidden
-      position: absolute
-      @include border-radius(300px)
+      position: relative
+      
+      a
+        display: block
+        img
+          @include border-radius(300px)
     .big
-      bottom: -8em
+      top: -3em
       left: 10%
     .small
-      top: 0
+      top: -6em
+      right: 3%
       
     ul
       opacity: .7
@@ -228,7 +233,7 @@
 @media only screen and (min-width: 1281px)
   .offices
     .small
-      left: 40em
+
 
 // Case studies
 section.case

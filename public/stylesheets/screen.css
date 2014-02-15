@@ -551,6 +551,12 @@ a#work-link {
   display: table;
   clear: both;
 }
+@media screen and (min-width: 1441px) {
+  .projects li {
+    margin-bottom: 7em;
+    padding-top: 8em;
+  }
+}
 .projects .third {
   margin-bottom: 20px;
   max-width: 400px;
@@ -711,7 +717,7 @@ a#work-link {
 }
 
 .community {
-  background: whitesmoke;
+  background: url("/images/community.jpg") no-repeat center fixed whitesmoke;
   *zoom: 1;
 }
 .community:after {
@@ -720,38 +726,43 @@ a#work-link {
   clear: both;
 }
 .community li {
-  height: 480px;
+  background: rgba(0, 0, 0, 0.5);
+  height: 750px;
   padding: 8em 0;
+  position: relative;
   text-align: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
-.community li.cnc {
-  background: url("/images/events/cnc.jpg") no-repeat center;
-}
-.community li.rb {
-  background: url("/images/events/rb.jpg") no-repeat center;
-}
-.community li.rf {
-  background: url("/images/events/rf.jpg") no-repeat center;
-}
-.community li.cr {
-  background: url("/images/events/cr.jpg") no-repeat center;
-}
-.community h3 {
-  background: rgba(0, 0, 0, 0.6);
+.community h2 {
   color: white;
-  display: inline-block;
-  line-height: 1.2;
-  padding: 0.4em 1em 0.3em;
+  line-height: 0.9;
+  padding: 0.8em 0 0.7em;
   text-align: center;
 }
-.community h3 span {
+.community h2 span {
   display: block;
-  font: 16px "open sans";
+  font: 16px/2 "open sans";
+}
+.community h2 img {
+  margin-top: 0.6em;
+  max-width: 100%;
 }
 
+.offices {
+  *zoom: 1;
+  padding-bottom: 7em;
+}
+.offices:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .offices > li {
   margin-bottom: 3em;
 }
@@ -779,11 +790,17 @@ a#work-link {
   .offices .smk {
     float: right;
     text-align: right;
+    position: relative;
     width: 40%;
   }
   .offices .planet {
     overflow: hidden;
-    position: absolute;
+    position: relative;
+  }
+  .offices .planet a {
+    display: block;
+  }
+  .offices .planet a img {
     -webkit-border-radius: 300px;
     -moz-border-radius: 300px;
     -ms-border-radius: 300px;
@@ -791,20 +808,16 @@ a#work-link {
     border-radius: 300px;
   }
   .offices .big {
-    bottom: -8em;
+    top: -3em;
     left: 10%;
   }
   .offices .small {
-    top: 0;
+    top: -6em;
+    right: 3%;
   }
   .offices ul {
     opacity: 0.7;
     font-size: 0.9em;
-  }
-}
-@media only screen and (min-width: 1281px) {
-  .offices .small {
-    left: 40em;
   }
 }
 section.case {
@@ -1038,9 +1051,8 @@ section.case a:hover, section.case a:focus {
 }
 
 #footer {
-  background: #06121d;
+  background: url("/images/engine-blur.jpg") fixed;
   color: white;
-  padding: 9em 0 0;
   position: relative;
   z-index: 2;
   *zoom: 1;
@@ -1056,7 +1068,7 @@ section.case a:hover, section.case a:focus {
   }
 }
 #footer .wrapper {
-  padding-bottom: 9em;
+  padding: 9em 0 12em;
 }
 #footer ul {
   float: right;
@@ -1064,7 +1076,6 @@ section.case a:hover, section.case a:focus {
 #footer a {
   color: #ed9322;
   margin-right: 3px;
-  opacity: 0.8;
   text-decoration: none;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -1073,6 +1084,19 @@ section.case a:hover, section.case a:focus {
 }
 #footer a:hover, #footer a:focus {
   opacity: 1;
+}
+#footer a.circle {
+  display: block;
+  left: 50%;
+  margin-left: -60px;
+  position: absolute;
+  overflow: hidden;
+  top: -60px;
+}
+#footer a.circle img {
+  float: left;
+  max-width: 100%;
+  width: 100%;
 }
 #footer p.copyright {
   background: rgba(0, 0, 0, 0.8);
@@ -1085,13 +1109,13 @@ section.case a:hover, section.case a:focus {
   text-transform: uppercase;
 }
 #footer p.contact {
-  padding-left: 100px;
   margin-bottom: 7px;
   opacity: 0.8;
+  padding-left: 2px;
 }
 #footer p.contact span {
   display: block;
-  margin-bottom: 3px;
+  margin-bottom: 0.4em;
 }
 #footer p.contact span:last-child {
   font-size: 14px;
@@ -1101,13 +1125,8 @@ section.case a:hover, section.case a:focus {
   margin-right: 5px;
 }
 #footer p i.fa-twitter, #footer p i.fa-github, #footer p i.fa-rss {
-  font-size: 1.4em;
+  font-size: 2em;
   margin-top: 5px;
-}
-
-.si {
-  float: left;
-  margin-right: 30px;
 }
 
 .links {
@@ -1142,17 +1161,17 @@ section.case a:hover, section.case a:focus {
 }
 .text li {
   font-size: 14px;
-  margin-bottom: 3em;
+  margin-bottom: 4em;
 }
 @media screen and (min-width: 801px) {
   .text li {
     float: left;
-    padding-left: 3.33%;
-    width: 30%;
+    padding-left: 6.33%;
+    width: 27%;
   }
 }
 .text span {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
   display: block;
 }
 .text a {
@@ -1160,14 +1179,27 @@ section.case a:hover, section.case a:focus {
   clear: left;
   color: white !important;
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 1.5em;
   padding: 7px 20px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
-  text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px;
+  -webkit-box-shadow: #ba6000 0 3px 0;
+  -moz-box-shadow: #ba6000 0 3px 0;
+  box-shadow: #ba6000 0 3px 0;
+  text-shadow: rgba(0, 0, 0, 0.15) 1px 1px 0;
+}
+.text i {
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 4em;
+  margin-bottom: 0.4em;
+}
+
+.si {
+  margin-bottom: 0.7em;
+  max-width: 60px;
 }
 
 .dg-container {
