@@ -42,11 +42,13 @@ class EmailSender
       email = params["email"]
       description = params["description"]
       portfolio_url = params["portfolio"]
+      position = params['position']
 
       mail_body = %Q(
       Hey!
 
-      #{full_name} just sent us a job application.
+      #{full_name} just sent us a job application for
+      the #{position} position.
 
       The applicatnt would describe himself as:
       #{description}

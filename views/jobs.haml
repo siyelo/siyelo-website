@@ -32,6 +32,16 @@
     %form{name: 'jobs_email', action: '/jobs', method: 'post'}
       %ul
         %li
+          What position do you apply for?
+          %br
+          Apprentice
+          %input{type: 'radio', name: 'position', value: 'APPRENTICE', checked: true }
+          Developer
+          %input{type: 'radio', name: 'position', value: 'DEVELOPER'}
+          Designer
+          %input{type: 'radio', name: 'position', value: 'DESIGNER'}
+
+        %li
           %input{type: 'text', name: 'full_name', placeholder: 'What is your name?'}
 
         %li
