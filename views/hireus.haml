@@ -46,7 +46,12 @@
           %input{type: 'text', name: 'budget', placeholder: 'What is your budget?'}
 
         %li
-          %input{type: 'hidden', name: 'favourite_movie', placeholder: 'What is your favourite movie?'}
+          %input{type: 'text', id: 'fav_movie', name: 'favourite_movie', placeholder: 'What is your favourite movie?'}
 
         %li
           %input{type: 'submit', value: 'Send'}
+
+%script
+  $(document).ready(function(){
+  $('#fav_movie').hide();
+  });
