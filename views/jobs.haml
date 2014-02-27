@@ -31,15 +31,15 @@
 
     %form{name: 'jobs_email', action: '/jobs', method: 'post'}
       %ul
-        %li
-          What position do you apply for?
-          %br
-          Apprentice
-          %input{type: 'radio', name: 'position', value: 'APPRENTICE', checked: true }
-          Developer
-          %input{type: 'radio', name: 'position', value: 'DEVELOPER'}
-          Designer
-          %input{type: 'radio', name: 'position', value: 'DESIGNER'}
+        %li.radio
+          %span What position do you apply for?
+          %input{type: 'radio', name: 'position', value: 'apprentice', id: 'apprentice'}
+          %label{for: 'apprentice'} Apprentice
+          %input{type: 'radio', name: 'position', value: 'developer', id: 'developer'}
+          %label{for: 'developer'} Developer
+          %input{type: 'radio', name: 'position', value: 'designer', id: 'designer'}
+          %label{for: 'designer'} Designer
+            
 
         %li
           %input{type: 'text', name: 'full_name', placeholder: 'What is your name?'}
