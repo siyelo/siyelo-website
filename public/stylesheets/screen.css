@@ -1356,11 +1356,8 @@ section.case a:hover, section.case a:focus {
 
 @media only screen and (max-width: 1440px) {
   #spaced h1 {
-    font-size: 139px;
+    font-size: 135px;
     max-width: 1000px;
-  }
-  #spaced h1 br {
-    display: none;
   }
   #spaced h2 {
     font-size: 28px;
@@ -1374,6 +1371,9 @@ section.case a:hover, section.case a:focus {
 @media only screen and (max-width: 1280px) {
   #spaced h1 {
     font-size: 125px;
+  }
+  #spaced h1 br {
+    display: none;
   }
   #spaced h2 {
     font-size: 26px;
