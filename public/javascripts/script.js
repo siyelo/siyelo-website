@@ -73,6 +73,47 @@ $(window).load(function(){
   });
 });
 
+// ScrollMagic
+
+var controller;
+$(document).ready(function($) {
+  // init controller
+  controller = new ScrollMagic();
+});
+
+$(document).ready(function($) {
+
+  var tween = TweenMax.to("#animate1", 1, {opacity: 1, scale: 1, left: 0});
+  var scene = new ScrollScene({triggerElement: "#trigger1"})
+    .setTween(tween)
+    .addTo(controller);
+
+  var tween = TweenMax.to("#animate2", 1, {opacity: 1, scale: 1, right: 0});
+  var scene = new ScrollScene({triggerElement: "#trigger2"})
+    .setTween(tween)
+    .addTo(controller);
+
+  var tween = TweenMax.to("#animate3", 1, {opacity: 1, scale: 1, left: 0});
+  var scene = new ScrollScene({triggerElement: "#trigger3"})
+    .setTween(tween)
+    .addTo(controller);
+
+  var tween = TweenMax.to("#animate4", 1, {opacity: 1, scale: 1, right: 0});
+  var scene = new ScrollScene({triggerElement: "#trigger4"})
+    .setTween(tween)
+    .addTo(controller);
+
+  var tween = TweenMax.to("#animate5", 1, {opacity: 1, scale: 1, left: 0});
+  var scene = new ScrollScene({triggerElement: "#trigger5"})
+    .setTween(tween)
+    .addTo(controller);
+
+  // show indicators (requires debug extension)
+  // scene.addIndicators();
+});
+
+
+
 // Google Maps API
 
 var map;
@@ -105,8 +146,6 @@ function initialize() {
       mapOptions);
   addMarker(map);
 }
-
-
 
 google.maps.event.addDomListener(window, 'load', initialize);
 

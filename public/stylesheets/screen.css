@@ -562,11 +562,18 @@ a#work-link {
   max-width: 400px;
   text-align: center;
 }
+.projects .preview {
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+}
 .projects .preview.left {
   margin-left: -3em;
+  left: -20em;
 }
 .projects .preview.right {
   margin-right: -3em;
+  right: -20em;
 }
 .projects .preview img {
   max-width: 100%;
