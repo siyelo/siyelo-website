@@ -4,7 +4,7 @@ $(document).ready(function(){
     e.preventDefault();
   });
   // sticky navigation menu
-  // stickyNav('#header');
+  stickyNav('#header');
 
   // smooth scrolling
   smoothScroll('js-smooth');
