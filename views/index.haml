@@ -1,6 +1,6 @@
 %script
   // sticky navigation menu
-  stickyNav('#header');
+  / stickyNav('#header');
 
 %header#header
   = partial('./views/shared/_header.haml')
@@ -278,25 +278,27 @@
 
     %ul.offices
       %li.ssa
+        %a{:href=>"https://plus.google.com/+SiyeloCapeTown/posts", :target=>"_blank", class: "office" }
+          %img{src: "./images/ssa.jpg"}
+
         %ul
           %li Suite 401
           %li 79 Roeland Street
           %li Cape Town, 8001
           %li South Africa
 
-        .big.planet
-          %a{:href=>"https://plus.google.com/+SiyeloCapeTown/posts", :target=>"_blank"}
-            %img{src: "./images/ssa.jpg"}
 
       %li.smk
+        %a{:href=>"https://plus.google.com/118213542007489012764/posts", :target=>"_blank", class: "office" }
+          %img{src: "./images/smk.jpg"}
+
         %ul
           %li Suite 105
           %li Marx & Engels 7
           %li Skopje, 1000
           %li Macedonia
-        .small.planet
-          %a{:href=>"https://plus.google.com/118213542007489012764/posts", :target=>"_blank"}
-            %img{src: "./images/smk.jpg"}
-
+          
+        
+  #map-canvas
 
 %script{:src => '/javascripts/mylibs/sticky-nav.js'}

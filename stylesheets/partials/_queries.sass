@@ -1,7 +1,7 @@
 @media only screen and (max-width: 1440px)
   #spaced
     h1
-      font-size: 135px
+      font-size: 130px
       max-width: 1000px
       
     h2
@@ -39,7 +39,7 @@
     display: block !important
 
   .wrapper
-    max-width: 1200px
+    max-width: 1280px
 
 @media only screen and (max-width: 800px)
 
@@ -134,13 +134,13 @@
     li
       float: left
       width: 50%
-  .offices
-    > li
-      margin-bottom: 3em
-    ul
-      margin-top: .7em
-
-
+  #map-canvas
+    height: 300px
+  #footer
+    .wrapper
+      padding-top: 4em
+    a.circle
+      top: -150px
 @media only screen and (max-width: 640px)
   #spaced
     hgroup
@@ -157,6 +157,7 @@
   .community
     li
       width: 100%
+      padding-bottom: 0
   .logos
     h2
       font-size: 45px
@@ -225,10 +226,16 @@
   .txt-heading
     padding-top: 5em
   .planet
-    margin: 0 -12%
+    @include clearfix
+    margin: 0 0 30px
+    max-height: 300px
+    img
+      display: block
+      margin-top: 10px
+      width: 100%
   .community li
     height: auto
-    padding: 6em 0
+    padding: 4em 0 0
   .cta a
     max-width: 200px
   .team li

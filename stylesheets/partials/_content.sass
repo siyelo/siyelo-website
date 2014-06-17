@@ -186,53 +186,46 @@
 
 .offices
   @include pie-clearfix
-  padding-bottom: 7em
+  padding: 4em 0
   > li
+    float: left
     margin-bottom: 3em
-    img
-      float: left
-      max-width: 100%
-  .smk img
-    max-width: 550px
-
-  .smk img
-    max-width: 340px
-
-@media only screen and (min-width: 1001px)
-  .offices
-    min-height: 540px
-    position: relative
-    .ssa
-      float: left
-      padding-top: 70px
-      width: 60%
-    .smk
-      float: right
-      text-align: right
-      position: relative
-      width: 40%
-    .planet
-      overflow: hidden
-      position: relative
-      
-      a
-        display: block
-        img
-          @include border-radius(300px)
-    .big
-      top: -3em
-      left: 10%
-    .small
-      top: -6em
-      right: 3%
-      
+    overflow: hidden
+    text-align: center
+    width: 50%
     ul
-      opacity: .7
-      font-size: .9em
+      clear: both
+      text-align: center
+    img
+      margin-bottom: 15px
+      max-width: 100%
+      position: relative
+      width: 85%
+      @include border-radius(400px)
+  @media only screen and (max-width: 401px)
+    padding: 3em 0
+    > li
+      float: none
+      display: block
+      width: 100%
 
-@media only screen and (min-width: 1281px)
-  .offices
-    .small
+
+#map-canvas
+  height: 450px
+  h2
+    font-size: 48px
+    line-height: 36px
+    padding: 20px 0 10px 10px
+    text-align: center
+    span
+      display: block
+      font: bold 14px "open sans"
+  p
+    padding: 0 0 5px 10px
+
+
+
+
 
 
 // Case studies

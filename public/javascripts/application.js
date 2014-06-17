@@ -8,3 +8,4 @@ $(document).ready(function() {
 	  .attr('target', '_blank');
 
 });
+

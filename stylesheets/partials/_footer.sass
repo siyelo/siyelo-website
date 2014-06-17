@@ -9,6 +9,8 @@
 		padding-top: 5em
 	.wrapper
 		padding: 9em 0 12em
+		@media screen and (max-width: 800px)
+			padding-bottom: 8em
 	ul
 		float: right
 	a
@@ -62,6 +64,11 @@
 	@media screen and (min-width: 801px)
 		float: left
 		width: 40%
+	@media screen and (max-width: 400px)
+		margin-top: 3em
+		width: 100%
+		text-align: center
+
 .text
 	@include pie-clearfix
 	@media screen and (min-width: 801px)
@@ -74,6 +81,8 @@
 			float: left
 			padding-left: 6.33%
 			width: 27%
+		@media screen and (max-width: 800px)
+			text-align: center
 	span
 		color: rgba(255, 255, 255, 0.8)
 		display: block
