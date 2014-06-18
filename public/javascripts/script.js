@@ -83,6 +83,30 @@ $(document).ready(function($) {
 
 $(document).ready(function($) {
 
+  // Background animations
+
+  var tween = TweenMax.to("#space", 6, {opacity: 1, parallax: 30});
+  var scene = new ScrollScene({triggerElement: "#spaced"})
+    .setTween(tween)
+    .addTo(controller);
+
+
+  // parallax
+  new ScrollScene({
+    triggerElement: "#spaced",
+    duration: $(window).height() + 300,
+    offset: -150
+  })
+  .addTo(controller)
+  .triggerHook("onCenter")
+  .setTween(new TimelineMax().add([
+    // TweenMax.fromTo("#spaced #big", 1, {scale: 2, alpha: 0.1, top: "100%"}, {top: "0%", ease: Linear.easeNone}),
+    TweenMax.to("#spaced #space", 1, {backgroundPosition: "0 50%", ease: Linear.easeNone})
+  ]));
+
+
+  // Spaced animations
+
   var tween = TweenMax.to("#animate0-1", 1, {opacity: 1, delay: 3});
   var scene = new ScrollScene({triggerElement: "#spaced"})
     .setTween(tween)
@@ -123,6 +147,12 @@ $(document).ready(function($) {
   var scene = new ScrollScene({triggerElement: "#spaced"})
     .setTween(tween)
     .addTo(controller);
+  var tween = TweenMax.to("#animate0-5", 1, {opacity: 1, delay: 3});
+  var scene = new ScrollScene({triggerElement: "#spaced"})
+    .setTween(tween)
+    .addTo(controller);
+
+  // Work animations
 
   var tween = TweenMax.to("#animate1-1", .6, {opacity: 1, scale: 1, left: 0});
   var scene = new ScrollScene({triggerElement: "#trigger1"})
