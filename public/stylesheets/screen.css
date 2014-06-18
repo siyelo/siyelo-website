@@ -528,6 +528,7 @@ a#work-link {
 }
 
 .projects {
+  overflow: hidden;
   *zoom: 1;
 }
 .projects:after {
@@ -563,21 +564,47 @@ a#work-link {
   text-align: center;
 }
 .projects .preview {
-  opacity: 0;
-  overflow: hidden;
   position: relative;
 }
 .projects .preview.left {
   margin-left: -3em;
+}
+.projects .preview.left img {
   left: -20em;
 }
 .projects .preview.right {
   margin-right: -3em;
+}
+.projects .preview.right img {
   right: -20em;
 }
 .projects .preview img {
-  max-width: 100%;
+  max-width: 100% !important;
+  opacity: 0;
+  position: relative;
+}
+.projects .preview img#animate1-1 {
   width: 100%;
+}
+.projects .preview img#animate1-2 {
+  bottom: 8%;
+  position: absolute;
+  width: 39%;
+}
+.projects .preview img#animate1-3 {
+  bottom: 0;
+  position: absolute;
+  width: 17%;
+}
+.projects #animate1-4, .projects #animate3-1, .projects #animate5-1 {
+  position: relative;
+  opacity: 0;
+  right: -20em;
+}
+.projects #animate2-1, .projects #animate4-1 {
+  position: relative;
+  opacity: 0;
+  left: -20em;
 }
 .projects h2 {
   color: #2a2e35;
