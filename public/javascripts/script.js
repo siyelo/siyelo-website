@@ -83,43 +83,43 @@ $(document).ready(function($) {
 
 $(document).ready(function($) {
 
-  var tween = TweenMax.to("#animate0-1", .4, {opacity: 1, delay: 3});
+  var tween = TweenMax.to("#animate0-1", 1, {opacity: 1, delay: 3});
   var scene = new ScrollScene({triggerElement: "#spaced"})
     .setTween(tween)
     .addTo(controller);
-  var tween = TweenMax.to("#animate0-2", .4, {opacity: 1, delay: 3});
+  var tween = TweenMax.to("#animate0-2", 1, {opacity: 1, delay: 3});
   var scene = new ScrollScene({triggerElement: "#spaced"})
     .setTween(tween)
     .addTo(controller);
-  var tween = TweenMax.to("#animate0-3-1", .8, {opacity: 1});
+  var tween = TweenMax.to("#animate0-3-1", 2, {opacity: 1});
   var scene = new ScrollScene({triggerElement: "#spaced"})
     .setTween(tween)
     .addTo(controller);
-  var tween = TweenMax.to("#animate0-3-2", .8, {opacity: 1, delay: .3});
+  var tween = TweenMax.to("#animate0-3-2", 2, {opacity: 1, delay: .3});
   var scene = new ScrollScene({triggerElement: "#spaced"})
     .setTween(tween)
     .addTo(controller);
-  var tween = TweenMax.to("#animate0-3-3", .8, {opacity: 1, delay: .7});
+  var tween = TweenMax.to("#animate0-3-3", 2, {opacity: 1, delay: .6});
   var scene = new ScrollScene({triggerElement: "#spaced"})
     .setTween(tween)
     .addTo(controller);
-  var tween = TweenMax.to("#animate0-3-4", .8, {opacity: 1, delay: 1});
+  var tween = TweenMax.to("#animate0-3-4", 2, {opacity: 1, delay: .9});
   var scene = new ScrollScene({triggerElement: "#spaced"})
     .setTween(tween)
     .addTo(controller);
-  var tween = TweenMax.to("#animate0-3-5", .8, {opacity: 1, delay: 1.6});
+  var tween = TweenMax.to("#animate0-3-5", 2, {opacity: 1, delay: 1.2});
   var scene = new ScrollScene({triggerElement: "#spaced"})
     .setTween(tween)
     .addTo(controller);
-  var tween = TweenMax.to("#animate0-3-6", .8, {opacity: 1, delay: 1.8});
+  var tween = TweenMax.to("#animate0-3-6", 2, {opacity: 1, delay: 1.5});
   var scene = new ScrollScene({triggerElement: "#spaced"})
     .setTween(tween)
     .addTo(controller);
-  var tween = TweenMax.to("#animate0-3-7", 1, {opacity: 1, delay: 2});
+  var tween = TweenMax.to("#animate0-3-7", 2, {opacity: 1, delay: 1.8});
   var scene = new ScrollScene({triggerElement: "#spaced"})
     .setTween(tween)
     .addTo(controller);
-  var tween = TweenMax.to("#animate0-4", .5, {opacity: 1, delay: 3});
+  var tween = TweenMax.to("#animate0-4", 1, {opacity: 1, delay: 3});
   var scene = new ScrollScene({triggerElement: "#spaced"})
     .setTween(tween)
     .addTo(controller);
