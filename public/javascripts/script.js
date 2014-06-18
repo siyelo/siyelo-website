@@ -83,6 +83,47 @@ $(document).ready(function($) {
 
 $(document).ready(function($) {
 
+  var tween = TweenMax.to("#animate0-1", .4, {opacity: 1, delay: 3});
+  var scene = new ScrollScene({triggerElement: "#spaced"})
+    .setTween(tween)
+    .addTo(controller);
+  var tween = TweenMax.to("#animate0-2", .4, {opacity: 1, delay: 3});
+  var scene = new ScrollScene({triggerElement: "#spaced"})
+    .setTween(tween)
+    .addTo(controller);
+  var tween = TweenMax.to("#animate0-3-1", .8, {opacity: 1});
+  var scene = new ScrollScene({triggerElement: "#spaced"})
+    .setTween(tween)
+    .addTo(controller);
+  var tween = TweenMax.to("#animate0-3-2", .8, {opacity: 1, delay: .3});
+  var scene = new ScrollScene({triggerElement: "#spaced"})
+    .setTween(tween)
+    .addTo(controller);
+  var tween = TweenMax.to("#animate0-3-3", .8, {opacity: 1, delay: .7});
+  var scene = new ScrollScene({triggerElement: "#spaced"})
+    .setTween(tween)
+    .addTo(controller);
+  var tween = TweenMax.to("#animate0-3-4", .8, {opacity: 1, delay: 1});
+  var scene = new ScrollScene({triggerElement: "#spaced"})
+    .setTween(tween)
+    .addTo(controller);
+  var tween = TweenMax.to("#animate0-3-5", .8, {opacity: 1, delay: 1.6});
+  var scene = new ScrollScene({triggerElement: "#spaced"})
+    .setTween(tween)
+    .addTo(controller);
+  var tween = TweenMax.to("#animate0-3-6", .8, {opacity: 1, delay: 1.8});
+  var scene = new ScrollScene({triggerElement: "#spaced"})
+    .setTween(tween)
+    .addTo(controller);
+  var tween = TweenMax.to("#animate0-3-7", 1, {opacity: 1, delay: 2});
+  var scene = new ScrollScene({triggerElement: "#spaced"})
+    .setTween(tween)
+    .addTo(controller);
+  var tween = TweenMax.to("#animate0-4", .5, {opacity: 1, delay: 3});
+  var scene = new ScrollScene({triggerElement: "#spaced"})
+    .setTween(tween)
+    .addTo(controller);
+
   var tween = TweenMax.to("#animate1-1", .6, {opacity: 1, scale: 1, left: 0});
   var scene = new ScrollScene({triggerElement: "#trigger1"})
     .setTween(tween)
