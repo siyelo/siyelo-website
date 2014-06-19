@@ -90,8 +90,7 @@ $(document).ready(function($) {
     .setTween(tween)
     .addTo(controller);
 
-
-  // parallax
+  // Background parallax
   new ScrollScene({
     triggerElement: "#spaced",
     duration: $(window).height() + 300,
@@ -100,7 +99,7 @@ $(document).ready(function($) {
   .addTo(controller)
   .triggerHook("onCenter")
   .setTween(new TimelineMax().add([
-    // TweenMax.fromTo("#spaced #big", 1, {scale: 2, alpha: 0.1, top: "100%"}, {top: "0%", ease: Linear.easeNone}),
+    // TweenMax.fromTo("#spaced #big", 1, {top: "35%"}, {top: "45%", ease: Linear.easeNone}),
     TweenMax.to("#spaced #space", 1, {backgroundPosition: "0 50%", ease: Linear.easeNone})
   ]));
 
@@ -197,12 +196,40 @@ $(document).ready(function($) {
   var scene = new ScrollScene({triggerElement: "#trigger4"})
     .setTween(tween)
     .addTo(controller);
+  var tween = TweenMax.to("#animate4-3", .6, {opacity: 1, scale: 1, right: 0});
+  var scene = new ScrollScene({triggerElement: "#trigger4"})
+    .setTween(tween)
+    .addTo(controller);
+  var tween = TweenMax.to("#animate4-4", .6, {opacity: 1, scale: 1, right: "70%"});
+  var scene = new ScrollScene({triggerElement: "#trigger4"})
+    .setTween(tween)
+    .addTo(controller);
+  var tween = TweenMax.to("#animate4-5", .6, {opacity: 1, scale: 1, right: "25%"});
+  var scene = new ScrollScene({triggerElement: "#trigger4"})
+    .setTween(tween)
+    .addTo(controller);
 
   var tween = TweenMax.to("#animate5-1", .6, {opacity: 1, scale: 1, right: 0});
   var scene = new ScrollScene({triggerElement: "#trigger5"})
     .setTween(tween)
     .addTo(controller);
   var tween = TweenMax.to("#animate5-2", .6, {opacity: 1, scale: 1, left: 0});
+  var scene = new ScrollScene({triggerElement: "#trigger5"})
+    .setTween(tween)
+    .addTo(controller);
+  var tween = TweenMax.to("#animate5-3", .6, {opacity: 1, scale: 1, left: 0});
+  var scene = new ScrollScene({triggerElement: "#trigger5"})
+    .setTween(tween)
+    .addTo(controller);
+  var tween = TweenMax.to("#animate5-4", .6, {opacity: 1, scale: 1, left: "70%"});
+  var scene = new ScrollScene({triggerElement: "#trigger5"})
+    .setTween(tween)
+    .addTo(controller);
+  var tween = TweenMax.to("#animate5-5", .6, {opacity: 1, scale: 1, left: "60%"});
+  var scene = new ScrollScene({triggerElement: "#trigger5"})
+    .setTween(tween)
+    .addTo(controller);
+  var tween = TweenMax.to("#animate5-6", .6, {opacity: 1, scale: 1, left: "30%"});
   var scene = new ScrollScene({triggerElement: "#trigger5"})
     .setTween(tween)
     .addTo(controller);

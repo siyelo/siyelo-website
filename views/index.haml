@@ -8,7 +8,7 @@
 %section#spaced
 
   %header.wrapper
-    %hgroup
+    %hgroup#big
       %h1
         %span#animate0-3-1 We
         %span#animate0-3-2 turn
@@ -22,21 +22,14 @@
         Build your next web/mobile app with an experienced team.
 
   #space
-    / %li
-    /   %img#stars-1{:src=>"images/stars-1.png"}
-    / %li
-    /   %img#stars-2{:src=>"images/stars-2.png"}
-    / %li
-    /   %img#stars-3{:src=>"images/stars-3.png"}
+
   %p.scroll#animate0-5
 
     %a#work2.js-smooth{:href => "#work"}
       %span keep going
       %img{src: "/images/scroll.png"}
 
-
 %section#work.content
-
   .wrapper
     .txt-heading
       %h1 Our work
@@ -95,7 +88,10 @@
             %a{href: '/clients/cooco'}
               How we pivoted and lanched EOS Marketplace
         .preview.two-thirds.right
-          %img#animate4-2{src: "/images/study/eos.jpg"}
+          %img#animate4-2{src: "/images/study/eos-desktop.png"}
+          %img#animate4-3{src: "/images/study/eos-laptop.png"}
+          %img#animate4-4{src: "/images/study/eos-tablet.png"}
+          %img#animate4-5{src: "/images/study/eos-mobile.png"}
 
     %li.madmimi#cs-mm#trigger5
       .wrapper
@@ -109,7 +105,11 @@
             %a{href: '/clients/mad-mimi'}
               How we helped the Mad Mimi team
         .preview.two-thirds.left
-          %img#animate5-2{src: "/images/study/madmimi.jpg"}
+          %img#animate5-2{src: "/images/study/madmimi-desktop.png"}
+          %img#animate5-3{src: "/images/study/madmimi-laptop.png"}
+          %img#animate5-4{src: "/images/study/madmimi-tablet.png"}
+          %img#animate5-5{src: "/images/study/madmimi-phablet.png"}
+          %img#animate5-6{src: "/images/study/madmimi-mobile.png"}
 
   .logos
     .wrapper
@@ -121,30 +121,69 @@
     %ul
       %li
         %img{src: "/images/logos/madmimi.png", alt: 'MadMimi'}
+        %h3
+          Mad Mimi
+          %span Email Marketing
       %li
         %img{src: "/images/logos/hetzner.png", alt: 'Hetzner'}
+        %h3
+          Hetzner
+          %span ISP
       %li
         %img{src: "/images/logos/chai.png", alt: 'CHAI'}
+        %h3
+          Clinton Health Access Initiative
+          %span NGO
       %li
         %img{src: "/images/logos/is.png", alt: 'Internet Solutions'}
+        %h3
+          Internet Solutions
+          %span ISP
       %li
         %img{src: "/images/logos/tad.png", alt: 'TalentedAfrica'}
+        %h3
+          Talented Africa
+          %span Accounting Platform
       %li
         %img{src: "/images/logos/classroom7.png", alt: 'Classroom7'}
+        %h3
+          Classroom 7
+          %span On-line Learning
       %li
         %img{src: "/images/logos/eos.png", alt: 'EoS'}
+        %h3
+          EOS
+          %span On-line Shop
       %li
         %img{src: "/images/logos/activitar.png", alt: 'Activitar'}
+        %h3
+          Activitar
+          %span Activity Database
       %li
         %img{src: "/images/logos/funkudu.png", alt: 'Funkudu'}
+        %h3
+          Funkudu
+          %span Activity Bookings
       %li
         %img{src: "/images/logos/abt.png", alt: 'ABT'}
+        %h3
+          ABT Associates
+          %span NGO
       %li
         %img{src: "/images/logos/sneakerlab.png", alt: 'SneakerLab'}
+        %h3
+          Sneaker Lab
+          %span Premium Shoe Care
       %li
         %img{src: "/images/logos/eeco.png", alt: 'EspressEco'}
+        %h3
+          Espresseco
+          %span Espresso Capsules
       %li
         %img{src: "/images/logos/wildtwig.png", alt: 'WildTwig'}
+        %h3
+          WildTwig
+          %span On-line Learning
   .cta
     %a{:href => "/hire-us" }
       Want to work with us?
