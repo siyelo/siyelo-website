@@ -25,6 +25,7 @@ b
   background: #f5f5f5
   display: block
   padding: 5em 0
+  text-align: center
   a
     background: $two
     color: #fff
@@ -43,6 +44,16 @@ b
       display: block
       font: 40px Tungsten
       text-transform: uppercase
+  &.double a
+    display: inline-block
+    margin: 0
+    width: 50%
+    &:first-child
+      margin-right: 15px
+    &:nth-child(2)
+      background: $light - #666
+      &:hover, &:focus
+        background: $light - #777
 
 .projects
   overflow: hidden
@@ -419,4 +430,3 @@ section.case
         float: right
 
 
-    

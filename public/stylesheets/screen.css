@@ -499,6 +499,7 @@ b {
   background: whitesmoke;
   display: block;
   padding: 5em 0;
+  text-align: center;
 }
 .cta a {
   background: #ed9322;
@@ -527,6 +528,20 @@ b {
   display: block;
   font: 40px Tungsten;
   text-transform: uppercase;
+}
+.cta.double a {
+  display: inline-block;
+  margin: 0;
+  width: 50%;
+}
+.cta.double a:first-child {
+  margin-right: 15px;
+}
+.cta.double a:nth-child(2) {
+  background: #888888;
+}
+.cta.double a:nth-child(2):hover, .cta.double a:nth-child(2):focus {
+  background: #777777;
 }
 
 .projects {
@@ -1200,7 +1215,7 @@ section.case a:hover, section.case a:focus {
 }
 
 #footer {
-  background: url("/images/engine-blur.jpg") fixed;
+  background: #06121d;
   color: white;
   position: relative;
   z-index: 2;
