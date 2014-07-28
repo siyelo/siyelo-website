@@ -49,7 +49,7 @@
         %h2
           Build a Real Project
           %span ⅓ of your internship
-        %p We’ll give you a real-world app to build. Either something that we are already building internally, or a new product that we’d like to launch. 
+        %p We’ll give you a real-world app to build. Either something that we are already building internally, or a new product that we’d like to launch.
 %section#guide
   .wrapper
     .row
@@ -79,29 +79,28 @@
 
     %h1 Apply now
 
-    %form{name: 'contact_email', action: '/hire-us', method: 'post'}
+    %form{name: 'internship_email', action: '/internships/full-stack', method: 'post', enctype: "multipart/form-data"}
       %ul
         %li
-          %input{type: 'text', name: 'full_name', placeholder: 'What is your name'}
+          %input{type: 'text', name: 'full_name', placeholder: 'What is your name?'}
 
         %li
           %input{type: 'text', name: 'email', placeholder: 'What is your email address?'}
 
         %li
-          %input{type: 'text', name: 'phone', placeholder: 'What is your phone number?'}
+          %textarea{type: 'text', name: 'description', placeholder: 'What will it be like for us to work with you?'}
 
         %li
-          %textarea{type: 'text', name: 'description', placeholder: 'What would you like to hire Siyelo to do for you?'}
-
-        %li
-          %input{type: 'text', name: 'budget', placeholder: 'What is your budget?'}
+          %input{type: 'text', name: 'portfolio', placeholder: "Portfolio or Github account URL? Type 'None' if none."}
 
         %li
           %input{type: 'text', id: 'fav_movie', name: 'favourite_movie', placeholder: 'What is your favourite movie?'}
 
         %li
-          %input{type: 'submit', value: 'Send'}
+          %input{type: 'file', name: 'file'}
 
+        %li
+          %input{type: 'submit', value: 'Submit'}
 
 %section#faq
   .wrapper
@@ -131,7 +130,7 @@
           %span A
           An Internship typically is for those who:
         %ul
-          %li want to explore new options for their career, 
+          %li want to explore new options for their career,
           %li want to get exposed to new ideas and technologies
           %li may still be studying and are likely to continue studying or working elsewhere afterwards
           %li are happy to learn and work mostly independently or with other interns on side-projects
@@ -143,3 +142,10 @@
           %li like to (and are capable enough) to work alongside the team on client projects
 
     %p For more information, check out Dan Croaks article about Interns vs Apprentices.
+
+%script
+  $(document).ready(function(){
+  $('#fav_movie').hide();
+  });
+
+

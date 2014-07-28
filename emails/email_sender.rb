@@ -68,5 +68,39 @@ class EmailSender
         body mail_body
       end
     end
+
+    def deliver_intern_application(params)
+      full_name = params["full_name"]
+      email = params["email"]
+      description = params["description"]
+      portfolio_url = params["portfolio"]
+      cv_filename = params["file"][:filename]
+
+      mail_body = %Q(
+      Hey!
+
+      #{full_name} just sent us a internship application.
+
+      The applicatnt would describe himself as:
+      #{description}
+
+      You can see his work here: #{portfolio_url}
+
+      You can contact him by email on #{email}.
+
+      His/her CV is attached to this email.
+
+      Cheers!)
+
+      log_mail(email, mail_body)
+      Mail.deliver do
+        from "#{email}"
+        to ENV['JOBS_EMAIL'] || 'ileeftimov@gmail.com'
+        subject "Internship application by: #{full_name}"
+        body mail_body
+        add_file filename: cv_filename, content: File.open(params["file"][:tempfile]).read
+      end
+    end
+
   end
 end

@@ -95,7 +95,7 @@ class SinatraBootstrap < Sinatra::Base
       redirect '/internships/full-stack'
     end
 
-    EmailSender.deliver_job_application(request.params)
+    EmailSender.deliver_intern_application(request.params)
 
     flash[:notice] = 'Your application has been submitted. Thank you!'
     redirect '/'
