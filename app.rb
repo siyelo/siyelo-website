@@ -41,6 +41,10 @@ class SinatraBootstrap < Sinatra::Base
     haml :jobs, layout: :page
   end
 
+  get '/internships/full-stack' do
+    haml :fullstack, layout: :page
+  end
+
   get '/clients/internet-solutions' do
     haml :is, layout: :page
   end
@@ -77,6 +81,18 @@ class SinatraBootstrap < Sinatra::Base
     unless EmailValidator.validate(request.params)
       flash[:error] = 'Please fill in all of the fields and resubmit your application.'
       redirect '/jobs'
+    end
+
+    EmailSender.deliver_job_application(request.params)
+
+    flash[:notice] = 'Your application has been submitted. Thank you!'
+    redirect '/'
+  end
+
+  post '/internships/full-stack' do
+    unless EmailValidator.validate(request.params)
+      flash[:error] = 'Please fill in all of the fields and resubmit your application.'
+      redirect '/internships/full-stack'
     end
 
     EmailSender.deliver_job_application(request.params)

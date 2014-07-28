@@ -1,0 +1,148 @@
+%script
+  $('body').addClass('fullstack')
+
+%header#header
+  .wrapper
+    %h1#logo
+      %a.js-smooth{:href => "/"}
+        %img{src: '/images/logo.png', :title => "Siyelo", :alt => "Siyelo logo"}
+    %a.right#menu-toggle{href: '#'}
+      %i.fa.fa-bars
+    %nav#main-nav
+      %ul
+        %li
+          %a{href: '/'}
+            Back to home
+        %li
+          %a{href: 'hire-us', class: 'hireus'}
+            Hire Us
+
+%section#wall
+  %header.wrapper
+    %hgroup
+      %h1
+        Learn what it takes
+        %br
+        to be a web developer
+        %span with Siyelo’s Full-Stack Developer Internship
+      %h2
+        Get into Ruby on Rails, databases, and APIs
+        %br
+        Learn frontend tools including HTML5, CSS3, JavaScript, and JQuery
+        %br
+        Build interesting web applications
+
+%section#intern-info
+  .wrapper
+    .row
+      .third
+        %img{ src: '/images/3-3.svg'}
+        %h2
+          Foundation
+          %span ⅓ of your internship
+        %p We’ll give you the resources to learn how the web works; web architectures, client-server communication, backend, frontend, HTTP, languages, frameworks and databases. Get to know Ruby, Rails, JavaScript (CoffeeScript), jQuery, HTML (HAML!) and CSS (SASS). Also, we’ll teach you how to properly use Git!
+      .third
+        %img{ src: '/images/2-3.svg'}
+        %h2
+          Your first app
+          %span ⅓ of your internship
+        %p In the phase, you will design, build, and ship your own version of ProductHunt – your first fully functional web app. You’ll use HTML, CSS, JavaScript, JQuery, Ruby on Rails, and SQL to build it, with guidance from your mentor.
+      .third
+        %img{ src: '/images/1-3.svg'}
+        %h2
+          Build a Real Project
+          %span ⅓ of your internship
+        %p We’ll give you a real-world app to build. Either something that we are already building internally, or a new product that we’d like to launch. 
+%section#guide
+  .wrapper
+    .row
+      .half
+        %h3 What you need
+        %ul.need
+          %li a burning desire to learn full-stack web development
+          %li some technical background
+          %li programming experience
+          %li the ability to self-direct and problem-solve
+          %li your own laptop (pref OSX/Linux)
+      .half
+        %h3 What we provide
+        %ul.provide
+          %li a nominated mentor, experienced in full-stack development
+          %li a couple of hours of our time each week.
+          %li other intern(s) to work with.
+          %li access to the Siyelo team <link to site>
+          %li a desk in our Skopje office.
+          %li dynamic working environment
+          %li learning resources (books and videos)
+          %li regular evaluation of your work and constructive feedback
+
+
+%section#form
+  .wrapper
+
+    %h1 Apply now
+
+    %form{name: 'contact_email', action: '/hire-us', method: 'post'}
+      %ul
+        %li
+          %input{type: 'text', name: 'full_name', placeholder: 'What is your name'}
+
+        %li
+          %input{type: 'text', name: 'email', placeholder: 'What is your email address?'}
+
+        %li
+          %input{type: 'text', name: 'phone', placeholder: 'What is your phone number?'}
+
+        %li
+          %textarea{type: 'text', name: 'description', placeholder: 'What would you like to hire Siyelo to do for you?'}
+
+        %li
+          %input{type: 'text', name: 'budget', placeholder: 'What is your budget?'}
+
+        %li
+          %input{type: 'text', id: 'fav_movie', name: 'favourite_movie', placeholder: 'What is your favourite movie?'}
+
+        %li
+          %input{type: 'submit', value: 'Send'}
+
+
+%section#faq
+  .wrapper
+    %h1 FAQ
+    %ul
+      %li
+        %p
+          %span Q
+          Is this a paid role?
+        %p
+          %span A
+          No but you’ll get to work with a fantastic team, be trained on leading technologies, and get exposed to what it takes to succeed in this industry. From our perspective we’re happily taking time out of our schedule to invest into your growth, and the growth of our community.
+
+      %li
+        %p
+          %span Q
+          Does this guarantee employment with Siyelo?
+        %p
+          %span A
+          No. But it is an opportunity for you to show us what you’re made of. If you prove yourself in an internship, we’ll likely consider you for an Apprenticeship.
+
+      %li
+        %p
+          %span Q
+          What is the difference between an Internship and an Apprenticeship with Siyelo?
+        %p
+          %span A
+          An Internship typically is for those who:
+        %ul
+          %li want to explore new options for their career, 
+          %li want to get exposed to new ideas and technologies
+          %li may still be studying and are likely to continue studying or working elsewhere afterwards
+          %li are happy to learn and work mostly independently or with other interns on side-projects
+
+        %p An Apprenticeship to us is for those who:
+        %ul
+          %li will be pursuing a career in web application development, most likely with Siyelo.
+          %li have some relevant experience/qualifications
+          %li like to (and are capable enough) to work alongside the team on client projects
+
+    %p For more information, check out Dan Croaks article about Interns vs Apprentices.

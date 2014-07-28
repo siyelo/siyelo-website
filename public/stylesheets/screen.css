@@ -125,6 +125,7 @@ h4 {
 }
 
 .row {
+  clear: both;
   display: block;
   width: 100%;
 }
@@ -470,6 +471,10 @@ a#work-link {
   padding: 8em 0 2.5em;
   max-width: 600px;
 }
+.txt-heading h1, .txt-heading h2 {
+  line-height: 0.85;
+  margin-bottom: 30px;
+}
 .txt-heading p {
   margin-bottom: 2em;
 }
@@ -484,6 +489,10 @@ a#work-link {
 
 #office .txt-heading {
   padding-bottom: 0;
+}
+
+b {
+  font-weight: bold;
 }
 
 .cta {
@@ -1458,6 +1467,160 @@ section.case a:hover, section.case a:focus {
   left: 20%;
 }
 
+body.fullstack {
+  background: url("/images/space.jpg") no-repeat center #06121d fixed;
+}
+body.fullstack #form {
+  background: white;
+  margin-bottom: 0 !important;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+body.fullstack #wall {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+body.fullstack #wall h1, body.fullstack #wall h2 {
+  line-height: 0.85;
+}
+body.fullstack #wall h1 {
+  color: white;
+  color: white;
+  font-size: 130px !important;
+  margin-top: 24%;
+  margin-bottom: 30px;
+}
+body.fullstack #wall h1 span {
+  display: block;
+  font-size: 65px;
+  font-weight: 100 !important;
+  opacity: 0.75;
+  text-transform: none;
+}
+body.fullstack #wall h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font: 22px "open sans" !important;
+  text-transform: none;
+}
+body.fullstack #footer {
+  background: url(/images/space.jpg) center fixed no-repeat;
+}
+
+#intern-info {
+  padding: 0 0 70px;
+}
+#intern-info h2 {
+  font-size: 50px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+#intern-info h2 span {
+  color: #ed9322;
+  display: block;
+  font-size: 30px;
+  text-transform: none;
+}
+#intern-info h2, #intern-info p {
+  color: white;
+  text-align: center;
+}
+#intern-info p {
+  font-size: 16px;
+  margin: 0 auto 60px;
+}
+#intern-info .third {
+  padding: 0 3%;
+  text-align: center;
+  width: 27%;
+}
+#intern-info .third img {
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+#guide {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.9)));
+  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  background-image: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  padding-bottom: 30px;
+}
+#guide h3 {
+  color: #ed9322;
+}
+#guide .half {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#guide .half ul {
+  color: white;
+  font-size: 16px;
+  padding-bottom: 100px;
+}
+#guide .half ul.provide {
+  list-style: disc;
+  margin-left: 20px;
+}
+#guide .half ul.provide li {
+  padding-left: 7px;
+}
+#guide .half ul.need {
+  list-style: none;
+}
+#guide .half:first-child {
+  padding-right: 20px;
+  text-align: right;
+}
+#guide .half:last-child h3 {
+  margin-left: 27px;
+}
+
+#faq {
+  background: #eeeeee url("/images/tech-logos.png") repeat-y fixed right;
+  padding: 120px 0;
+}
+#faq h2, #faq .wrapper > ul {
+  margin-left: 40px;
+  max-width: 60%;
+}
+#faq h2 > li, #faq .wrapper > ul > li {
+  margin-bottom: 30px;
+}
+#faq h2 > li p, #faq .wrapper > ul > li p {
+  color: #666666;
+}
+#faq h2 > li p:first-child, #faq .wrapper > ul > li p:first-child {
+  color: #06121d;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#faq h2 > li p:nth-child(2) span, #faq .wrapper > ul > li p:nth-child(2) span {
+  background: #ed9322;
+}
+#faq h2 > li p span, #faq .wrapper > ul > li p span {
+  background: #06121d;
+  color: white;
+  left: 0;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  width: 30px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+#faq ul ul {
+  color: #666666;
+  list-style: disc;
+  margin: 10px 0 10px 30px;
+}
+
 @media only screen and (max-width: 1440px) {
   #spaced h1 {
     font-size: 130px;
@@ -1465,6 +1628,13 @@ section.case a:hover, section.case a:focus {
   }
   #spaced h2 {
     font-size: 28px;
+  }
+
+  #wall h1 {
+    font-size: 110px;
+  }
+  #wall h2 {
+    font-size: 26px;
   }
 
   .projects li {
@@ -1482,6 +1652,13 @@ section.case a:hover, section.case a:focus {
   #spaced h2 {
     font-size: 26px;
     max-width: 450px;
+  }
+
+  #wall h1 {
+    font-size: 90px;
+  }
+  #wall h2 {
+    font-size: 24px;
   }
 
   .projects li {
@@ -1521,6 +1698,19 @@ section.case a:hover, section.case a:focus {
   }
   #spaced h2 {
     font-size: 28px;
+  }
+
+  #highlights #wall h1 {
+    font-size: 80px !important;
+  }
+  #highlights #wall h2 {
+    font-size: 22px !important;
+  }
+
+  #intern-info .third {
+    display: block;
+    float: none;
+    width: 100%;
   }
 
   .half, .third, .two-thirds, .fourth {
@@ -1672,6 +1862,13 @@ section.case a:hover, section.case a:focus {
     max-width: 240px;
   }
 
+  #highlights #wall h1 {
+    font-size: 60px !important;
+  }
+  #highlights #wall h2 {
+    font-size: 20px !important;
+  }
+
   .team li img, .team li canvas {
     margin-left: -25%;
   }
@@ -1696,6 +1893,24 @@ section.case a:hover, section.case a:focus {
   #spaced h2 {
     font-size: 21px;
     max-width: 240px;
+  }
+
+  body.fullstack #wall h1 {
+    font-size: 55px !important;
+    margin-top: 50%;
+  }
+  body.fullstack #wall h1 span {
+    font-size: 30px !important;
+  }
+  body.fullstack #wall h2 {
+    font-size: 14px !important;
+  }
+
+  #intern-info img {
+    max-width: 30%;
+  }
+  #intern-info p {
+    font-size: 14px;
   }
 
   .logos .wrapper {
