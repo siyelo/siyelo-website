@@ -150,6 +150,10 @@ $(document).ready(function($) {
   var scene = new ScrollScene({triggerElement: "#spaced"})
     .setTween(tween)
     .addTo(controller);
+  var tween = TweenMax.to("#animate0-6", 1, {opacity: .7, delay: 3});
+  var scene = new ScrollScene({triggerElement: "#spaced"})
+    .setTween(tween)
+    .addTo(controller);
 
   // Work animations
 

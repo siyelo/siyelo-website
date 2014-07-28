@@ -411,6 +411,34 @@ a#work-link {
   margin-bottom: 15px;
 }
 
+.gotointerns {
+  bottom: 8%;
+  color: #eeeeee;
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  font-size: 14px;
+  opacity: 0;
+  padding: 10px 15px;
+  position: absolute;
+  right: 9%;
+  text-align: right;
+  text-decoration: none;
+  z-index: 20;
+  -webkit-transform: all 0.8s;
+  -moz-transform: all 0.8s;
+  -ms-transform: all 0.8s;
+  -o-transform: all 0.8s;
+  transform: all 0.8s;
+}
+.gotointerns span {
+  color: #ed9322;
+  display: block;
+}
+.gotointerns:hover, .gotointerns:focus {
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+}
+
 #mini-nav {
   display: inline-block;
   left: 10px;
@@ -1715,10 +1743,14 @@ body.fullstack #footer {
     font-size: 28px;
   }
 
-  #highlights #wall h1 {
+  .gotointerns {
+    display: none;
+  }
+
+  body.fullstack #wall h1 {
     font-size: 80px !important;
   }
-  #highlights #wall h2 {
+  body.fullstack #wall h2 {
     font-size: 22px !important;
   }
 
@@ -1877,10 +1909,10 @@ body.fullstack #footer {
     max-width: 240px;
   }
 
-  #highlights #wall h1 {
+  body.fullstack #wall h1 {
     font-size: 60px !important;
   }
-  #highlights #wall h2 {
+  body.fullstack #wall h2 {
     font-size: 20px !important;
   }
 
