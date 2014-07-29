@@ -243,12 +243,6 @@ $(document).ready(function($) {
 });
 
 
-// Custom input type=file
-document.getElementById("uploadBtn").onchange = function () {
-    document.getElementById("uploadFile").value = this.value;
-};
-
-
 // Google Maps API
 
 var map;
@@ -284,3 +278,8 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
+
+// Custom input type=file
+document.getElementById("uploadBtn").onchange = function () {
+    document.getElementById("uploadFile").value = this.value;
+};
