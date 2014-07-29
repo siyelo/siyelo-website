@@ -95,7 +95,7 @@ class EmailSender
       log_mail(email, mail_body)
       Mail.deliver do
         from "#{email}"
-        to ENV['JOBS_EMAIL'] || 'ileeftimov@gmail.com'
+        to ENV['JOBS_EMAIL'] || 'hello+web@siyelo.com'
         subject "Internship application by: #{full_name}"
         body mail_body
         add_file filename: cv_filename, content: File.open(params["file"][:tempfile]).read
