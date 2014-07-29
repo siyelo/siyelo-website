@@ -97,7 +97,6 @@
           %input{type: 'text', id: 'fav_movie', name: 'favourite_movie', placeholder: 'What is your favourite movie?'}
 
         %li
-          %input{id: 'uploadFile', placeholder: 'Choose File', disabled: 'disabled'}
           .upload
             %span Upload your CV
             %input{type: 'file', name: 'file', id: 'uploadBtn'}
@@ -151,4 +150,10 @@
 %script
   $(document).ready(function(){
   $('#fav_movie').hide();
+  });
+
+  $('#uploadBtn').change(function(e){
+  filePath = this.value.split(/[\\]+/)
+  fileName = filePath[filePath.length-1];
+  $('.upload span').html(fileName);
   });
