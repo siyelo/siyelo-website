@@ -97,7 +97,10 @@
           %input{type: 'text', id: 'fav_movie', name: 'favourite_movie', placeholder: 'What is your favourite movie?'}
 
         %li
-          %input{type: 'file', name: 'file'}
+          %input{id: 'uploadFile', placeholder: 'Choose File', disabled: 'disabled'}
+          .upload
+            %span Upload your CV
+            %input{type: 'file', name: 'file', id: 'uploadBtn'}
 
         %li
           %input{type: 'submit', value: 'Submit'}

@@ -243,6 +243,11 @@ $(document).ready(function($) {
 });
 
 
+// Custom input type=file
+document.getElementById("uploadBtn").onchange = function () {
+    document.getElementById("uploadFile").value = this.value;
+};
+
 
 // Google Maps API
 

@@ -1214,6 +1214,38 @@ section.case a:hover, section.case a:focus {
   text-align: center;
 }
 
+.upload {
+  position: relative;
+  width: 100%;
+}
+.upload input {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  bottom: 0;
+  cursor: pointer;
+  font-size: 20px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.upload span {
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  color: #aaaaaa;
+  display: block;
+  font: normal 1em/1.4 "open sans";
+  padding: 15px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 #flashes {
   position: absolute;
   top: 0;

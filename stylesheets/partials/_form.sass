@@ -85,6 +85,32 @@
         line-height: 32px
         text-align: center
 
+.upload
+  position: relative
+  width: 100%
+  input
+    +opacity(0)
+    bottom: 0
+    cursor: pointer
+    font-size: 20px
+    left: 0
+    margin: 0
+    padding: 0
+    position: absolute
+    right: 0
+    top: 0
+    width: 100%
+    z-index: 2
+  span
+    background: rgba(0, 0, 0, .1)
+    border: none
+    color: #aaa
+    display: block
+    font: normal 1em/1.4 'open sans'
+    padding: 15px
+    width: 100%
+    @include box-sizing(border-box)
+
 
 //
 // Flash messages
