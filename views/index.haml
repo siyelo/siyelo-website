@@ -1,3 +1,6 @@
+/ - @title = 'blah'
+
+
 %script
   // sticky navigation menu
   / stickyNav('#header');
@@ -23,15 +26,14 @@
 
   #space
 
-  %a.gotointerns#animate0-6{href:'/internships/full-stack'}
+  %a.gotointerns#animate0-6{href:'/internships/full-stack', title: 'Apply for Full Stack Developer Internship', target: '_blank'}
     Learn what it takes to be a web developer
     %span Apply for Siyelo’s Full-Stack Developer Internship
 
   %p.scroll#animate0-5
-
-    %a#work2.js-smooth{:href => "#work"}
+    %a#work2.js-smooth{:href => "#work", title: 'Scroll down'}
       %span keep going
-      %img{src: "/images/scroll.png"}
+      %img{src: "/images/scroll.png", alt:'Scroll down arrow image'}
 
 %section#work.content
   .wrapper
@@ -50,12 +52,12 @@
           %h2 Launch a new idea
           %p Looking to bring a new web app to market? You need a team to help design, develop and deliver it.
           %p
-            %a{href: '/clients/talented-africa'}
+            %a{href: '/clients/talented-africa', title: 'Go to Talented Africa case study'}
               See how we launched Talented Africa
         .preview.two-thirds.left
-          %img#animate1-1{src: "/images/study/tad-laptop.png"}
-          %img#animate1-2{src: "/images/study/tad-tablet.png"}
-          %img#animate1-3{src: "/images/study/tad-mobile.png"}
+          %img#animate1-1{src: "/images/study/tad-laptop.png", alt: 'Talented Aftica Laptop preview'}
+          %img#animate1-2{src: "/images/study/tad-tablet.png", alt: 'Talented Africa Tablet preview'}
+          %img#animate1-3{src: "/images/study/tad-mobile.png", alt: 'Talented Africa Mobile preview'}
 
     %li.is#cs-is#trigger2
       .wrapper
@@ -63,10 +65,10 @@
           %h2 Streamline your business
           %p Need to save costs? Rethinking the way you are doing things? We've helped clients save costs by rapidly replacing their legacy systems.
           %p
-            %a{href: '/clients/internet-solutions'}
+            %a{href: '/clients/internet-solutions', title: 'Go to Internet Solutions case study'}
               How we saved costs for Internet Solutions
         .preview.two-thirds.right
-          %img#animate2-2{src: "/images/study/is.jpg"}
+          %img#animate2-2{src: "/images/study/is.jpg", alt:'Internet Solutions preview'}
 
     %li.chai#cs-chai#trigger3
       .wrapper
@@ -74,10 +76,10 @@
           %h2 Improve your user's experience
           %p Apps nowadays must be intuitive to use and visually appealing. We can help design and implement responsive and intuitive interfaces.
           %p
-            %a{href: '/clients/clinton-health-access-initiative'}
+            %a{href: '/clients/clinton-health-access-initiative', title: 'Go to Clinton Health Access Initiative case study'}
               How we helped CHAI re-imagine their UX
         .preview.two-thirds.left
-          %img#animate3-2{src: "/images/study/chai.jpg"}
+          %img#animate3-2{src: "/images/study/chai.jpg", alt:'Clinton Health Foundation preview'}
 
     %li.cooco#cs-eos#trigger4
       .wrapper
@@ -89,13 +91,13 @@
             Our collaborative approach helped some of our clients to start fresh and really
             turn things around.
           %p
-            %a{href: '/clients/cooco'}
+            %a{href: '/clients/cooco', title: 'Go to Cooco case study'}
               How we pivoted and lanched EOS Marketplace
         .preview.two-thirds.right
-          %img#animate4-2{src: "/images/study/eos-desktop.png"}
-          %img#animate4-3{src: "/images/study/eos-laptop.png"}
-          %img#animate4-4{src: "/images/study/eos-tablet.png"}
-          %img#animate4-5{src: "/images/study/eos-mobile.png"}
+          %img#animate4-2{src: "/images/study/eos-desktop.png", alt:'EOS desktop preview'}
+          %img#animate4-3{src: "/images/study/eos-laptop.png", alt:'EOS laptop preview'}
+          %img#animate4-4{src: "/images/study/eos-tablet.png", alt:'EOS tablet preview'}
+          %img#animate4-5{src: "/images/study/eos-mobile.png", alt:'EOS mobile preview'}
 
     %li.madmimi#cs-mm#trigger5
       .wrapper
@@ -106,14 +108,14 @@
             As an experienced team available at reasonably short notice, we've helped many
             clients solve this problem.
           %p
-            %a{href: '/clients/mad-mimi'}
+            %a{href: '/clients/mad-mimi', title: 'Go to Mad Mimi case study'}
               How we helped the Mad Mimi team
         .preview.two-thirds.left
-          %img#animate5-2{src: "/images/study/madmimi-desktop.png"}
-          %img#animate5-3{src: "/images/study/madmimi-laptop.png"}
-          %img#animate5-4{src: "/images/study/madmimi-tablet.png"}
-          %img#animate5-5{src: "/images/study/madmimi-phablet.png"}
-          %img#animate5-6{src: "/images/study/madmimi-mobile.png"}
+          %img#animate5-2{src: "/images/study/madmimi-desktop.png", alt: 'Mad Mimi desktop preview'}
+          %img#animate5-3{src: "/images/study/madmimi-laptop.png", alt: 'Mad Mimi laptop preview'}
+          %img#animate5-4{src: "/images/study/madmimi-tablet.png", alt: 'Mad Mimi tablet preview'}
+          %img#animate5-5{src: "/images/study/madmimi-phablet.png", alt: 'Mad Mimi phablet preview'}
+          %img#animate5-6{src: "/images/study/madmimi-mobile.png", alt: 'Mad Mimi mobile preview'}
 
   .logos
     .wrapper
@@ -124,72 +126,72 @@
 
     %ul
       %li
-        %img{src: "/images/logos/madmimi.png", alt: 'MadMimi'}
+        %img{src: "/images/logos/madmimi.png", alt: 'MadMimi client logo'}
         %h3
           Mad Mimi
           %span Email Marketing
       %li
-        %img{src: "/images/logos/hetzner.png", alt: 'Hetzner'}
+        %img{src: "/images/logos/hetzner.png", alt: 'Hetzner client logo'}
         %h3
           Hetzner
           %span ISP
       %li
-        %img{src: "/images/logos/chai.png", alt: 'CHAI'}
+        %img{src: "/images/logos/chai.png", alt: 'CHAI client logo'}
         %h3
           Clinton Health Access Initiative
           %span NGO
       %li
-        %img{src: "/images/logos/is.png", alt: 'Internet Solutions'}
+        %img{src: "/images/logos/is.png", alt: 'Internet Solutions client logo'}
         %h3
           Internet Solutions
           %span ISP
       %li
-        %img{src: "/images/logos/tad.png", alt: 'TalentedAfrica'}
+        %img{src: "/images/logos/tad.png", alt: 'TalentedAfrica client logo'}
         %h3
           Talented Africa
           %span Accounting Platform
       %li
-        %img{src: "/images/logos/classroom7.png", alt: 'Classroom7'}
+        %img{src: "/images/logos/classroom7.png", alt: 'Classroom7 client logo'}
         %h3
           Classroom 7
           %span On-line Learning
       %li
-        %img{src: "/images/logos/eos.png", alt: 'EoS'}
+        %img{src: "/images/logos/eos.png", alt: 'EoS client logo'}
         %h3
           EOS
           %span On-line Shop
       %li
-        %img{src: "/images/logos/activitar.png", alt: 'Activitar'}
+        %img{src: "/images/logos/activitar.png", alt: 'Activitar client logo'}
         %h3
           Activitar
           %span Activity Database
       %li
-        %img{src: "/images/logos/funkudu.png", alt: 'Funkudu'}
+        %img{src: "/images/logos/funkudu.png", alt: 'Funkudu client logo'}
         %h3
           Funkudu
           %span Activity Bookings
       %li
-        %img{src: "/images/logos/abt.png", alt: 'ABT'}
+        %img{src: "/images/logos/abt.png", alt: 'ABT client logo'}
         %h3
           ABT Associates
           %span NGO
       %li
-        %img{src: "/images/logos/sneakerlab.png", alt: 'SneakerLab'}
+        %img{src: "/images/logos/sneakerlab.png", alt: 'SneakerLab client logo'}
         %h3
           Sneaker Lab
           %span Premium Shoe Care
       %li
-        %img{src: "/images/logos/eeco.png", alt: 'EspressEco'}
+        %img{src: "/images/logos/eeco.png", alt: 'EspressEco client logo'}
         %h3
           Espresseco
           %span Espresso Capsules
       %li
-        %img{src: "/images/logos/wildtwig.png", alt: 'WildTwig'}
+        %img{src: "/images/logos/wildtwig.png", alt: 'WildTwig client logo'}
         %h3
           WildTwig
           %span On-line Learning
   .cta
-    %a{:href => "/hire-us" }
+    %a{:href => "/hire-us", title: 'Hire Siyelo' }
       Want to work with us?
       %span Hire us now!
 
@@ -203,7 +205,7 @@
   %ul.team
     %li
       .bwWrapper
-        %img{src: '/images/team/glenn.jpg'}
+        %img{src: '/images/team/glenn.jpg', alt: 'Glenn Roberts'}
       .txtWrapper
         %h3
           Glenn Roberts
@@ -212,7 +214,7 @@
 
     %li
       .bwWrapper
-        %img{src: './images/team/dime.jpg'}
+        %img{src: './images/team/dime.jpg', alt: 'Dime Pashoski'}
       .txtWrapper
         %h3
           Dime Pashoski
@@ -221,7 +223,7 @@
 
     %li
       .bwWrapper
-        %img{src: '/images/team/stu.jpg'}
+        %img{src: '/images/team/stu.jpg', alt: 'Stuart Corbishley'}
       .txtWrapper
         %h3
           Stuart Corbishley
@@ -230,7 +232,7 @@
 
     %li
       .bwWrapper
-        %img{src: '/images/team/nic.jpg'}
+        %img{src: '/images/team/nic.jpg', alt: 'Nic Young'}
       .txtWrapper
         %h3
           Nic Young
@@ -239,7 +241,7 @@
 
     %li
       .bwWrapper
-        %img{src: '/images/team/ile.jpg'}
+        %img{src: '/images/team/ile.jpg', alt: 'Ilija Eftimov'}
       .txtWrapper
         %h3
           Ile Eftimov
@@ -248,7 +250,7 @@
 
     %li
       .bwWrapper
-        %img{src: '/images/team/charleen.jpg'}
+        %img{src: '/images/team/charleen.jpg', alt: 'Charleen Marais'}
       .txtWrapper
         %h3
           Charleen Marais
@@ -258,7 +260,7 @@
 
     %li
       .bwWrapper
-        %img{src: '/images/team/wendy.jpg'}
+        %img{src: '/images/team/wendy.jpg', alt: 'Wendy Williams'}
       .txtWrapper
         %h3
           Wendy Williams
@@ -266,10 +268,10 @@
         %p Wendy is our trusted, excel-creating, generally-amazing administrator. Her good sense of humor and calming, zen-like presence mean she's a joy to be around. Except if your invoice is past due...
 
   .cta.double
-    %a{:href => "/jobs" }
+    %a{:href => "/jobs", title: 'Apply for a job' }
       Want to join the team?
       %span Click here to apply
-    %a{:href => "/internships/full-stack"}
+    %a{:href => "/internships/full-stack", title: 'Apply for internship', target: '_blank'}
       Become a Web Developer
       %span Apply for internship
 
@@ -279,7 +281,7 @@
       %h1 Our Community
       %p Siyelo is very passionate about supporting and giving back to the community. We sponsor and host events, we love contributing to open source just as much we enjoy using open source. If you are looking for sponsorship for a local event, get in touch with us, maybe we can help!
   %ul.community
-    %a{href: 'http://www.meetup.com/Code-Coffee-Cape-Town/', target: '_blank' }
+    %a{href: 'http://www.meetup.com/Code-Coffee-Cape-Town/', target: '_blank', title: 'Go to Code & Coffee Cape Town page' }
       %li.cnc.fourth
         %h2
           %span We organize
@@ -287,22 +289,22 @@
           %br
           Cape Town
           %br
-          %img{src:'/images/events/cnc-logo.png'}
-    %a{href: 'http://www.railsbridge.org/', target: '_blank' }
+          %img{src:'/images/events/cnc-logo.png', alt: 'Code & Coffee Cape Town logo'}
+    %a{href: 'http://www.railsbridge.org/', target: '_blank', title: 'Go to Rails Bridge page' }
       %li.rb.fourth
         %h2
           %span We host
           Rails Bridge
           %br
-          %img{src:'/images/events/rb-logo.png'}
-    %a{href: 'http://www.rubyfuza.org/', target: '_blank' }
+          %img{src:'/images/events/rb-logo.png', alt: 'Rails Bridge logo'}
+    %a{href: 'http://www.rubyfuza.org/', target: '_blank', title: 'Go to Ruby Fuza page' }
       %li.rf.fourth
         %h2
           %span We design
           RubyFuza
           %br
-          %img{src:'/images/events/rf-logo.png'}
-    %a{href: 'http://coderetreat.org/events/global-day-of-coderetreat-2013-skopje-macedonia', target: '_blank' }
+          %img{src:'/images/events/rf-logo.png', alt: 'Ruby Fuza logo'}
+    %a{href: 'http://coderetreat.org/events/global-day-of-coderetreat-2013-skopje-macedonia', target: '_blank', title: 'Go to Code Retreat Skopje page' }
       %li.cr.fourth
         %h2
           %span We sponsor
@@ -310,7 +312,7 @@
           %br
           Skopje
           %br
-          %img{src:'/images/events/cr-logo.png'}
+          %img{src:'/images/events/cr-logo.png', alt: 'Code Retreat Skopje logo'}
 
 %section#office.content
   .wrapper
@@ -329,8 +331,8 @@
 
     %ul.offices
       %li.ssa
-        %a{:href=>"https://plus.google.com/+SiyeloCapeTown/posts", :target=>"_blank", class: "office" }
-          %img{src: "./images/ssa.jpg"}
+        %a{:href=>"https://plus.google.com/+SiyeloCapeTown/posts", :target=>"_blank", class: "office", title: 'Go to Siyelo Cape Town google plus page' }
+          %img{src: "./images/ssa.jpg", alt: 'Siyelo Cape Town'}
 
         %ul
           %li Suite 401
@@ -340,8 +342,8 @@
 
 
       %li.smk
-        %a{:href=>"https://plus.google.com/118213542007489012764/posts", :target=>"_blank", class: "office" }
-          %img{src: "./images/smk.jpg"}
+        %a{:href=>"https://plus.google.com/118213542007489012764/posts", :target=>"_blank", class: "office", title: 'Go to Siyelo Skopje google plus page' }
+          %img{src: "./images/smk.jpg", alt: 'Siyelo Skopje'}
 
         %ul
           %li Suite 105

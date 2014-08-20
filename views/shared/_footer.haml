@@ -3,32 +3,29 @@
   
   .wrapper
     %a{title:'Go back to top', href:'#spaced', class:'js-smooth circle'}
-      %img{ src:"/images/logo-circle.png"}
+      %img{ src:"/images/logo-circle.png", alt: ''}
     %ul.text
       %li
         %i.fa.fa-magic
         %span Our team of designers and developers can turn your idea into an amazing product
-        %a{href: '/hire-us'} Hire us
+        %a{href: '/hire-us', title: 'Hire Siyelo'} Hire us
 
       %li
         %i.fa.fa-lightbulb-o
         %span Technology, programming and the business of building apps.
-        %a{href: 'http://blog.siyelo.com'} Visit our blog
+        %a{href: 'http://blog.siyelo.com', title: 'Go to our blog'} Visit our blog
 
       %li
         %i.fa.fa-rocket
         %span If you're enthusiastic about technology and business, drop us a line.
-        %a{href: '/jobs'} Join the team
+        %a{href: '/jobs', title: 'Apply for a job'} Join the team
 
     .links
-      %img{ src: "/images/logo-orbital.png", class: "si"}
+      %img{ src: "/images/logo-orbital.png", class: "si", alt: 'Siyelo orbital logo'}
       %p.contact
         %span
-          //%i.fa.fa-envelope
-          %a{href: 'mailto:hello@siyelo.com'} hello@siyelo.com
-        %span
-          //%i.fa.fa-phone
-          +27 79 864 1542
+          %a{href: 'mailto:hello@siyelo.com', title: 'Mail Siyelo'} hello@siyelo.com
+        %span +27 79 864 1542
         %span
           %a{ title:"Siyelo on Twitter", href:"http://twitter.com/#!/siyelo"}
             %i.fa.fa-twitter

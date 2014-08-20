@@ -5,13 +5,13 @@
   .wrapper
     %h1#logo
       %a.js-smooth{:href => "/"}
-        %img{src: '/images/logo.png', :title => "Siyelo", :alt => "Siyelo logo"}
-    %a.right#menu-toggle{href: '#'}
+        %img{src: '/images/logo.png', alt: "Siyelo logo"}
+    %a.right#menu-toggle{href: '#', title: 'Toggle mobile navigation'}
       %i.fa.fa-bars
     %nav#main-nav
       %ul
         %li
-          %a{href: '/', class: 'hireus'}
+          %a{href: '/', class: 'hireus', title: 'Go to our home page'}
             Go Home
 
 %section#wall
@@ -33,23 +33,24 @@
   .wrapper
     .row
       .third
-        %img{ src: '/images/3-3.svg'}
+        %img{ src: '/images/3-3.svg', alt: 'Foundation'}
         %h2
           Foundation
           %span ⅓ of your internship
         %p We’ll give you the resources to learn how the web works; web architectures, client-server communication, backend, frontend, HTTP, languages, frameworks and databases. Get to know Ruby, Rails, JavaScript (CoffeeScript), jQuery, HTML (HAML!) and CSS (SASS). Also, we’ll teach you how to properly use Git!
       .third
-        %img{ src: '/images/2-3.svg'}
+        %img{ src: '/images/2-3.svg', alt: 'Your first app'}
         %h2
           Your first app
           %span ⅓ of your internship
         %p In the phase, you will design, build, and ship your own version of ProductHunt – your first fully functional web app. You’ll use HTML, CSS, JavaScript, JQuery, Ruby on Rails, and SQL to build it, with guidance from your mentor.
       .third
-        %img{ src: '/images/1-3.svg'}
+        %img{ src: '/images/1-3.svg', alt: 'Build a real project'}
         %h2
           Build a Real Project
           %span ⅓ of your internship
         %p We’ll give you a real-world app to build. Either something that we are already building internally, or a new product that we’d like to launch.
+
 %section#guide
   .wrapper
     .row
@@ -80,7 +81,6 @@
 
 %section#form
   .wrapper
-
     %h1 Apply now
 
     %form{name: 'internship_email', action: '/internships/full-stack', method: 'post', enctype: "multipart/form-data"}
@@ -152,7 +152,7 @@
 
         %p
           For more information, check out Dan Croak's article about
-          %a{href:"http://robots.thoughtbot.com/internship-or-apprenticeship", target: "_new"} Interns vs Apprentices.
+          %a{href:"http://robots.thoughtbot.com/internship-or-apprenticeship", target: "_new", title: 'Interns vs Apprentices info text'} Interns vs Apprentices.
 
 %script
   $(document).ready(function(){

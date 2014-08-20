@@ -1,23 +1,25 @@
 .wrapper
   %h1#logo
-    %a.js-smooth{:href => "/"}
-      %img#animate0-1{src: '/images/logo.png', :title => "Siyelo", :alt => "Siyelo logo"}
-  %a.right#menu-toggle{href: '#'}
+    %a.js-smooth{href: "/", title: 'Siyelo Home'}
+      %img#animate0-1{src: '/images/logo.png', alt: 'Siyelo logo'}
+  
+  %a.right#menu-toggle{href: '#', title: 'Toggle mobile navigation'}
     %i.fa.fa-bars
+  
   %nav#main-nav
     %ul#animate0-2
       %li
-        %a.js-smooth{href: '#work'}
+        %a.js-smooth{href: '#work', title: 'Scroll to our Work section'}
           Work
       %li
-        %a.js-smooth{href: '#team'}
+        %a.js-smooth{href: '#team', title: 'Scroll to our Team section'}
           Team
       %li
-        %a.js-smooth{href: '#community'}
+        %a.js-smooth{href: '#community', title: 'Scroll to our Community section'}
           Community
       %li
-        %a.js-smooth{href: '#office'}
+        %a.js-smooth{href: '#office', title: 'Scroll to our Offices section'}
           Offices
       %li
-        %a.js-smooth{href: 'hire-us', class: 'hireus'}
+        %a.js-smooth{href: 'hire-us', class: 'hireus', title: 'Hire Siyelo'}
           Hire Us
