@@ -29,12 +29,11 @@
 %section#work.content
   .wrapper
     .txt-heading
-      %h1 Our work
+      %h1 Who we are
       %p
         Clients hire us to build amazing products and services.
-        We always start by understanding their business first. We
-        workshop. We prototype. We ship working software. We learn and
-        we iterate. We collaborate very closely throughout the entire project.
+        We partner. We prototype. We ship working software. 
+        We build web and mobile apps with Ruby and Javascript.
 
   %ul.projects
     %li.ta#cs-tad#trigger1
@@ -184,7 +183,7 @@
   .cta
     %a{:href => "/hire-us", title: 'Hire Siyelo' }
       Want to work with us?
-      %span Hire us now!
+      %span Let's Talk!
 
 
 %section#team.content
@@ -258,13 +257,10 @@
           %span Accounting
         %p Wendy is our trusted, excel-creating, generally-amazing administrator. Her good sense of humor and calming, zen-like presence mean she's a joy to be around. Except if your invoice is past due...
 
-  .cta.double
+  .cta
     %a{:href => "/jobs", title: 'Apply for a job' }
       Want to join the team?
       %span Click here to apply
-    %a{:href => "/internships/full-stack", title: 'Apply for internship', target: '_blank'}
-      Become a Web Developer
-      %span Apply for internship
 
 %section#community.content
   .wrapper
@@ -305,44 +301,21 @@
           %br
           %img{src:'/images/events/cr-logo.png', alt: 'Code Retreat Skopje logo'}
 
-%section#office.content
+%section#contact.content
   .wrapper
 
     .txt-heading
-      %h1 Our offices
-      %p
-        Siyelo works remotely, both with our clients, and within our own team.
-        Our virtual office is built around tools like PivotalTracker, FlowDock, Sqwiggle,
-        ScreenHero and GitHub.
+      %h1 Contact Us
+      %ul
+        %li
+          %a{href: 'mailto:hello@siyelo.com', title: 'Email Siyelo'} hello@siyelo.com
+        %li
+          %a{href: 'tel:+27 (0) 79 864 1542', title: 'Email Siyelo'} +27 (0) 79 864 1542
+      %p 
+        %a{:href => "/hire-us", title: 'Hire Siyelo' }
+          Need help with a project?
+          %span Let's Talk!
 
-      %p
-        Sometimes we spend-time in the third-dimension at our Cape Town or Skopje offices.
-        If you are in the neighbourhood, feel free to stop by for a coffee and a lesson in
-        table tennis.
-
-    %ul.offices
-      %li.ssa
-        %a{:href=>"https://plus.google.com/+SiyeloCapeTown/posts", :target=>"_blank", class: "office", title: 'Go to Siyelo Cape Town google plus page' }
-          %img{src: "./images/ssa.jpg", alt: 'Siyelo Cape Town'}
-
-        %ul
-          %li Suite 401
-          %li 79 Roeland Street
-          %li Cape Town, 8001
-          %li South Africa
-
-
-      %li.smk
-        %a{:href=>"https://plus.google.com/118213542007489012764/posts", :target=>"_blank", class: "office", title: 'Go to Siyelo Skopje google plus page' }
-          %img{src: "./images/smk.jpg", alt: 'Siyelo Skopje'}
-
-        %ul
-          %li Suite 105
-          %li Marx & Engels 7
-          %li Skopje, 1000
-          %li Macedonia
-          
-        
   #map-canvas
 
 %script{:src => '/javascripts/mylibs/sticky-nav.js'}
