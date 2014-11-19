@@ -79,58 +79,61 @@ b
     position: relative
     &.left
       margin-left: -3em
-      img
-        left: -20em
     &.right
       margin-right: -3em
-      img
-        right: -20em
     img
       max-width: 100% !important
-      opacity: 0
       position: relative
       //@include scale(0)
       &#animate1-1
         width: 100%
+        left: 0%
       &#animate1-2
         bottom: 8%
         position: absolute
         width: 39%
+        left: 55%
       &#animate1-3
         bottom: 0
         position: absolute
         width: 17%
+        left: 48%
   #animate1-4 ,#animate3-1 ,#animate5-1
     position: relative
-    opacity: 0
-    right: -20em
+    right: 0
 
   #animate2-1, #animate4-1
     position: relative
-    opacity: 0
-    left: -20em
 
   #animate4-3, #animate4-4, #animate4-5, 
     bottom: 0
     position: absolute
-    right: -20em
   #animate4-3
     bottom: 7%
+    right: 0px
   #animate4-4
     bottom: 3%
+    right: 70%
+  #animate4-5
+    right: 25%
 
   #animate5-3, #animate5-4, #animate5-5, #animate5-6
     bottom: 0
     position: absolute
-    left: -20em
+  #animate5-2
+    left: 0
   #animate5-3
     bottom: 3%
+    left: 0
   #animate5-4
     bottom: 3%
+    left: 70%
   #animate5-5
     bottom: -1%
+    left: 66%
   #animate5-6
     bottom: -4%
+    left: 30%
     
 
   h2
