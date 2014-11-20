@@ -1117,6 +1117,12 @@ section.case a:hover, section.case a:focus {
   float: right;
 }
 
+#contact p a {
+  color: #666666;
+  text-decoration: none;
+  font: "open sans";
+}
+
 #form {
   margin-bottom: 6em;
 }
