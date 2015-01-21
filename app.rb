@@ -47,12 +47,6 @@ class SinatraBootstrap < Sinatra::Base
     haml :jobs, layout: :page
   end
 
-  get '/internships/full-stack' do
-    @title = "Learn what it takes to be a web developer, apply for internship"
-    @description = "Get into Ruby on Rails, databases, and APIs. Learn frontend tools including HTML5, CSS3, JavaScript, and JQuery. Build interesting web applications"
-    haml :fullstack, layout: :page
-  end
-
   get '/clients/internet-solutions' do
     @title = "Internet Solutions case study"
     @description = "Need to save costs? Rethinking the way you are doing things? We've helped clients save costs by rapidly replacing their legacy systems."
@@ -102,18 +96,6 @@ class SinatraBootstrap < Sinatra::Base
     end
 
     EmailSender.deliver_job_application(request.params)
-
-    flash[:notice] = 'Your application has been submitted. Thank you!'
-    redirect '/'
-  end
-
-  post '/internships/full-stack' do
-    unless EmailValidator.validate(request.params)
-      flash[:error] = 'Please fill in all of the fields and resubmit your application.'
-      redirect '/internships/full-stack'
-    end
-
-    EmailSender.deliver_intern_application(request.params)
 
     flash[:notice] = 'Your application has been submitted. Thank you!'
     redirect '/'
