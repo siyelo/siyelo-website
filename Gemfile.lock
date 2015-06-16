@@ -14,6 +14,8 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     polyglot (0.3.3)
+    puma (2.11.3)
+      rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-flash3 (1.0.5)
       rack
@@ -37,6 +39,7 @@ DEPENDENCIES
   compass
   haml
   mail
+  puma
   rack-flash3
   rake (= 10.3.2)
   sass

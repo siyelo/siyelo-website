@@ -11,3 +11,5 @@ gem 'rack-flash3'
 # Sass & Compass
 gem 'sass'
 gem 'compass'
+
+gem 'puma'
