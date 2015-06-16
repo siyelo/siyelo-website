@@ -41,3 +41,6 @@ DEPENDENCIES
   rake (= 10.3.2)
   sass
   sinatra
+
+BUNDLED WITH
+   1.10.4
