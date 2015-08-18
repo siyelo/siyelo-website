@@ -19,15 +19,14 @@
         %li
           %a{href: '/#contact'}
             Contact
-
+            
 %section#form
 
   .wrapper
     .txt-heading
       %h1 Hire Siyelo
 
-    %form{name: 'contact_email', action: 'https://formkeep.com/f/0868d6cf9701', method: 'post', :'accept-charset' => "UTF-8"}
-      %input{type: 'hidden', name: 'utf8', value: "✓"}
+    %form{name: 'contact_email', action: '/hire-us', method: 'post'}
       %ul
         %li
           %input{type: 'text', name: 'full_name', placeholder: 'What is your name'}
