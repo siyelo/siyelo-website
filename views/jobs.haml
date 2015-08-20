@@ -39,7 +39,7 @@
           %label{for: 'developer'} Developer
           %input{type: 'radio', name: 'position', value: 'designer', id: 'designer'}
           %label{for: 'designer'} Designer
-            
+
 
         %li
           %input{type: 'text', name: 'full_name', placeholder: 'What is your name?'}
@@ -58,6 +58,12 @@
 
         %li
           %input{type: 'submit', value: 'Submit'}
+
+    %form{name: 'jobs_email', action: 'https://formkeep.com/f/40d878712043', method: 'post', :'accept-charset' => "UTF-8"}
+      %input{type: 'hidden', name: 'utf8', value: "✓"}
+      %input{type: 'text', name: 'email', placeholder: 'What is your email address?'}
+      %button{type: 'submit', value: 'Submit'}
+        Submit
 
 %script
   $(document).ready(function(){
